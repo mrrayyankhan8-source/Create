@@ -1,0 +1,149 @@
+=== Adjustable Chain Gearshift ===
+URL: https://create.fandom.com/wiki/Adjustable_Chain_Gearshift
+Adjustable Chain Gearshift Renewable Yes Stackable Yes (64) Tools Blast resistance 6 Hardness 1.5 Solid block Yes Full block Yes Transparent Yes Luminant No Flammable No Catches fire from lava No The Adjustable Chain Gearshift functions similarly to Encased Chain Drive , but can change the speed of the output when powered with redstone. Contents 1 Obtaining 1.1 Crafting 2 Usage 2.1 Examples 3 Data values 3.1 ID 4 History Obtaining [ ] Crafting [ ] Name Ingredients Recipe Adjustable Chain Gearshi...
+
+=== Automating items ===
+URL: https://create.fandom.com/wiki/Automating_items
+This page is a candidate for deletion. Reason: This article is redundant and of low quality. The content of this article is contained on the Sequenced Assembly page. Author(s): We recommend reading our rules and guides to improve pages marked for deletion. Moderators: Remember to check the page history and what links here before deletion . Some items can't be crafted normally in a mechanical crafter or a crafting table, and sometimes they need to be pressed or washed. Automation of items is a ba...
+
+=== Block Attachment Utilities ===
+URL: https://create.fandom.com/wiki/Block_Attachment_Utilities
+Redirect to: Category:Block Attachment Utility...
+
+=== Block IDs ===
+URL: https://create.fandom.com/wiki/Block_IDs
+The following is a list of block IDs used in Create. List of Block IDs Block ID Acacia Window acacia_window Acacia Window Pane acacia_window_pane Adjustable Chain Gearshift adjustable_chain_gearshift Analog Lever analog_lever Block of Andesite Alloy andesite_alloy_block Andesite Bars andesite_bars Andesite Funnel (belt state) andesite_belt_funnel Andesite Alloy andesite_alloy Andesite Casing andesite_casing Andesite Door andesite_door Andesite Encased Shaft andesite_encased_shaft Andesite Funnel...
+
+=== Block of Andesite Alloy ===
+URL: https://create.fandom.com/wiki/Block_of_Andesite_Alloy
+Block of Andesite Alloy is a decorative storage block for Andesite Alloy . Block of Andesite Alloy Renewable Yes Stackable Yes (64) Tool Blast resistance 6 Hardness 1.5 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No Contents 1 Obtaining 1.1 Crafting 1.2 Compacting 2 Usage 2.1 Crafting 3 Data values 3.1 ID 4 History Obtaining [ ] Crafting [ ] Name Ingredients Recipe Block of Andesite Alloy Andesite Alloy Compacting [ ] Name Ingredients Recipe Bloc...
+
+=== Block of Brass ===
+URL: https://create.fandom.com/wiki/Block_of_Brass
+This article is about the block.  For the ingot, see Brass Ingot . For other forms of brass, see Brass . Block of Brass Renewable No Stackable Yes (64) Tool Blast resistance 6 Hardness 5 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No The Block of Brass is a metal block. It can be crafted with 9 Brass Ingots . It can be used to form the base of a beacon pyramid. Contents 1 Obtaining 1.1 Breaking 1.2 Crafting 2 Usage 2.1 Crafting 3 Data values 3.1 ...
+
+=== Block of Cardboard ===
+URL: https://create.fandom.com/wiki/Block_of_Cardboard
+Redirect to: Cardboard...
+
+=== Block of Coal ===
+URL: https://create.fandom.com/wiki/Block_of_Coal
+This page is a candidate for deletion. Reason: Create provides no substantial recipes for this block, thus making this page redundant. See Block of Coal on the Minecraft Wiki for useful information. Author(s): We recommend reading our rules and guides to improve pages marked for deletion. Moderators: Remember to check the page history and what links here before deletion . For the April Fools' joke item, see Block of Coal (April Fools' joke) . For other uses, see Coal (disambiguation) . Block of ...
+
+=== Block of Copper ===
+URL: https://create.fandom.com/wiki/Block_of_Copper
+This item is part of vanilla Minecraft. More information can be found at: Minecraft Wiki: Block of Copper This article is about the block. For the ore, see Copper Ore . For other forms of copper, see Copper . Block of Copper Block Cut Shingles Tiles Renewable Yes Stackable Yes (64) Tool Blast resistance 6 Hardness 3 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No The Block of Copper is a decorative storage block equivalent to nine Copper Ingots .
+...
+
+=== Block of Experience ===
+URL: https://create.fandom.com/wiki/Block_of_Experience
+Block of Experience is a decorative storage block for Nuggets of Experience . It also can be used as a beacon base. Block of Experience Rarity Uncommon Renewable No Stackable Yes (64) Tool Blast resistance 6 Hardness 3 Solid block Yes Full block Yes Transparent No Luminant Yes (15) Flammable No Catches fire from lava No Contents 1 Obtaining 1.1 Crafting 1.2 Compacting 2 Usage 2.1 Crafting 3 Data values 3.1 ID 4 History Obtaining [ ] Crafting [ ] Name Ingredients Recipe Block of Experience Nugget...
+
+=== Block of Industrial Iron ===
+URL: https://create.fandom.com/wiki/Block_of_Industrial_Iron
+Block of Industrial Iron Industrial Iron Weathered Iron Renewable Yes Stackable Yes (64) Tool Blast resistance 6 Hardness 3 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No Contents 1 Obtaining 1.1 Stonecutting 2 Usage 3 Data values 3.1 ID 4 History Obtaining [ ] Stonecutting [ ] Name Ingredients Recipe Block of Industrial Iron Iron Ingot 2 Block of Weathered Iron Iron Ingot 2 Usage [ ] Pictured from left to right: A Chute , an encased Chute, and a...
+
+=== Block of Raw Zinc ===
+URL: https://create.fandom.com/wiki/Block_of_Raw_Zinc
+Redirect to: Zinc...
+
+=== Block of Weathered Iron ===
+URL: https://create.fandom.com/wiki/Block_of_Weathered_Iron
+Redirect to: Block of Industrial Iron...
+
+=== Block of Zinc ===
+URL: https://create.fandom.com/wiki/Block_of_Zinc
+This article is a stub , and needs some love to grow up! You can help the Create Wiki by expanding it . This article is about the block. For the ore, see Zinc Ore . For other forms of zinc, see Zinc . Block of Zinc Renewable No Stackable Yes (64) Tool Blast resistance 6 Hardness 5 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No A Block of Zinc can be classified as decoration and it can be used to form the base of a beacon pyramid. It makes the sou...
+
+=== Blocks and Features ===
+URL: https://create.fandom.com/wiki/Blocks_and_Features
+This page provides explanations of some of the main blocks and underlying concepts of Create. If we haven't gotten around to documenting what you were looking for, consult the following: The Mod JEI for showing the recipes and recipe types added in Create The in-game tooltips of Create for description of the individual blocks and items For Additional feedback and help please see our Discord . Contents 1 Mod spotlights 2 The Basics of Rotation 2.1 Generating Rotational Force 2.2 Transmitting Rota...
+
+=== Bound Block of Cardboard ===
+URL: https://create.fandom.com/wiki/Bound_Block_of_Cardboard
+Redirect to: Cardboard...
+
+=== Copper Block ===
+URL: https://create.fandom.com/wiki/Copper_Block
+Redirect to: Block of Copper...
+
+=== Copycat Block ===
+URL: https://create.fandom.com/wiki/Copycat_Block
+Copycat Blocks can take on the appearance and properties of other blocks. They are generally used for decorative purposes, taking on the texture of another block while retaining the shape and size of narrow panels or steps. Copycat Block Panel Step Renewable No Stackable Yes (64) Tool Blast resistance 6 Hardness 3 Solid block Yes Full block No Transparent Yes Luminant No Flammable No Catches fire from lava No Contents 1 Obtaining 1.1 Stonecutting 2 Usage 2.1 Placement 2.1.1 Steps 2.1.2 Panels 2....
+
+=== Diving Gear ===
+URL: https://create.fandom.com/wiki/Diving_Gear
+Diving Gear Helmet Boots Type Armor Durability Helmet: 77 Boots: 91 Renewable Yes Stackable No Diving Gear is used with Copper Backtank for underwater mobility. Contents 1 Obtaining 1.1 Crafting 2 Usage 2.1 Smithing 3 Data values 3.1 ID 4 History Obtaining [ ] Crafting [ ] Name Ingredients Recipe Diving Helmet Copper Ingot + Any Glass Diving Boots Copper Ingot + Andesite Alloy Usage [ ] The boots provide 1 ( ) armor point while the Helmet provides 2 ( ). The Diving Helmet used with a Copper Back...
+
+=== Gantry Shaft ===
+URL: https://create.fandom.com/wiki/Gantry_Shaft
+Redirect to: Gantry Carriage...
+
+=== Gearbox ===
+URL: https://create.fandom.com/wiki/Gearbox
+Gearbox Normal Vertical Renewable Yes Stackable Yes (64) Tools Blast resistance 6 Hardness 1.5 Solid block Yes Full block Yes Transparent Yes Luminant No Flammable No Catches fire from lava No The Gearbox is a block used to transfer Rotational power in 4 directions, either horizontally or vertically. Contents 1 Obtaining 1.1 Crafting 2 Usage 3 Real World Comparison 4 Data values 4.1 ID Obtaining [ ] Crafting [ ] Name Ingredients Recipe Gearbox Cogwheel + Andesite Casing Switch Gearbox type Verti...
+
+=== Gearshift ===
+URL: https://create.fandom.com/wiki/Gearshift
+Gearshift Renewable Yes Stackable Yes (64) Tools Blast resistance 6 Hardness 1.5 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No Rotational Power stats Kinetic Stress impact 0 Contents 1 Obtaining 1.1 Usage 1.2 Crafting 2 Data values 2.1 ID 3 History Obtaining [ ] Usage [ ] The Gearshift reverses outgoing Rotational Force when a Redstone signal is applied. Crafting [ ] Name Ingredients Crafting Recipe Gearshift Redstone Dust + Cogwheel + Andesite ...
+
+=== Handheld Blockzapper ===
+URL: https://create.fandom.com/wiki/Handheld_Blockzapper
+This page describes content that exists only in outdated versions of Create This feature used to be in the mod but has since been removed. Handheld Blockzapper Type Tool Renewable No Stackable No The Handheld Blockzapper is a gun that can place blocks or replace Blocks from far away. Contents 1 Obtaining 1.1 Crafting 2 Usage 2.1 Settings 2.2 Upgrades 3 History Obtaining [ ] Crafting [ ] Name Ingredients Recipe Handheld Blockzapper
+(Removed) Andesite Alloy + Obsidian + Refined Radiance Usage [ ] ...
+
+=== Industrial Iron Block ===
+URL: https://create.fandom.com/wiki/Industrial_Iron_Block
+Redirect to: Block of Industrial Iron...
+
+=== Item Drain ===
+URL: https://create.fandom.com/wiki/Item_Drain
+Item Drain Renewable Yes Stackable Yes (64) Tool Blast resistance 6 Hardness 3 Solid block Yes Full block No Transparent Yes Luminant No Flammable No Catches fire from lava No The Item Drain drains fluid from items such as buckets and bottles inserted onto it. Contents 1 Obtaining 1.1 Crafting 2 Usage 3 Data values 3.1 ID Obtaining [ ] Crafting [ ] Name Ingredients Recipe Item Drain Iron Bars + Copper Casing Usage [ ] The Item Drain can hold up to 1500mb of fluid at a time. A Fluid Pump is neede...
+
+=== Item Hatch ===
+URL: https://create.fandom.com/wiki/Item_Hatch
+Item Hatch Renewable Yes Stackable Yes (64) Tool Blast resistance 6 Hardness 3 Solid block Yes Full block No Transparent Yes Luminant No Flammable No Catches fire from lava No The Item Hatch is used to deposit a player’s inventory into storage. Contents 1 Crafting 2 Usage 2.1 Filter 3 Data values 3.1 ID 4 History Crafting [ ] Name Ingredients Recipe Item Hatch Andesite Alloy + Iron Trapdoor Usage [ ] Place the Item Hatch on the side of a storage block such as an Item Vault or Chute . Right-click...
+
+=== Item IDs ===
+URL: https://create.fandom.com/wiki/Item_IDs
+List of Item IDs Block ID Andesite Alloy andesite_alloy Attribute Filter attribute_filter Bar of Chocolate bar_of_chocolate Blaze Cake blaze_cake Brass Hand brass_hand Brass Ingot brass_ingot Brass Nugget brass_nugget Brass Sheet brass_sheet Builder's Tea builders_tea Dough dough Capacity (I, II, and III) minecraft:enchanted_book{StoredEnchantments:[{lvl:1s, id:"create:capacity"}]} Chocolate Bucket chocolate_bucket Chocolate Glazed Berries chocolate_glazed_berries Chromatic Compound chromatic_co...
+
+=== Item Vault ===
+URL: https://create.fandom.com/wiki/Item_Vault
+Item Vault Renewable Yes Stackable Yes (64) Tool Blast resistance 1200 Hardness 3 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No Contents 1 Crafting 2 Usage 2.1 Size 2.2 Viewing Inventory 2.3 On Trains 3 Data values 3.1 ID 4 History Crafting [ ] Name Ingredients Recipe Item Vault Iron Sheet + Barrel Usage [ ] By default, each Item Vault block has a storage space of 20 stacks, and this can be changed in the Config . Items cannot be added or remove...
+
+=== List automatable items in create mod ===
+URL: https://create.fandom.com/wiki/List_automatable_items_in_create_mod
+Redirect to: List of automatable items...
+
+=== List of automatable items ===
+URL: https://create.fandom.com/wiki/List_of_automatable_items
+This article is a stub , and needs some love to grow up! You can help the Create Wiki by expanding it . Contents 1 Automatability 2 Automatable resources 2.1 List of Automatable Items 2.1.1 List of Automatable Create Items 2.1.2 List of Automatable Vanilla Items 2.1.3 Items only Automatable using Exploits 2.2 List of Automatable Blocks 3 Non-Automatable Resources Automatability [ ] The Create mod has many items but not all are automatable. There is a difference between automatable and renewable ...
+
+=== Manual Item Application ===
+URL: https://create.fandom.com/wiki/Manual_Item_Application
+Manual Item Application is a recipe type where an item is used on a placed block. Recipes [ ] Right-click the item onto the placed block to complete the recipe. These recipes may also be automated with Deployers ; with this method, the block does not have to be placed. Name Ingredients Manual Item Application Andesite Casing Any Stripped Wood or Stripped Log + Andesite Alloy Copper Casing Any Stripped Wood or Stripped Log + Copper Ingot Brass Casing Any Stripped Wood or Stripped Log + Brass Ingo...
+
+=== Netherite Diving Gear ===
+URL: https://create.fandom.com/wiki/Netherite_Diving_Gear
+When used with a full Netherite Backtank and Netherite Leggings , the wearer is immune to Fire and Lava . Netherite Diving Gear Helmet Backtank Boots Type Armor Durability Helmet: 407 Boots: 481 Renewable No Stackable No Contents 1 Obtaining 1.1 Smithing 2 Usage 2.1 Armor 2.2 Air Pressure 2.3 In-Game Tooltips 2.3.1 Netherite Diving Helmet 2.3.2 Netherite Backtank 2.3.3 Netherite Diving Boots 3 Gallery 4 Data values 4.1 ID 5 History Obtaining [ ] Smithing [ ] Name Ingredients Recipe Netherite Div...
+
+=== Rose Quartz Block ===
+URL: https://create.fandom.com/wiki/Rose_Quartz_Block
+Rose Quartz Block Block Tiles Small Tiles Renewable Yes Stackable Yes (64) Tool Blast resistance Block: 1.5 Tiles: 6 Hardness Block: 1.5 Tiles: 3 Solid block Yes Full block Yes Transparent No Luminant No Flammable No Catches fire from lava No The Rose Quartz Block , Rose Quartz Tiles , and Small Rose Quartz Tiles are decorative blocks made from Rose Quartz and Polished Rose Quartz . Contents 1 Obtaining 1.1 Stonecutting 1.2 Crafting 2 Data values 2.1 ID 3 History Obtaining [ ] Stonecutting [ ] N...
+
+=== Sequenced Gearshift ===
+URL: https://create.fandom.com/wiki/Sequenced_Gearshift
+Sequenced Gearshift Renewable No Stackable Yes (64) Tools Blast resistance 6 Hardness 1.5 Solid block Yes Full block Yes Transparent Yes Luminant No Flammable No Catches fire from lava No The Sequenced Gearshift allows finer control over Rotational power , allowing multiple changes to the rotation over a period of time. Contents 1 Obtaining 1.1 Crafting 2 Usage 3 Data values 3.1 ID 4 History Obtaining [ ] Crafting [ ] Name Ingredients Recipe Sequenced Gearshift Electron Tube + Cogwheel + Brass C...
+
+=== Shaft ===
+URL: https://create.fandom.com/wiki/Shaft
+Shaft Renewable Yes Stackable Yes (64) Tools Blast resistance 6 Hardness 1.5 Solid block Yes Full block No Transparent Yes Luminant No Flammable No Catches fire from lava No The shaft is a basic mechanical component in Create. A shaft can be used to connect two mechanical components such that the rotation of one rotates the other, and shafts serve as the only blocks upon which Mechanical Belts can be placed. Contents 1 Obtaining 1.1 Crafting 1.2 Sawing 2 Usage 2.1 Connecting components 2.2 Mecha...
+
+=== Vertical Gearbox ===
+URL: https://create.fandom.com/wiki/Vertical_Gearbox
+Redirect to: Gearbox...
+
+=== Weathered Iron Block ===
+URL: https://create.fandom.com/wiki/Weathered_Iron_Block
+Redirect to: Block of Industrial Iron...
