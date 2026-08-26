@@ -1,0 +1,5482 @@
+[
+  {
+    "title": "Adjustable Chain Gearshift",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "renewable": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Adjustable Chain Gearshift functions similarly to Encased Chain Drive, but can change the speed of the output when powered with redstone.",
+    "categories": [
+      "Mechanical Components",
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Adjustable Crate",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "The Adjustable Crate is a block that stores s.",
+    "categories": []
+  },
+  {
+    "title": "Adjustable Repeater",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "transparent": "Yes",
+      "luminant": "No",
+      "blast_resistance": "0",
+      "hardness": "0"
+    },
+    "type": "block",
+    "description": "For similar and updated functionality, see Pulse Repeater or Pulse Extender.",
+    "categories": [
+      "Removed features"
+    ]
+  },
+  {
+    "title": "Advanced Ore Processing",
+    "attributes": {},
+    "type": "page",
+    "description": "Learn to design and build your own large-scale ore processing facility. This tutorial covers the concepts and peculiarities of each step of the process. Along the way, you'll learn how to sort, buffer, and regulate the item flow between steps so your processing line stays efficient, unclogged, and fully automated.",
+    "categories": []
+  },
+  {
+    "title": "Analog Lever",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "0.5",
+      "hardness": "Lever: 0.5",
+      "solid": "No",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "Yes"
+    },
+    "type": "block",
+    "description": "The Analog Lever is used to emit a variable signal via player input.",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Andesite",
+    "attributes": {
+      "image": "<gallery>\nAndesite.png|Natural\nCut Andesite.png|Cut\nCut Andesite Slab.png|Cut Slab\nCut Andesite Stairs.png|Cut Stairs\nCut Andesite Wall.png|Cut Wall\nPolished Cut Andesite.png|Polished Cut\nPolished Cut Andesite Slab.png|Polished Cut Slab\nPolished Cut Andesite Slab Double.png|Polished Cut Slab Double\nPolished Cut Andesite Stairs.png|Polished Cut Stairs\nPolished Cut Andesite Wall.png|Polished Cut Wall\nCut Andesite Bricks.png|Bricks\nCut Andesite Brick Slab.png|Brick Slab\nCut Andesite Brick Stairs.png|Brick Stairs\nCut Andesite Brick Wall.png|Brick Wall\nSmall Andesite Bricks.png|Small Bricks\nSmall Andesite Brick Slab.png|Small Brick Slab\nSmall Andesite Brick Stairs.png|Small Brick Stairs\nSmall Andesite Brick Wall.png|Small Brick Wall\nLayered Andesite.png|Layered\nAndesite Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Andesite}}\n{{Slot|Cut Andesite}}\n{{Slot|Cut Andesite Slab}}\n{{Slot|Cut Andesite Stairs}}\n{{Slot|Cut Andesite Wall}}\n{{Slot|Polished Cut Andesite}}\n{{Slot|Polished Cut Andesite Slab}}\n{{Slot|Polished Cut Andesite Stairs}}\n{{Slot|Polished Cut Andesite Wall}}\n{{Slot|Cut Andesite Bricks}}\n{{Slot|Cut Andesite Brick Stairs}}\n{{Slot|Cut Andesite Brick Slab}}\n{{Slot|Cut Andesite Brick Wall}}\n{{Slot|Small Andesite Bricks}}\n{{Slot|Small Andesite Brick Slab}}\n{{Slot|Small Andesite Brick Stairs}}\n{{Slot|Small Andesite Brick Wall}}\n{{Slot|Layered Andesite}}\n{{Slot|Andesite Pillar}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Andesite  is a naturally generating stone block that is necessary for crafting Andesite Alloys and can be used to craft various decorative blocks.",
+    "categories": [
+      "Decoration",
+      "Materials",
+      "Renewable resources"
+    ]
+  },
+  {
+    "title": "Andesite Alloy",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes",
+      "title": "Andesite Alloy"
+    },
+    "type": "item",
+    "description": "Andesite Alloy is a material used in Andesite Casing and simple kinetic blocks, which serves as an entry-point to the mechanical components of Create.  Among its many functions, it is an essential ingredient for crafting Shafts and both regular and large Cogwheels. Andesite Alloy is the most basic component construction material in Create.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Andesite Funnel",
+    "attributes": {
+      "image": "<gallery>\nAndesite Belt Funnel.png|Belt\nHorizontal Andesite Funnel.png|Horizontal\nVertical Andesite Funnel.png|Vertical\nExtended Andesite Funnel.png|Extended\n</gallery>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Andesite Funnel is used to extract or insert materials into inventories, similar in nature to the Brass Funnel.",
+    "categories": [
+      "Item Transportation",
+      "Machines",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Andesite Tunnel",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "6",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "A decorative Tunnel for Mechanical Belts.",
+    "categories": [
+      "Decoration",
+      "Item Transportation"
+    ]
+  },
+  {
+    "title": "Asurine",
+    "attributes": {
+      "image": "<gallery>\nAsurine.png|Normal\nCut Asurine.png|Cut\nPolished Cut Asurine.png|Polished Cut\nCut Asurine Bricks.png|Bricks\nSmall Asurine Bricks.png|Small Bricks\nLayered Asurine.png|Layered\nAsurine Pillar.png\n</gallery>",
+      "slot": "{{Slot|Asurine}}{{Slot|Cut Asurine}}{{Slot|Polished Cut Asurine}}{{Slot|Cut Asurine Bricks}}{{Slot|Small Asurine Bricks}}{{Slot|Layered Asurine}}{{Slot|Asurine Pillar}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.25",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Asurine is a decorative block in Create, named after its Azure color.",
+    "categories": [
+      "Decoration",
+      "Non-renewable resources"
+    ]
+  },
+  {
+    "title": "Automating items",
+    "attributes": {},
+    "type": "page",
+    "description": "thumb",
+    "categories": []
+  },
+  {
+    "title": "Bar of Chocolate",
+    "attributes": {
+      "type": "Food",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "restores": "6",
+      "saturation": "3.6"
+    },
+    "type": "item",
+    "description": "A Bar of Chocolate is a  item.",
+    "categories": [
+      "Food"
+    ]
+  },
+  {
+    "title": "Basin",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "6"
+    },
+    "type": "block",
+    "description": "The Basin is a block that holds items and fluids used in Packing, Compacting, and Mixing recipes. A basin can also function as an interaction point in fluid systems as fluids can be placed in or removed from a Basin directly by a player. In a survival game, a basin's most significant function is creating Brass, which is essential for the creation of most advanced components.",
+    "categories": [
+      "Fluid Systems",
+      "Machines",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Bearing (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "Bearings are blocks which have a rotating component which can be attached to blocks.",
+    "categories": []
+  },
+  {
+    "title": "Bell (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "There are three types of bell:",
+    "categories": []
+  },
+  {
+    "title": "Belt Observer",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "For similar functionality, see Brass Tunnel or Smart Observer.",
+    "categories": []
+  },
+  {
+    "title": "Belt Support",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Pickaxe",
+      "blast_resistance": "?",
+      "hardness": "?",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Belt Support is a purely decorative block used for hiding the bottom of Mechanical Belts. This block's functionality would later be replaced by Casings.",
+    "categories": []
+  },
+  {
+    "title": "Blaze Brass",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Blaze Brass was a crafting ingredient used to upgrade the Handheld Blockzapper.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Blaze Burner",
+    "attributes": {
+      "image": "<gallery>\nFile:Empty Blaze Burner.png|Empty\nFile:Blaze Burner.png|With Blaze\n</gallery>",
+      "slot": "{{Slot|Empty Blaze Burner}}{{Slot|Blaze Burner}}",
+      "stackable": "Yes (64)",
+      "renewable": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "full": "No",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "transparent": "Yes",
+      "luminant": "Yes (if heated)<br>\nHeated: 12 <br>\nSuperheated: 15 <br>\nWith {{MC|Fire}}: 13 <br>\nWith {{MC|Soul Fire}}: 10"
+    },
+    "type": "block",
+    "description": "A Blaze Burner is a heating component that is required for certain Mixing recipes. It can be used for heating Steam Engines, Bulk Smoking, Bulk Smelting, and as a decorative light source.",
+    "categories": [
+      "Machines"
+    ]
+  },
+  {
+    "title": "Blaze Cake",
+    "attributes": {
+      "image": "<gallery>\nBlaze Cake.png|Cake\nBlaze Cake Base.png|Base\n</gallery>",
+      "slot": "{{Slot|Blaze Cake Base}}{{Slot|Blaze Cake}}",
+      "stackable": "Yes (64)",
+      "renewable": "No"
+    },
+    "type": "item",
+    "description": "thumb|160px|Super-Heated Blaze Burner.",
+    "categories": []
+  },
+  {
+    "title": "Blazing Tools",
+    "attributes": {
+      "image": "<gallery>\nBlazing Pickaxe.png|Pickaxe\nBlazing Shovel.png|Shovel\nBlazing Axe.png|Axe\nBlazing Sword.png|Sword\n</gallery>",
+      "slot": "{{Slot|Blazing Pickaxe}}{{Slot|Blazing Shovel}}{{Slot|Blazing Axe}}{{Slot|Blazing Sword}}",
+      "durability": "450",
+      "effects": "Sets attacked entities on fire, smelts broken blocks.",
+      "type": "Tool",
+      "renewable": "Yes",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "Obtaining",
+    "categories": []
+  },
+  {
+    "title": "Block IDs",
+    "attributes": {},
+    "type": "page",
+    "description": "The following is a list of block IDs used in Create.",
+    "categories": []
+  },
+  {
+    "title": "Block of Andesite Alloy",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Block of Andesite Alloy is a decorative storage block for Andesite Alloy.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Block of Brass",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Block of Brass is a metal block. It can be crafted with 9 Brass Ingots. It can be used to form the base of a beacon pyramid.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Block of Coal",
+    "attributes": {
+      "image": "Block of Coal.png",
+      "transparent": "No",
+      "light": "No",
+      "tool": "wooden pickaxe",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "flammable": "Yes (5)",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "A block of coal, also known as a coal block, is a storage block, equivalent to nine coal, that can also be used as fuel.",
+    "categories": []
+  },
+  {
+    "title": "Block of Copper",
+    "attributes": {
+      "image": "<gallery>\nBlock of Copper.png|Block\nCut Copper.png|Cut\nCopper Shingles.png|Shingles\nCopper Tiles.png|Tiles\n</gallery>",
+      "slot": "{{slot|Block of Copper}}{{slot|Exposed Copper}}{{slot|Weathered Copper}}{{slot|Oxidized Copper}}<br>\n{{slot|Cut Copper}}{{slot|Exposed Cut Copper}}{{slot|Weathered Cut Copper}}{{slot|Oxidized Cut Copper}}<br>\n{{slot|Copper Shingles}}{{slot|Exposed Copper Shingles}}{{slot|Weathered Copper Shingles}}{{slot|Oxidized Copper Shingles}}<br>\n{{slot|Copper Tiles}}{{slot|Exposed Copper Tiles}}{{slot|Weathered Copper Tiles}}{{slot|Oxidized Copper Tiles}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Stone Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "This article is about the block. For the ore, see Copper Ore. For other forms of copper, see Copper.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Block of Experience",
+    "attributes": {
+      "rarity": "Uncommon",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "Yes (15)",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Block of Experience is a decorative storage block for Nuggets of Experience. It also can be used as a beacon base.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Block of Industrial Iron",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "slot": "{{Slot|Block of Industrial Iron}}{{Slot|Block of Weathered Iron}}",
+      "rarity": "",
+      "image": "<gallery>Block_of_Industrial_Iron.png|Industrial Iron\nBlock_of_Weathered_Iron.png|Weathered Iron</gallery>"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Block of Zinc",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "This article is about the block. For the ore, see Zinc Ore. For other forms of zinc, see Zinc.",
+    "categories": []
+  },
+  {
+    "title": "Blocks and Features",
+    "attributes": {},
+    "type": "page",
+    "description": "This page provides explanations of some of the main blocks and underlying concepts of Create.",
+    "categories": [
+      "Tutorials",
+      "Machines",
+      "Items"
+    ]
+  },
+  {
+    "title": "Blue Wool",
+    "attributes": {
+      "title": "Blue Wool",
+      "image": "Blue Wool.png"
+    },
+    "type": "block",
+    "description": "Blue Wool is a Wool Type in Minecraft.",
+    "categories": []
+  },
+  {
+    "title": "Bracket",
+    "attributes": {
+      "image": "<gallery>\nMetal Bracket.png|Metal\nWooden Bracket.png|Wooden\n</gallery>",
+      "slot": "{{Slot|Wooden Bracket}}{{Slot|Metal Bracket}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "N/A",
+      "blast_resistance": "N/A",
+      "hardness": "N/A",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Brackets are decorative items used on Shafts, Cogwheels, and Fluid Pipes.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Brass",
+    "attributes": {
+      "image": "[[File:Block of Brass.png]]",
+      "slot": "{{Slot|Block of Brass}}{{Slot|Brass Ingot}}{{Slot|Brass Nugget}}{{Slot|Brass Sheet}}",
+      "stackable": "Yes (64)",
+      "renewable": "No"
+    },
+    "type": "item",
+    "description": "Brass is an alloy obtained by mixing  and Zinc together with a Mechanical Mixer, Basin, and Blaze Burner. It is used primarily for crafting item sorting machines. Blocks of Brass can also be used as a beacon base.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Brass Funnel",
+    "attributes": {
+      "image": "<gallery>\nBrass Belt Funnel.png|Belt\nHorizontal Brass Funnel.png|Horizontal\nVertical Brass Funnel.png|Vertical\nExtended Brass Funnel.png|Extended\n</gallery>",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Brass Funnel  is a block that can extract or insert items into inventories, much like the Andesite Funnel.",
+    "categories": [
+      "Item Transportation",
+      "Machines",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Brass Hand",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "No"
+    },
+    "type": "item",
+    "description": "The Brass Hand is an item that is only used in crafting recipes.",
+    "categories": [
+      "Crafting Components"
+    ]
+  },
+  {
+    "title": "Brass Ingot",
+    "attributes": {
+      "image": "Brass_Ingot.png",
+      "stackable": "Yes (64)",
+      "renewable": "No"
+    },
+    "type": "item",
+    "description": "The Brass Ingot is often used in any component capable of item sorting. It is also an important component in Mechanical Crafters, which are required to create the Crushing Wheel.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Brass Tunnel",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "5",
+      "solid": "Yes",
+      "full": "Yes (only top)",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "No"
+    },
+    "type": "block",
+    "description": "A Brass Tunnel is a machine that can only be placed on Mechanical Belts. It can be decorative or it can be used to split, sort, or combine streams of items fed by belts.",
+    "categories": [
+      "Item Transportation",
+      "Machines"
+    ]
+  },
+  {
+    "title": "Brass Workshop",
+    "attributes": {},
+    "type": "page",
+    "description": "The brass workshop, unsurprisingly, allows you to create Brass Ingots which opens up quite a lot of capabilities such as automated planting, item sorting, advanced redstone circuits, ore processors, and elevators. It requires access to the Nether to obtain a .",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Build Order",
+    "attributes": {},
+    "type": "page",
+    "description": "Many of the new items introduced by the Create mod are constructed in part with other Create items. For example, a Shaft requires you to have first made Andesite Alloy. The table below categorizes the Create items into levels corresponding to the order in which items must be built. Building an item at level four will require one or more items from level three and potentially items from lower build levels as well as native Minecraft items. The asterisked items in the first column are used as components for other Create items at higher build order levels.",
+    "categories": [
+      "Crafting Components",
+      "Mechanical Components",
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Builder's Tea",
+    "attributes": {
+      "image": "<gallery>\nBuilder's Tea.png|Item\nTea (Fluid).gif|Liquid\n</gallery>",
+      "type": "Consumable",
+      "slot": "{{Slot|Builder's Tea}}{{Slot|Builder's Tea (fluid)}}",
+      "restores": "1",
+      "saturation": "1.2",
+      "effects": "3 minutes of {{MC|Haste}}",
+      "renewable": "Yes",
+      "stackable": "Yes (16)"
+    },
+    "type": "item",
+    "description": "Builder's Tea is a potion-like consumable that restores a single hunger point, 1.2 saturation, and grants the drinker the  for 3 minutes.",
+    "categories": [
+      "Food"
+    ]
+  },
+  {
+    "title": "Calcite",
+    "attributes": {
+      "image": "<gallery>\nCalcite.png|Normal\nCut Calcite.png|Cut\nPolished Cut Calcite.png|Polished Cut\nCut Calcite Bricks.png|Bricks\nSmall Calcite Bricks.png|Small Bricks\nLayered Calcite.png|Layered\nCalcite Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Calcite}}{{Slot|Cut Calcite}}{{Slot|Polished Cut Calcite}}{{Slot|Cut Calcite Bricks}}{{Slot|Small Calcite Bricks}}{{Slot|Layered Calcite}}{{Slot|Calcite Pillar}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "0.75",
+      "hardness": "0.75",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Calcite is a decorative vanilla block.",
+    "categories": [
+      "Decoration",
+      "Non-renewable resources"
+    ]
+  },
+  {
+    "title": "Cardboard",
+    "attributes": {
+      "image": "<gallery>\nBlock of Cardboard.png|Unbound\nBound Block of Cardboard.png|Bound\n</gallery>",
+      "slot": "{{Slot|Pulp}}{{Slot|Cardboard}}{{Slot|Block of Cardboard}}{{Slot|Bound Block of Cardboard}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Tool",
+      "blast_resistance": "0.2",
+      "hardness": "0.2",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "Yes",
+      "lavasusceptible": "Yes"
+    },
+    "type": "block",
+    "description": "Cardboard is a key material for constructing bulk item storage and transport systems (Logistics Network) where it is used to create Packagers. Cardboard can also be crafted into books, item frames, item tags, armor and swords.",
+    "categories": [
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Cardboard Package",
+    "attributes": {},
+    "type": "page",
+    "description": "Cardboard Packages are part of the High Logistics system in Create. They are used to insert or extract items in bulk into or from storage blocks. They can also transport items in bulk between storage and a variety of tools in an automated factory.",
+    "categories": [
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Cardboard Sword",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "type": "Sword",
+      "durability": "200"
+    },
+    "type": "item",
+    "description": "Crafting",
+    "categories": [
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Cart Assembler",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Cart Assembler can attach a Contraption to  that pass through it when supplied with a  signal.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks"
+    ]
+  },
+  {
+    "title": "Casing",
+    "attributes": {
+      "image": "<gallery>\nAndesite Casing.png|Andesite\nBrass Casing.png|Brass\nCopper Casing.png|Copper\nTrain Casing.png|Train\n</gallery>",
+      "slot": "{{Slot|Andesite Casing}}{{Slot|Brass Casing}}{{Slot|Copper Casing}}{{Slot|Train Casing}}",
+      "renewable": "'''Brass''' & '''Train''': No<br/>'''All others''': Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Casings are blocks used throughout many crafting recipes in Create, as well as for decoration and aesthetic purposes.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Chain Conveyor",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "1x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Chain Conveyor is used to transport Cardboard Packages. It has a secondary use of transferring rotational force across open spaces that aren't perfectly horizontal, vertical or on a 45\u00b0 slope (where a Mechanical Belt would normally be used)",
+    "categories": [
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Charcoal",
+    "attributes": {
+      "image": "Charcoal.png",
+      "type": "",
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Charcoal is an item obtained by smelting logs or wood. It is used as fuel, or for crafting torches and campfires. Unlike coal, charcoal cannot be traded with villagers or crafted into a block of coal. Coal and charcoal also cannot stack together. It can be used as a substitute for coal, as both charcoal and coal have an equivalent duration when smelted.",
+    "categories": []
+  },
+  {
+    "title": "Chocolate",
+    "attributes": {},
+    "type": "page",
+    "description": "Chocolate is a fluid used to create the Bar of Chocolate.",
+    "categories": [
+      "Fluids"
+    ]
+  },
+  {
+    "title": "Chocolate (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "Chocolate is a fluid block.",
+    "categories": []
+  },
+  {
+    "title": "Chocolate Bucket",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "A Chocolate Bucket is a  filled with Chocolate.",
+    "categories": [
+      "Food"
+    ]
+  },
+  {
+    "title": "Chocolate Glazed Berries",
+    "attributes": {
+      "type": "Food",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "restores": "7",
+      "saturation": "9.2"
+    },
+    "type": "item",
+    "description": "Chocolate Glazed Berries are a  item.",
+    "categories": [
+      "Food"
+    ]
+  },
+  {
+    "title": "Chorus Chrome",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Chorus Chrome was a crafting ingredient that was used to craft the Creative Motor (previously known as the Motor) and was also used to upgrade the Handheld Blockzapper.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Chromatic Compound",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Chromatic Compound is a material used to create Shadow Steel and Refined Radiance. It is also used to upgrade the Handheld Blockzapper.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Chute",
+    "attributes": {
+      "image": "<gallery>\nChute.png|Chute\nSmart Chute.png|Smart Chute\n</gallery>",
+      "slot": "{{Slot|Chute}}{{Slot|Smart Chute}}",
+      "renewable": "'''Chute''': Yes<br/>'''Smart Chute''': No",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Smart Chute: Yes <br> Chute: No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Chutes transport items vertically, generally downward unless an encased fan is used to blow items upward. There are two varieties: Chute and Smart Chute. Smart Chutes allow the player to control the types of items passed and their stack size.",
+    "categories": [
+      "Item Transportation"
+    ]
+  },
+  {
+    "title": "Cinder Flour",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "No"
+    },
+    "type": "item",
+    "description": "Cinder Flour is primarily used as an ingredient in the process of making Blaze Cakes, as well as in making various vanilla powders.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Circuits",
+    "attributes": {},
+    "type": "page",
+    "description": "Create adds several components that can be used in redstone circuits. These include the Redstone Contact, Redstone Link, Linked Controller, Pulse Repeater, Pulse Extender, Pulse Timer, Powered Latch, and Powered Toggle Latch.  These components can make redstone circuits simpler and smaller as well as giving finer control over timing.",
+    "categories": [
+      "Redstone",
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Clipboard",
+    "attributes": {
+      "image": "<gallery>\nClipboard Block.png|Blank\nWritten Clipboard.png|Written\n</gallery>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "tool2": "Any Pickaxe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "A Clipboard can be used to copy and paste a block's settings, keep track of a Schematicannon's checklist, or another written checklist.",
+    "categories": [
+      "Tools"
+    ]
+  },
+  {
+    "title": "Clockwork Bearing",
+    "attributes": {
+      "image": "",
+      "stress_requirement": "",
+      "speed_requirement": "None",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "4.0x RPM"
+    },
+    "type": "block",
+    "description": "The Clockwork Bearing is an advanced version of the Mechanical Bearing for rotating up to two clock hands according to the current in-game time.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks",
+      "Decoration",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Clutch",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "None",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Clutch stops outgoing rotation when a redstone signal is applied.",
+    "categories": [
+      "Mechanical Components",
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Coal",
+    "attributes": {
+      "image": "Coal.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Coal is a mineral item mainly obtained from coal ore. It is primarily used for crafting torches and campfires, as well as fuel.",
+    "categories": []
+  },
+  {
+    "title": "Coal (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "Coal (disambiguation)",
+    "categories": []
+  },
+  {
+    "title": "Cobblestone",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": []
+  },
+  {
+    "title": "Cocoa Jungle Log",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": []
+  },
+  {
+    "title": "Cogwheel",
+    "attributes": {
+      "image": "<gallery>\nCogwheel (block).png|Small\nLarge Cogwheel (block).png|Large\n</gallery>",
+      "slot": "{{Slot|Cogwheel}}{{Slot|Large Cogwheel}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "None"
+    },
+    "type": "block",
+    "description": "The Cogwheel is a basic mechanical component in Create that relays rotation.",
+    "categories": [
+      "Mechanical Components",
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Conductor",
+    "attributes": {},
+    "type": "page",
+    "description": "Conductors are special passive mobs in Create:Steam 'n' rails.",
+    "categories": []
+  },
+  {
+    "title": "Conductor Caps",
+    "attributes": {},
+    "type": "page",
+    "description": "Conductor Caps are a craftable item added with Create: Steam 'n rails.",
+    "categories": []
+  },
+  {
+    "title": "Configuration",
+    "attributes": {},
+    "type": "page",
+    "description": "Create mod has multiple config options that can be used to adjust the Create experience. These settings can be changed in-game at any time through the pause or title screen menu.",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Contraption",
+    "attributes": {},
+    "type": "page",
+    "description": "Contraptions are  that appear as customizable moving structures.",
+    "categories": [
+      "Multi-blocks",
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Contraption Controls",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Contraption Controls are used to control Contraption Actors.",
+    "categories": [
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Controller Rail",
+    "attributes": {
+      "image1": "Controller Rail.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any pickaxe",
+      "blast_resistance": "0.7",
+      "hardness": "0.7",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Controller Rails are used to control the speed of s or Minecart Contraptions.",
+    "categories": []
+  },
+  {
+    "title": "Copper",
+    "attributes": {},
+    "type": "page",
+    "description": "Copper is a material used to create fluid components and Brass. For generation conditions, see .",
+    "categories": [
+      "Items",
+      "Materials",
+      "Ores"
+    ]
+  },
+  {
+    "title": "Copper Backtank",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "No",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "4x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Copper Backtank carries pressurized air.",
+    "categories": []
+  },
+  {
+    "title": "Copper Ingot",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "This article is about the ingot between Create versions 0.2-0.4. For the ore, see Copper Ore.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Copper Legacy Pack",
+    "attributes": {},
+    "type": "page",
+    "description": "Before Create , Create's copper looked a lot different, and there was a texture pack to make vanilla copper match it. Unfortunately, the release of Create , the textures were changed to match vanilla copper. If you preferred the look of Create's copper, there is a texture pack that changes it back that you can find right here. You can also pair the pack with this to make more vanilla copper blocks and items match.",
+    "categories": []
+  },
+  {
+    "title": "Copper Nugget",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "The Copper Nugget is a nugget used to craft Copper Ingots.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Copper Ore",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "3"
+    },
+    "type": "block",
+    "description": "Copper Ore is a  block found underground. It can be processed into copper ingots which are used in a variety of recipes within the mod.",
+    "categories": []
+  },
+  {
+    "title": "Copycat Block",
+    "attributes": {
+      "image": "<gallery>\nCopycat Panel.png|Panel\nCopycat Step.png|Step\n</gallery>",
+      "slot": "{{Slot|Copycat Panel}}{{Slot|Copycat Step}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Copycat Blocks can take on the appearance and properties of other blocks. They are generally used for decorative purposes, taking on the texture of another block while retaining the shape and size of narrow panels or steps.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Crafter Slot Cover",
+    "attributes": {
+      "image": "[[File:Crafter Slot Cover.png]]",
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Crafter Slot Covers are used to denote empty spaces in Mechanical Crafter setups.",
+    "categories": []
+  },
+  {
+    "title": "Crafting",
+    "attributes": {},
+    "type": "page",
+    "description": "ALL ITEMS",
+    "categories": [
+      "Disambiguation pages"
+    ]
+  },
+  {
+    "title": "Crafting Blueprint",
+    "attributes": {
+      "image": "Crafting Blueprint Entity.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "1",
+      "hardness": "1"
+    },
+    "type": "block",
+    "description": "Crafting Blueprint is a block much like a  that can be used to save crafting recipes and auto craft them easily.",
+    "categories": []
+  },
+  {
+    "title": "Crafting Components",
+    "attributes": {},
+    "type": "page",
+    "description": "The Brass Hand, the Electron Tube, the Precision Mechanism, the Propeller, and the Whisk are all items which function solely as ingredients in crafting recipes for advanced mechanical components.",
+    "categories": [
+      "Items",
+      "Crafting Components"
+    ]
+  },
+  {
+    "title": "Create Addon Mods",
+    "attributes": {},
+    "type": "page",
+    "description": "__TOC__",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Create Cosmonautics",
+    "attributes": {},
+    "type": "page",
+    "description": "The mod introduces various rocket engines designed for different flight requirements, resource-rich asteroids, orbital mechanics for celestial bodies, a dedicated space dimension, and the Moon. It also features the \"Sputnik\" probe, which enables both visual and functional programming (of course in Lua) for precise rocket control, as well as persistent loading for physics contraptions from Sable.",
+    "categories": [
+      "Getting Started With Cosmonautics"
+    ]
+  },
+  {
+    "title": "Create Mod Wiki",
+    "attributes": {},
+    "type": "page",
+    "description": "__NOTOC__ __NOEDITSECTION__Welcome to the Minecraft Create Mod Wiki! articles since June 12th, 2019<mainpage-leftcolumn-start />",
+    "categories": []
+  },
+  {
+    "title": "Create Mod Wiki:AutoWikiBrowser/CheckPage",
+    "attributes": {},
+    "type": "page",
+    "description": "Approved users",
+    "categories": []
+  },
+  {
+    "title": "Create Mod Wiki:Guides",
+    "attributes": {},
+    "type": "page",
+    "description": "This page contains various guides to assist new users on the Minecraft Create Mod Wiki In the articles below, users can find this wiki's rules, guidelines, formatting tips, in-game tutorials, and support.",
+    "categories": [
+      "Informational"
+    ]
+  },
+  {
+    "title": "Create Mod Wiki:Policy",
+    "attributes": {},
+    "type": "page",
+    "description": "The Create Mod Wiki is an online source of information about the popular  mod and related subjects. The wiki can be edited by anyone and is governed by the consensus of its users, derived by argument-supported, civil collaboration between them. The Create Mod Wiki has a set of rules all editors should normally follow.",
+    "categories": [
+      "Informational"
+    ]
+  },
+  {
+    "title": "Create Mod Wiki:Staff",
+    "attributes": {},
+    "type": "page",
+    "description": "https://static.wikia.nocookie.net/central/images/thumb/1/12/Badge-Admin.svg/40px-Badge-Admin.svg AdministratorsUsernameNonaWax (wall \u2022 contribs)Joker876 (wall \u2022 contribs)Feonid (wall \u2022 contribs)",
+    "categories": [
+      "Informational"
+    ]
+  },
+  {
+    "title": "Create Steam \u2018n\u2018 Rails",
+    "attributes": {},
+    "type": "page",
+    "description": "Work In Progress, If it doesn\u2018t fit here, I\u2018ll remove the Page.",
+    "categories": []
+  },
+  {
+    "title": "Creative Blaze Cake",
+    "attributes": {
+      "type": "Fuel",
+      "rarity": "Epic",
+      "renewable": "No",
+      "stackable": "Yes"
+    },
+    "type": "item",
+    "description": "The Creative Blaze Cake gives infinite fuel to Blaze Burners and allows the user to cycle through their states. This item is normally available in Creative Mode only.",
+    "categories": [
+      "Creative Only"
+    ]
+  },
+  {
+    "title": "Creative Crate",
+    "attributes": {
+      "image": "Creative Crate.png",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "solid": "No",
+      "full": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "luminant": "No",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "The Creative Crate is a creative-only block that can output the item in the filter slot (located on the top), infinitely. It will also act as a trash can when items are input to it, accepting and deleting the item. Although unobtainable in survival, it can be mined. Items can be extracted via a funnel, hopper or other item extracting components.",
+    "categories": [
+      "Creative Only"
+    ]
+  },
+  {
+    "title": "Creative Fluid Tank",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No, unless filled with Lava",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "6",
+      "hardness": "3"
+    },
+    "type": "block",
+    "description": "A Creative-exclusive block that acts as an infinite source of the fluid it contains.",
+    "categories": [
+      "Creative Only"
+    ]
+  },
+  {
+    "title": "Creative Motor",
+    "attributes": {
+      "image": "File:Creative_Motor.png",
+      "output": "16384.0x RPM",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "speed_generated": "-256 to 256",
+      "solid": "Yes",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "stress_capacity": "16,384x [[Kinetic Stress|SU]]",
+      "rarity": "Creative Only"
+    },
+    "type": "block",
+    "description": "The Creative Motor is a block used for power generation.",
+    "categories": [
+      "Creative Only",
+      "Generators"
+    ]
+  },
+  {
+    "title": "Creative Worldshaper",
+    "attributes": {
+      "type": "Tool",
+      "renewable": "No",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "A Creative Worldshaper can Place, Merge and Attach Blocks. It can also place cubes, cylinders and spheres up to X32 Y32 Z32.",
+    "categories": [
+      "Tools",
+      "Creative Only"
+    ]
+  },
+  {
+    "title": "Crimsite",
+    "attributes": {
+      "image": "<gallery>\nCrimsite.png|Normal\nCut Crimsite.png|Cut\nPolished Cut Crimsite.png|Polished Cut\nCut Crimsite Bricks.png|Bricks\nSmall Crimsite Bricks.png|Small Bricks\nLayered Crimsite.png|Layered\nCrimsite Pillar.png\n</gallery>",
+      "slot": "{{Slot|Crimsite}}{{Slot|Cut Crimsite}}{{Slot|Polished Cut Crimsite}}{{Slot|Cut Crimsite Bricks}}{{Slot|Small Crimsite Bricks}}{{Slot|Layered Crimsite}}{{Slot|Crimsite Pillar}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.25",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Crimsite is a decorative block added by Create, named after its crimson color.",
+    "categories": [
+      "Decoration",
+      "Non-renewable resources"
+    ]
+  },
+  {
+    "title": "Crushed Brass",
+    "attributes": {
+      "image": "File:Crushed_Brass.png",
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Crushed Brass is a crushed version of the material, Brass, and was primarily obtainable via heated mixing of Crushed Copper Ore and Crushed Zinc Ore.",
+    "categories": []
+  },
+  {
+    "title": "Crushed Ores",
+    "attributes": {
+      "image": "<gallery>\nCrushed Iron Ore.png|Crushed Raw Iron\nCrushed Gold Ore.png|Crushed Raw Gold\nCrushed Copper Ore.png|Crushed Raw Copper\nCrushed Zinc Ore.png|Crushed Raw Zinc\n</gallery>",
+      "slot": "{{Slot|Crushed Iron Ore}}{{Slot|Crushed Gold Ore}}{{Slot|Crushed Copper Ore}}{{Slot|Crushed Zinc Ore}}",
+      "renewable": "Crushed Gold Ore: Yes <br> All Others: No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Crushed Ores are obtained from crushing various items.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Crushing Wheel",
+    "attributes": {
+      "image": "File:Crushing_Wheel.png",
+      "stress_requirement": "",
+      "speed_requirement": "None",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "8.0x RPM"
+    },
+    "type": "block",
+    "description": "Crushing Wheels are the more advanced version of the Millstone. It applies Crushing recipes to any items inserted from the direction they are spinning away from.",
+    "categories": [
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Cuckoo Clock",
+    "attributes": {
+      "stress_requirement": "",
+      "speed_requirement": "None",
+      "image": "File:Cuckoo_Clock.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "tool2": "Any Pickaxe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "stress_impact": "1.0x RPM"
+    },
+    "type": "block",
+    "description": "The Cuckoo Clock is a block that displays in-game time.",
+    "categories": [
+      "Machines"
+    ]
+  },
+  {
+    "title": "Deepslate",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Deepslate is a stone type that generates below y=0 instead of  and takes significantly longer to mine.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Default Mod Compatibility",
+    "attributes": {},
+    "type": "page",
+    "description": "Work in progress page - the aim is to list the main mods from the link, and explain what the interactions are, possibly by linking to an as of yet non-existing section of a page of the block with special interactions. Please add on to this page. For now there are these links:",
+    "categories": []
+  },
+  {
+    "title": "Deforester",
+    "attributes": {
+      "image": "Deforester.png",
+      "durability": "1024",
+      "renewable": "No",
+      "type": "Tool",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "The Deforester was a Refined Radiance axe with a special ability.",
+    "categories": []
+  },
+  {
+    "title": "Deployer",
+    "attributes": {
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "4x RPM",
+      "speed_requirement": "None",
+      "solid": "Yes",
+      "full": "Yes"
+    },
+    "type": "block",
+    "description": "The Deployer simulates player actions on blocks or entities exactly 2 blocks away from it. It can simulate a left or a right click, holding or without holding an item.",
+    "categories": [
+      "Machines",
+      "Mechanical Components",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Depot",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Partially (bottom only)",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Depot is used as an interaction point for machines such as the Mechanical Arm.",
+    "categories": []
+  },
+  {
+    "title": "Desk Bell",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Tool",
+      "blast_resistance": "",
+      "hardness": "0",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "A Desk Bell plays a sound and emits a redstone signal when right-clicked.",
+    "categories": [
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Diorite",
+    "attributes": {
+      "image": "<gallery>\nDiorite.png|Normal\nPolished Diorite.png|Polished\nCut Diorite.png|Cut\nPolished Cut Diorite.png|Polished Cut\nCut Diorite Bricks.png|Bricks\nSmall Diorite Bricks.png|Small Bricks\nLayered Diorite.png|Layered\nDiorite Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Diorite}}{{Slot|Polished Diorite}}{{Slot|Cut Diorite}}{{Slot|Polished Cut Diorite}}{{Slot|Cut Diorite Bricks}}{{Slot|Small Diorite Bricks}}{{Slot|Layered Diorite}}{{Slot|Diorite Pillar}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Diorite is a decorative vanilla block. In Create, it can be used to make Andesite, a common crafting material in the mod.",
+    "categories": [
+      "Decoration",
+      "Renewable resources"
+    ]
+  },
+  {
+    "title": "Display Board",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "speed_requirement": "32 RPM"
+    },
+    "type": "block",
+    "description": "Display Boards are a scalable alternative to the .",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Display Link",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe"
+    },
+    "type": "block",
+    "description": "A Display Link is used to get information from a block and send it to blocks that can display it.",
+    "categories": []
+  },
+  {
+    "title": "Diving Gear",
+    "attributes": {
+      "image": "<gallery>\nDiving Helmet.png|Helmet\nDiving Boots.png|Boots\n</gallery>",
+      "durability": "Helmet: 77 <br> Boots: 91",
+      "slot": "{{Slot|Diving Helmet}}{{Slot|Diving Boots}}",
+      "renewable": "Yes",
+      "stackable": "No",
+      "type": "Armor"
+    },
+    "type": "item",
+    "description": "Diving Gear is used with Copper Backtank for underwater mobility.",
+    "categories": []
+  },
+  {
+    "title": "Dolomite",
+    "attributes": {
+      "image": "<gallery>\nDolomite Cobblestone.png|Cobblestone\nDolomite.png|Normal\nPolished Dolomite.png|Polished\nDolomite Bricks.png|Bricks\nFancy Dolomite Bricks.png|Fancy\nDolomite Pillar.png|Pillar\nPaved Dolomite.png|Paved\nLayered Dolomite.png|Layered\nChiseled Dolomite.png|Chiseled\nMossy Dolomite.png|Mossy\nOvergrown Dolomite.png|Overgrown</gallery>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "0.8",
+      "hardness": "0.8"
+    },
+    "type": "block",
+    "description": "Dolomite is a decorative stone block.",
+    "categories": []
+  },
+  {
+    "title": "Dough",
+    "attributes": {
+      "Image1": "Dough.png",
+      "stackable": "Yes (64)",
+      "renewable": "Yes"
+    },
+    "type": "item",
+    "description": "Dough is used to make , , and . Using dough to make bread or cake is considerably cheaper than the vanilla recipe.",
+    "categories": [
+      "Materials",
+      "Food"
+    ]
+  },
+  {
+    "title": "Dripstone",
+    "attributes": {},
+    "type": "page",
+    "description": "Please click the link here.",
+    "categories": []
+  },
+  {
+    "title": "Egg",
+    "attributes": {},
+    "type": "page",
+    "description": "",
+    "categories": []
+  },
+  {
+    "title": "Electron Tube",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes"
+    },
+    "type": "item",
+    "description": "The Electron Tube is an item that is only used in crafting recipes.",
+    "categories": [
+      "Crafting Components"
+    ]
+  },
+  {
+    "title": "Elevator Pulley",
+    "attributes": {
+      "1": "",
+      "image": "<gallery>\nElevator Pulley.png|Elevator Pulley\nElevator Contact.png|Elevator Contact\nDim Elevator Contact.png|Elevator Contact (Dim)\nLit Elevator Contact.png|Elevator Contact (Lit)\n</gallery>",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "Pulley: No <br> Contact: Yes (10)",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "4x RPM"
+    },
+    "type": "block",
+    "description": "An Elevator Pulley is a Contraption useful for creating multi-floor elevators easily.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Encased Chain Drive",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "",
+      "stress_impact": "",
+      "speed_requirement": ""
+    },
+    "type": "block",
+    "description": "The Encased Chain Drive is a block that can transfer rotation much like the Mechanical Belt.",
+    "categories": [
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Encased Fan",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "2x RPM",
+      "stress_capacity": "16x RPM",
+      "speed_generated": "4 RPM"
+    },
+    "type": "block",
+    "description": "The Encased Fan is a mechanical component that can create air streams. Encased Fans are used for moving entities, vertical transport of items and Bulk Item Processing.",
+    "categories": [
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Engineer's Goggles",
+    "attributes": {
+      "slot": "{{slot|Engineer's Goggles}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Engineer's Goggles are a wearable item that allow the user to see more details about placed machines.",
+    "categories": [
+      "Tools"
+    ]
+  },
+  {
+    "title": "Extendo Grip",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "No",
+      "type": "Tool",
+      "durability": "200"
+    },
+    "type": "item",
+    "description": "The Extendo Grip is a tool that can be used to increase the player's reach.",
+    "categories": [
+      "Tools"
+    ]
+  },
+  {
+    "title": "Extractor",
+    "attributes": {
+      "image": "<gallery>\nExtractor.png|Extractor\nLinked Extractor.png|Linked</gallery>",
+      "slot": "{{Slot|Extractor}}{{Slot|Linked Extractor}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "For similar functionality, see Funnel.",
+    "categories": []
+  },
+  {
+    "title": "Factory Gauge",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "No",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Factory Gauge is used to send requests through a Logistics Network to maintain an amount of an item in the linked storage.",
+    "categories": [
+      "High Logistics",
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Filter",
+    "attributes": {
+      "image": "<gallery>\nFilter.png|List\nAttribute Filter.png|Attribute\nPackage Filter.png|Package\n</gallery>",
+      "slot": "{{Slot|List Filter}}{{Slot|Attribute Filter}}{{Slot|Package Filter}}",
+      "renewable": "Filter: Yes <br> Attribute Filter and Package Filter: No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Most machines have a built in filter used to determine how they treat inputs. List Filters are used to adjust the treatment of multiple items at once.",
+    "categories": [
+      "Item Transportation"
+    ]
+  },
+  {
+    "title": "Flour (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "There are two types of flour:",
+    "categories": []
+  },
+  {
+    "title": "Fluid Pipe",
+    "attributes": {
+      "image": "Fluid Pipe.png{{!}}Pipe",
+      "slot": "",
+      "renewable": "Yes",
+      "luminant": "No",
+      "lavasusceptible": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "full": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "solid": "Yes",
+      "requires_rotation": "No",
+      "stress_impact": "",
+      "title": "Fluid Pipe"
+    },
+    "type": "block",
+    "description": "Fluid Pipes are blocks used to  transport and deal with fluids.",
+    "categories": [
+      "Fluid Conveyance",
+      "Fluid Systems"
+    ]
+  },
+  {
+    "title": "Fluid Tank",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes",
+      "tool": "Wooden Pickaxe",
+      "luminant": "No",
+      "blast_resistance": "6",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "hardness": "3.5"
+    },
+    "type": "block",
+    "description": "The Fluid Tank is a fluid storage mechanism that can store up to 8 buckets (displayed as 8,000 mB in-game) of fluid per block.",
+    "categories": [
+      "Fluid Systems",
+      "Fluid Storage"
+    ]
+  },
+  {
+    "title": "Fluid Valve",
+    "attributes": {
+      "title": "Fluid Valve",
+      "image": "Fluid Valve.png{{!}}Valve",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "0"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": []
+  },
+  {
+    "title": "Flywheel",
+    "attributes": {
+      "image": "Flywheel.png",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Flywheel is a legacy block that was repurposed to a decorative block. It is 3x3 in size, but only needs 1 block to be placed, similar to the Water Wheel.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Framed Glass",
+    "attributes": {
+      "image": "<gallery>\nFramed Glass.png|Framed\nHorizontal Framed Glass.png|Horizontal Framed\nVertical Framed Glass.png|Vertical Framed\n</gallery>",
+      "slot": "{{slot|Framed Glass}}{{slot|Horizontal Framed Glass}}{{slot|Vertical Framed Glass}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any",
+      "blast_resistance": "0.3",
+      "hardness": "0.3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Framed Glass is a decorative variant of .",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Framed Glass Trapdoor",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "6",
+      "hardness": "3"
+    },
+    "type": "block",
+    "description": "The Framed Glass Trapdoor is a transparent trapdoor.",
+    "categories": []
+  },
+  {
+    "title": "Funnel (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "Funnels are blocks used to transfer items between inventories and belts or depots.",
+    "categories": []
+  },
+  {
+    "title": "Funnel (removed)",
+    "attributes": {
+      "title": "Funnel",
+      "image": "[[File:Funnel.png]]",
+      "slot": "{{Slot|Funnel}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Not to be confused with Andesite Funnel or Brass Funnel",
+    "categories": []
+  },
+  {
+    "title": "Furnace Engine",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "No",
+      "stress_capacity": "1024.0x RPM",
+      "speed_generated": "Furnace or Smoker: 16 RPM\nBlast Furnace: 32 RPM"
+    },
+    "type": "block",
+    "description": "The Furnace Engine was a Stress-generating block used to create Rotational Force when connected to any  currently going through the process of smelting. As of  of the Create Mod, this block has been retired, and can no longer be obtained in any way.",
+    "categories": []
+  },
+  {
+    "title": "Gabbro",
+    "attributes": {
+      "image": "<gallery>\nGabbro.png|Normal\nGabbro Cobblestone.png|Cobblestone\nPolished Gabbro.png|Polished\nGabbro Bricks.png|Bricks\nFancy Gabbro Bricks.png|Fancy\nGabbro Pillar.png|Pillar\nPaved Gabbro.png|Paved\nLayered Gabbro.png|Layered\nChiseled Gabbro.png|Chiseled\nMossy Gabbro.png|Mossy\nOvergrown Gabbro.png|Overgrown</gallery>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "6",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "Gabbro is a block of .",
+    "categories": []
+  },
+  {
+    "title": "Gantry Carriage",
+    "attributes": {
+      "image": "<gallery>\nGantry Carriage.png|Carriage\nGantry Shaft.png|Shaft\n</gallery>",
+      "slot": "{{Slot|Gantry Carriage}}{{Slot|Gantry Shaft}}",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "renewable": "Yes"
+    },
+    "type": "block",
+    "description": "The Gantry Carriage is a block that can move Contraptions along Gantry Shafts.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Gearbox",
+    "attributes": {
+      "image": "<gallery>Gearbox.png|Normal\nVertical Gearbox.png|Vertical</gallery>",
+      "slot": "{{Slot|Gearbox}}{{Slot|Vertical Gearbox}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Gearbox is a block used to transfer Rotational power in 4 directions, either horizontally or vertically.",
+    "categories": [
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Gearshift",
+    "attributes": {
+      "image": "Gearshift.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "stress_impact": "0",
+      "hardness": "1.5",
+      "lavasusceptible": "No",
+      "flammable": "No",
+      "blast_resistance": "6"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Mechanical Components",
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Getting started",
+    "attributes": {},
+    "type": "page",
+    "description": "Crafting",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Gilded Quartz Tools",
+    "attributes": {
+      "image": "<gallery>\nGilded Quartz Pickaxe.png|Pickaxe\nGilded Quartz Shovel.png|Shovel\nGilded Quartz Axe.png|Axe\nGilded Quartz Sword.png|Sword\n</gallery>",
+      "slot": "{{Slot|Gilded Quartz Pickaxe}}{{Slot|Gilded Quartz Shovel}}{{Slot|Gilded Quartz Axe}}{{Slot|Gilded Quartz Sword}}",
+      "type": "Tool",
+      "durability": "1644",
+      "renewable": "No",
+      "stackable": "No",
+      "effects": "Increases reach by 3 blocks."
+    },
+    "type": "item",
+    "description": "For similar functionality, see Extendo Grip.",
+    "categories": []
+  },
+  {
+    "title": "Gold",
+    "attributes": {},
+    "type": "page",
+    "description": "Gold is a material generated as an ore in the world. Among its many functions, it is used as a crafting ingredient for Wrenches and Engineer's Goggles and is used in . Six forms of Gold exist: Blocks of Gold, Crushed Gold Ore, Gold Ingots, Gold Nuggets, Gold Ore, and Gold Sheets.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Granite",
+    "attributes": {
+      "image": "<gallery>\nGranite.png|Normal\nPolished Granite.png|Polished\nCut Granite.png|Cut\nPolished Cut Granite.png|Polished Cut\nCut Granite Bricks.png|Bricks\nSmall Granite Bricks.png|Small Bricks\nLayered Granite.png|Layered\nGranite Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Granite}}{{Slot|Polished Granite}}{{Slot|Cut Granite}}{{Slot|Polished Cut Granite}}{{Slot|Cut Granite Bricks}}{{Slot|Small Granite Bricks}}{{Slot|Layered Granite}}{{Slot|Granite Pillar}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Granite is a decorative vanilla block.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Hand Crank",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "stress_capacity": "8x RPM"
+    },
+    "type": "block",
+    "description": "The Hand Crank generates a small amount of Rotational Force through player interaction.",
+    "categories": [
+      "Generators"
+    ]
+  },
+  {
+    "title": "Handheld Blockzapper",
+    "attributes": {
+      "image1": "Handheld Blockzapper.png",
+      "renewable": "No",
+      "stackable": "No",
+      "type": "Tool"
+    },
+    "type": "item",
+    "description": "The Handheld Blockzapper is a gun that can place blocks or replace Blocks from far away.",
+    "categories": []
+  },
+  {
+    "title": "Happy Birthday Story (My First Roblox Story Game) - Unused Content",
+    "attributes": {},
+    "type": "page",
+    "description": "",
+    "categories": []
+  },
+  {
+    "title": "Haunted Bell",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "5",
+      "hardness": "5"
+    },
+    "type": "block",
+    "description": "The Haunted Bell is a block that highlights mob spawnable spots when held or rang.",
+    "categories": [
+      "Tools"
+    ]
+  },
+  {
+    "title": "Honey",
+    "attributes": {},
+    "type": "page",
+    "description": "Honey is a fluid used to create the Honeyed Apple.",
+    "categories": [
+      "Fluids"
+    ]
+  },
+  {
+    "title": "Honey (disambiguation)",
+    "attributes": {},
+    "type": "page",
+    "description": "Honey is a fluid block.",
+    "categories": []
+  },
+  {
+    "title": "Honey Bucket",
+    "attributes": {
+      "image1": "Honey Bucket.png",
+      "renewable": "Yes",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "This article is about the Bucket. For the fluid, see Honey. For other forms of honey, see Honey (disambiguation).",
+    "categories": []
+  },
+  {
+    "title": "Honeyed Apple",
+    "attributes": {
+      "type": "Food",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "restores": "8",
+      "saturation": "12.8"
+    },
+    "type": "item",
+    "description": "A Honeyed Apple is a  item.  Eating one restores  hunger and 12.8  \u2013 as much as a  or .",
+    "categories": [
+      "Food"
+    ]
+  },
+  {
+    "title": "Hose Pulley",
+    "attributes": {
+      "image": "[[File:Hose Pulley.png]]",
+      "stress_requirement": "",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "4x [[Stress|SU]]"
+    },
+    "type": "block",
+    "description": "The Hose Pulley lets down a hose that can drain bodies of liquids.",
+    "categories": [
+      "Fluid Conveyance",
+      "Fluid Systems"
+    ]
+  },
+  {
+    "title": "Integrated Circuit",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "The Integrated Circuit was an item used to craft the Rotation Speed Controller. It was removed in the Create 0.3.2 update.",
+    "categories": []
+  },
+  {
+    "title": "Iron Ingot",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Iron Ingot is an ingot that generates in the . Among its many vanilla functions, it has a few interactions added by Create.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Iron Sheet",
+    "attributes": {},
+    "type": "page",
+    "description": "The Iron Sheet is the sheet variant of Iron.",
+    "categories": [
+      "Materials",
+      "Sheets"
+    ]
+  },
+  {
+    "title": "Item Drain",
+    "attributes": {
+      "image": "[[File:Item Drain.png]]",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Item Drain drains fluid from items such as buckets and bottles inserted onto it.",
+    "categories": [
+      "Fluid Systems",
+      "Fluid Storage"
+    ]
+  },
+  {
+    "title": "Item Hatch",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Item Hatch is used to deposit a player\u2019s inventory into storage.",
+    "categories": [
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Item IDs",
+    "attributes": {},
+    "type": "page",
+    "description": "List of Item IDsBlockID Andesite Alloy andesite_alloy Attribute Filter attribute_filter Bar of Chocolate",
+    "categories": [
+      "Items",
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Item Vault",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "1200",
+      "hardness": "3",
+      "id": "item_vault"
+    },
+    "type": "block",
+    "description": "Crafting",
+    "categories": [
+      "Multi-blocks"
+    ]
+  },
+  {
+    "title": "Khandayat",
+    "attributes": {},
+    "type": "page",
+    "description": "The term Khandayat refers to a ruler who governs and administers a vast territory/region, and a great warrior who rules a Khanda (region). Every Kshatriya and warrior community in Odisha is referred to as Khandayat, as mentioned in various Odia texts, inscriptions, genealogies, and ancient records. Khandayat is synonymous with Kshatriyas of Odisha. Khandayat is the local name for Kshatriyas in Odisha. Most of the zamindaris (landlord estates) in Odisha are in the possession of Khandayats.",
+    "categories": []
+  },
+  {
+    "title": "Kinetic Stress",
+    "attributes": {},
+    "type": "page",
+    "description": "thumb|Here is a small demo set up, showing stress using the Engineer's Goggles",
+    "categories": [
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Lapis Sheet",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Lapis Sheet was a material used to make the Integrated Circuit.",
+    "categories": []
+  },
+  {
+    "title": "Large Water Wheel",
+    "attributes": {
+      "image": "<gallery>\nLarge Water Wheel.png|Spruce\nLarge Oak Water Wheel.png|Oak\nLarge Birch Water Wheel.png|Birch\nLarge Jungle Water Wheel.png|Jungle\nLarge Acacia Water Wheel.png|Acacia\nLarge Dark Oak Water Wheel.png|Dark Oak\nLarge Crimson Water Wheel.png|Crimson\nLarge Warped Water Wheel.png|Warped\nLarge Mangrove Water Wheel.png|Mangrove\nLarge Bamboo Water Wheel.png|Bamboo\nLarge Cherry Water Wheel.png|Cherry\n</gallery>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "tool2": "Any Pickaxe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_capacity": "512 [[Kinetic Stress|SU]]",
+      "speed_generated": "4 RPM"
+    },
+    "type": "block",
+    "description": "The Large Water Wheel is a bigger version of the Water Wheel.",
+    "categories": [
+      "Generators"
+    ]
+  },
+  {
+    "title": "Lava",
+    "attributes": {},
+    "type": "page",
+    "description": "Lava is a light emitting vanilla  that can be found deep within the overworld and primarily in .",
+    "categories": [
+      "Fluids"
+    ]
+  },
+  {
+    "title": "Limesand",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "any",
+      "blast_resistance": "0.5",
+      "hardness": "0.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Limesand is a block used to create Limestone",
+    "categories": []
+  },
+  {
+    "title": "Limestone",
+    "attributes": {
+      "image": "<gallery>\nLimestone.png|Normal\nCut Limestone.png|Cut\nPolished Cut Limestone.png|Polished Cut\nCut Limestone Bricks.png|Bricks\nSmall Limestone Bricks.png|Small Bricks\nLayered Limestone.png|Layered\nLimestone Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Limestone}}{{Slot|Cut Limestone}}{{Slot|Polished Cut Limestone}}{{Slot|Cut Limestone Bricks}}{{Slot|Small Limestone Bricks}}{{Slot|Layered Limestone}}{{Slot|Limestone Pillar}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "0.8",
+      "hardness": "1.25",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Limestone is a block of .",
+    "categories": [
+      "Decoration",
+      "Renewable resources"
+    ]
+  },
+  {
+    "title": "Linear Chassis",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Axe",
+      "tool2": "Pickaxe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "lavasusceptible": "Yes",
+      "flammable": "No",
+      "solid": "Yes"
+    },
+    "type": "block",
+    "description": "The Linear Chassis is one method of connecting up Contraptions.",
+    "categories": [
+      "Mechanical Components",
+      "Block Attachment Utility"
+    ]
+  },
+  {
+    "title": "Linked Controller",
+    "attributes": {
+      "type": "Utility",
+      "renewable": "No",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "The Linked Controller is a remote control for Redstone Links.",
+    "categories": []
+  },
+  {
+    "title": "List of automatable items",
+    "attributes": {},
+    "type": "page",
+    "description": "Automatability",
+    "categories": []
+  },
+  {
+    "title": "Logistics Network",
+    "attributes": {},
+    "type": "page",
+    "description": "A Logistics Network is a player-designed and -built system for managing bulk item inventories. In its most basic form, it allows a player to easily store bulk inventories of mixed items and later retrieve specific items from a selection list. Special tools like Packagers, Stock Links, Stock Tickers, Factory Gauges and Redstone Requesters allow highly customizable automation. Logistics networks can be used for creating virtual unified storage systems, operating merchandise shops, or running large complex factory processes.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Making a train",
+    "attributes": {},
+    "type": "page",
+    "description": "This page is a work in progress. Feel free to edit.",
+    "categories": []
+  },
+  {
+    "title": "Manual Item Application",
+    "attributes": {},
+    "type": "page",
+    "description": "Manual Item Application is a recipe type where an item is  on a placed block.",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Mass Storage",
+    "attributes": {},
+    "type": "page",
+    "description": "This is a placeholder for a later tutorial page",
+    "categories": []
+  },
+  {
+    "title": "Mechanical Arm",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Partially (bottom only)",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "2x SU",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Mechanical Arm is a block used to transfer items.",
+    "categories": [
+      "Item Transportation",
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Mechanical Bearing",
+    "attributes": {
+      "image1": "Mechanical Bearing.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "4.0x [[Stress|SU]]",
+      "blast_resistance": "6",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "The Mechanical Bearing is used to create and rotate Contraptions.",
+    "categories": [
+      "Movement Anchors",
+      "Movement Actors",
+      "Mechanical Components",
+      "Multi-blocks"
+    ]
+  },
+  {
+    "title": "Mechanical Belt",
+    "attributes": {
+      "image": "<gallery>\nMechanical Belt Block.png|Belt\nWhite Mechanical Belt.png|White\nOrange Mechanical Belt.png|Orange\nMagenta Mechanical Belt.png|Magenta\nLight Blue Mechanical Belt.png|Light Blue\nYellow Mechanical Belt.png|Yellow\nLime Mechanical Belt.png|Lime\nPink Mechanical Belt.png|Pink\nGray Mechanical Belt.png|Gray\nLight Gray Mechanical Belt.png|Light Gray\nCyan Mechanical Belt.png|Cyan\nPurple Mechanical Belt.png|Purple\nBlue Mechanical Belt.png|Blue\nBrown Mechanical Belt.png|Brown\nGreen Mechanical Belt.png|Green\nRed Mechanical Belt.png|Red\nBlack Mechanical Belt.png|Black\n</gallery>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "any pickaxe",
+      "tool2": "any axe",
+      "blast_resistance": "0.8",
+      "hardness": "0.8",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "0.0x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "A Mechanical Belt is a mechanical component that conveys rotation and moves items and entities.",
+    "categories": [
+      "Mechanical Components",
+      "Item Transportation"
+    ]
+  },
+  {
+    "title": "Mechanical Crafter",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "2x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "Mechanical Crafters are machines that can automatically craft items.",
+    "categories": [
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Mechanical Drill",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "4.0x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Mechanical Drill is a block used to break blocks.",
+    "categories": [
+      "Machines",
+      "Mechanical Components",
+      "Movement Anchors"
+    ]
+  },
+  {
+    "title": "Mechanical Harvester",
+    "attributes": {
+      "image": "File:Mechanical_Harvester.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes (base only)",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Mechanical Harvester is a component used on Contraptions to harvest crops.",
+    "categories": [
+      " Movement Actors"
+    ]
+  },
+  {
+    "title": "Mechanical Mixer",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes (only sides)",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "4x RPM",
+      "speed_requirement": "30 RPM",
+      "tool2": ""
+    },
+    "type": "block",
+    "description": "The Mechanical Mixer is a mechanical component that applies Mixing recipes and shapeless Crafting recipes to items in Basins.",
+    "categories": [
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Mechanical Piston",
+    "attributes": {
+      "image": "<gallery>\nMechanical Piston.png|Normal\nSticky Mechanical Piston.png|Sticky\n</gallery>",
+      "slot": "{{Slot|Mechanical Piston}}{{Slot|Sticky Mechanical Piston}}",
+      "stress_requirement": "",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "0.5",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "4.0x RPM",
+      "transparent": "Yes"
+    },
+    "type": "block",
+    "description": "The Mechanical Piston is a piston that can push Contraptions when powered with Rotational Power.",
+    "categories": [
+      "Movement Anchors",
+      "Mechanical Components",
+      "Multi-blocks"
+    ]
+  },
+  {
+    "title": "Mechanical Plough",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "solid": "Yes",
+      "full": "No"
+    },
+    "type": "block",
+    "description": "The Mechanical Plough is a Movement Actor used to break non-collidable blocks and fling entities.",
+    "categories": [
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Mechanical Press",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "8x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Mechanical Press is a mechanical component that applies Pressing, Packing, and Compacting recipes to items below it. It is an important early-game item, as it is used to press Ingots into Sheets, which are important ingredients for higher-level components.",
+    "categories": [
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Mechanical Pump",
+    "attributes": {
+      "title": "Mechanical Pump",
+      "image": "Mechanical Pump.png{{!}}Pump",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "4x RPM",
+      "speed_requirement": "1",
+      "full": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": []
+  },
+  {
+    "title": "Mechanical Roller",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Partial",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe"
+    },
+    "type": "block",
+    "description": "The Mechanical Roller can be used on Contraptions to clear and pave a path.",
+    "categories": [
+      "Machines",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Mechanical Saw",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "2x RPM"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Machines",
+      "Mechanical Components",
+      "Mechanical Saw"
+    ]
+  },
+  {
+    "title": "Melon and Pumpkin Farm",
+    "attributes": {},
+    "type": "page",
+    "description": "Although automated  and  farms can be made in vanilla Minecraft, Create makes them much easier to build. And Create can automatically craft  back into whole melons for trading.",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Metal Bars",
+    "attributes": {
+      "image": "<gallery>\nCopper Bars.png|Copper\nAndesite Bars.png|Andesite\nBrass Bars.png|Brass\n</gallery>",
+      "slot": "{{Slot|Copper Bars}}{{Slot|Andesite Bars}}{{Slot|Brass Bars}}",
+      "renewable": "Brass: No <br> All others: Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Metal Bars are decorative blocks that work much like .",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Metal Girder",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Metal Girders are a decorative block.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Metal Ladder",
+    "attributes": {
+      "image": "<gallery>\nAndesite Ladder Block.png|Andesite\nCopper Ladder Block.png|Copper\nBrass Ladder Block.png|Brass\n</gallery>",
+      "slot": "{{Slot|Andesite Ladder}}{{Slot|Copper Ladder}}{{Slot|Brass Ladder}}",
+      "renewable": "Andesite & Copper: Yes<br>Brass: No",
+      "stackable": "Yes (64)",
+      "tool": "Any Pickaxe",
+      "blast_resistance": "0.4",
+      "hardness": "0.4",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Metal Ladders are decorative blocks. Like s, they are climbable on Contraptions.",
+    "categories": [
+      "Decoration",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Metal Scaffolding",
+    "attributes": {
+      "image": "<gallery>\nAndesite Scaffolding.png|Andesite\nCopper Scaffolding.png|Copper\nBrass Scaffolding.png|Brass\n</gallery>",
+      "slot": "{{Slot|Andesite Scaffolding}}{{Slot|Copper Scaffolding}}{{Slot|Brass Scaffolding}}",
+      "renewable": "Brass: No <br> All others: Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any",
+      "blast_resistance": "'''0'''",
+      "hardness": "'''0'''",
+      "solid": "Partial",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Metal Scaffolding are decorative blocks.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Millstone",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes",
+      "stress_impact": "4x RPM",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Millstone is a more basic equivalent of the Crushing Wheels, and is most likely the first of the two that the Player will construct. It is capable of applying milling recipes to any valid items inserted from above.",
+    "categories": [
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Minecart Coupling",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes"
+    },
+    "type": "item",
+    "description": "Minecart Coupling is used to make minecart or minecart contraption trains.",
+    "categories": []
+  },
+  {
+    "title": "Missing Create Mod Versions",
+    "attributes": {},
+    "type": "page",
+    "description": "This page lists versions of Create that are currently assumed to be missing; i.e. there is definitive proof that these versions exist, however copies of said version are not available on any mod hosting sites, like Modrinth or Curseforge. Many of these entries are partially documented in the Create Changelogs.",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Mysterious Conversion",
+    "attributes": {},
+    "type": "page",
+    "description": "Mysterious Conversion is a system of converting items into other items in unique ways.",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Netherite Diving Gear",
+    "attributes": {
+      "image": "<gallery>\nNetherite Diving Helmet.png|Helmet\nNetherite Backtank.png|Backtank\nNetherite Diving Boots.png|Boots\n</gallery>",
+      "slot": "{{Slot|Netherite Diving Helmet}}{{Slot|Netherite Backtank}}{{Slot|Netherite Diving Boots}}",
+      "durability": "Helmet: 407 <br> Boots: 481",
+      "renewable": "No",
+      "stackable": "No",
+      "type": "Armor"
+    },
+    "type": "item",
+    "description": "When used with a full Netherite Backtank and , the wearer is immune to  and .",
+    "categories": []
+  },
+  {
+    "title": "Nixie Tube",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "Yes (5)",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Nixie Tube is a block that can display text or numbers.",
+    "categories": [
+      "Machines",
+      "Redstone",
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Nozzle",
+    "attributes": {
+      "image": "Nozzle.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "0 [[Stress|SU]]",
+      "blast_resistance": "6",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "A Nozzle distributes the effect of an Encased Fan in all directions.",
+    "categories": [
+      "Machines"
+    ]
+  },
+  {
+    "title": "Nugget of Experience",
+    "attributes": {
+      "type": "Consumable",
+      "rarity": "Uncommon",
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Nuggets of Experience are an item that hold .",
+    "categories": []
+  },
+  {
+    "title": "Ochrum",
+    "attributes": {
+      "image": "<gallery>\nOchrum.png|Normal\nCut Ochrum.png|Cut\nPolished Cut Ochrum.png|Polished Cut\nCut Ochrum Bricks.png|Bricks\nSmall Ochrum Bricks.png|Small Bricks\nLayered Ochrum.png|Layered\nOchrum Pillar.png\n</gallery>",
+      "slot": "{{Slot|Ochrum}}{{Slot|Cut Ochrum}}{{Slot|Polished Cut Ochrum}}{{Slot|Cut Ochrum Bricks}}{{Slot|Small Ochrum Bricks}}{{Slot|Layered Ochrum}}{{Slot|Ochrum Pillar}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "0.75",
+      "hardness": "1.25",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Ochrum is a decorative block added by Create, named after its ochre color.",
+    "categories": [
+      "Decoration",
+      "Non-renewable resources"
+    ]
+  },
+  {
+    "title": "Overview",
+    "attributes": {},
+    "type": "page",
+    "description": "Create is a Minecraft modification that reimagines automation through the use of Rotational Force, supplementing traditional redstone systems with a visually intuitive mechanical power network. Players generate and transmit kinetic energy to drive machines that move items, process materials, and construct dynamic contraptions. The mod also introduces fluid handling, enabling the transport and transformation of liquids using animated pumps, pipes, and spouts. A standout feature is its realistic train system, which allows players to build steam-powered locomotives, schedule routes, and transport goods or passengers across vast distances. To support learning and experimentation, Create integrates with the Just Enough Items (JEI) mod, providing in-game access to crafting recipes, machine usage, and sequenced assembly steps.",
+    "categories": []
+  },
+  {
+    "title": "Package Frogport",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Package Frogports are used to move Cardboard Packages from and to Chain Conveyors.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics",
+      "Machines"
+    ]
+  },
+  {
+    "title": "Packager",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Packager is used to extract items from an attached storage block and place them in Cardboard Packages allowing the items to be transported, stored, or used as a set. Packagers can also extract items from cardboard packages and insert them into the attached storage.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Peculiar Bell",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "No",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "blast_resistance": "5",
+      "hardness": "5"
+    },
+    "type": "block",
+    "description": "The Peculiar Bell is a decorative block that is also used to create the Haunted Bell.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Piston Extension Pole",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes",
+      "tool": "Any Pickaxe",
+      "tool2": "Any Axe",
+      "blast_resistance": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "hardness": "1.5"
+    },
+    "type": "block",
+    "description": "The Piston Extension Pole is an extension for the Mechanical Piston",
+    "categories": [
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Placard",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Placard is a decorative block used to display items. It can be considered Create's counterpart to the vanilla Item Frame.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Placement Assist",
+    "attributes": {},
+    "type": "page",
+    "description": "thumb",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Planks",
+    "attributes": {
+      "image": "<gallery>Oak_Planks.png|Oak\nSpruce_Planks.png|Spruce\nBirch_Planks.png|Birch\nJungle_Planks.png|Jungle\nAcacia_Planks.png|Acacia\nDark_Oak_Planks.png|Dark Oak\nMangrove_Planks.png|Mangrove\nCrimson_Planks.png|Crimson\nWarped_Planks.png|Warped\nCherry_Planks.png|Cherry\nBamboo_Planks.png|Bamboo\n</gallery>",
+      "slot": "{{Slot|Oak Planks}}{{Slot|Spruce Planks}}{{Slot|Birch Planks}}{{Slot|Jungle Planks}}{{Slot|Acacia Planks}}{{Slot|Dark Oak Planks}}{{Slot|Mangrove Planks}}{{Slot|Crimson Planks}}{{Slot|Warped Planks}}{{Slot|Cherry Planks}}{{Slot|Bamboo Planks}}",
+      "tool": "Axe",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "title": "Planks",
+      "blast_resistance": "3",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "Yes",
+      "lavasusceptible": "Yes"
+    },
+    "type": "block",
+    "description": "thumb|Planks can be used to change the texture of Water Wheels. The texture is generated automatically, so it has support for some mods.|360x360px",
+    "categories": []
+  },
+  {
+    "title": "Polished Rose Quartz",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Polished Rose Quartz is an important crafting material used in the production of Electron Tubes. It can also be used to craft Rose Quartz Lamps, or its tiled decorative blocks.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Pondering",
+    "attributes": {},
+    "type": "page",
+    "description": "Pondering is an in-game guide system that allows the player to quickly get information about Create blocks.",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Portable Fluid Interface",
+    "attributes": {
+      "image1": "Portable Fluid Interface.png",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "No",
+      "blast_resistance": "6",
+      "hardness": "3"
+    },
+    "type": "block",
+    "description": "The Portable Fluid Interface is the fluid version of the Portable Storage Interface. It is used to insert or extract from the fluid inventory of a Contraption.",
+    "categories": [
+      "Fluid Conveyance",
+      "Fluid Systems",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Portable Storage Interface",
+    "attributes": {
+      "image": "[[File:Portable Storage Interface.png]]",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Portable Storage Interface is a block that allows Item Transporters to directly interact with Contraption inventories.",
+    "categories": [
+      "Item Transportation",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Postbox",
+    "attributes": {
+      "image": "<gallery>\nWhite Postbox.png|White\nOrange Postbox.png|Orange\nMagenta Postbox.png|Magenta\nLight Blue Postbox.png|Light Blue\nYellow Postbox.png|Yellow\nLime Postbox.png|Lime\nPink Postbox.png|Pink\nGray Postbox.png|Gray\nLight Gray Postbox.png|Light Gray\nCyan Postbox.png|Cyan\nPurple Postbox.png|Purple\nBlue Postbox.png|Blue\nBrown Postbox.png|Brown\nGreen Postbox.png|Green\nRed Postbox.png|Red\nBlack Postbox.png|Black\n</gallery>",
+      "slot": "{{Slot|White Postbox}}{{Slot|Orange Postbox}}{{Slot|Magenta Postbox}}{{Slot|Light Blue Postbox}}{{Slot|Yellow Postbox}}{{Slot|Lime Postbox}}{{Slot|Pink Postbox}}{{Slot|Gray Postbox}}{{Slot|Light Gray Postbox}}{{Slot|Cyan Postbox}}{{Slot|Purple Postbox}}{{Slot|Blue Postbox}}{{Slot|Brown Postbox}}{{Slot|Green Postbox}}<div class=center>{{Slot|Red Postbox}}{{Slot|Black Postbox}}</div>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "any axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Crafting",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Potato Cannon",
+    "attributes": {
+      "type": "Weapon",
+      "durability": "100",
+      "renewable": "Yes",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "The Potato Cannon is a projectile weapon that uses various food items as ammunition.",
+    "categories": [
+      "Machines",
+      "Tools"
+    ]
+  },
+  {
+    "title": "Powdered Obsidian",
+    "attributes": {
+      "image": "Powdered Obsidian.png",
+      "stackable": "Yes (64)",
+      "renewable": "Yes",
+      "1": ""
+    },
+    "type": "item",
+    "description": "Powdered Obsidian is a material used to create Sturdy Sheet.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Powered Latch",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "'''0'''",
+      "hardness": "'''0'''",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "Yes"
+    },
+    "type": "block",
+    "description": "The Powered Latch emits a redstone signal that can be toggled on or off by other signals.",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Powered Toggle Latch",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "'''0'''",
+      "hardness": "'''0'''",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "Yes"
+    },
+    "type": "block",
+    "description": "The Powered Latch emits a redstone signal that can be toggled on or off.",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Precision Mechanism",
+    "attributes": {
+      "type": "Material",
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "The Precision Mechanism is one of many Crafting Components.",
+    "categories": [
+      "Crafting Components"
+    ]
+  },
+  {
+    "title": "Precision Workshop",
+    "attributes": {},
+    "type": "page",
+    "description": "The precision workshop gives you the tools to build just about anything in the Create mod. In addition to the bulk mixing provided by the Brass Workshop, the precision workshop enables you to build Precision Mechanisms, Crushing Wheels, and Train Tracks. Precision mechanisms allow you to build Rotation Speed Controllers, Train Controls, and other advanced devices. Crushing wheels open up a world of automated ore processing for Iron Farms, Nuggets of Experience and more. This design does not include bulk washing or vanilla automation such as bulk smelting.",
+    "categories": [
+      "Tutorials",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Pulley",
+    "attributes": {},
+    "type": "page",
+    "description": "There are three types of pulleys, including:",
+    "categories": []
+  },
+  {
+    "title": "Pulse Extender",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "'''0'''",
+      "hardness": "'''0'''",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "No"
+    },
+    "type": "block",
+    "description": "Crafting",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Pulse Repeater",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "'''0'''",
+      "hardness": "'''0'''",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "No"
+    },
+    "type": "block",
+    "description": "Sends a pulse after delaying for a specified time.",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Pulse Timer",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Any Tool",
+      "blast_resistance": "0",
+      "hardness": "0",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Pulse Timer is used to pulse repeatedly at a set interval.",
+    "categories": [
+      "Logic Components",
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Quality Tool Handle",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "The Quality Tool Handle is a stick-like item made of Zinc and is only used to craft the Gilded Quartz tool set and the Shadow Steel tool set.",
+    "categories": []
+  },
+  {
+    "title": "Quick Start Skill List",
+    "attributes": {},
+    "type": "page",
+    "description": "TaskPurposeSteps1. Make Andesite AlloyAndesite Alloy is a fundamental ingredient for nearly every item in Create. You will need a lot of it.1. Mine iron ore and andesite blocks",
+    "categories": []
+  },
+  {
+    "title": "Radial Chassis",
+    "attributes": {
+      "image": "File:Radial Chassis.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "tool2": "",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "transparent": "No"
+    },
+    "type": "block",
+    "description": "The Radial Chassis is a block used to connect Contraptions.",
+    "categories": [
+      "Block Attachment Utility"
+    ]
+  },
+  {
+    "title": "Radiant Casing",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes",
+      "solid": "Yes",
+      "full": "Yes",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "transparent": "No",
+      "luminant": "Yes (11)",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Radiant Casing is a Casing block crafted with Refined Radiance and is a purely decorative block.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Randomizer",
+    "attributes": {},
+    "type": "page",
+    "description": "Introduction",
+    "categories": []
+  },
+  {
+    "title": "Re-Packager",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Re-Packager is used to merge multiple Cardboard Packages that contain one recipe for a Mechanical Crafter.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Recipe",
+    "attributes": {},
+    "type": "page",
+    "description": "JSON Format",
+    "categories": []
+  },
+  {
+    "title": "Redstone Additions",
+    "attributes": {
+      "image": "<gallery>\nAnalog Lever.png|Analog Lever\nRedstone Link.png|Redstone Link\nPulse Extender.png|Pulse Extender\nPulse Repeater.png|Pulse Repeater\nPowered Latch.png|Powered Latch\nPowered Toggle Lath.png|Powered Toggle Latch\n</gallery>",
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "Lever: 0.5 <br> Redstone Link: 2 <br> All Others: 0",
+      "hardness": "Lever: 0.5 <br>\nRedstone Link: 2 <br> All Others: 0",
+      "solid": "Lever: No <br> All Others: Yes",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Redstone Link: Yes <br> All Others: No",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "Pulse Extender, Pulse Repeater: No <br> All Others: Yes",
+      "slot": "{{Slot|Analog Lever}}{{Slot|Redstone Link}}{{Slot|Pulse Extender}}{{Slot|Pulse Repeater}}{{Slot|Powered Latch}}{{Slot|Powered Toggle Latch}}"
+    },
+    "type": "block",
+    "description": "Create adds several components that can be used in Redstone Circuits. These include the Redstone Contact, Redstone Link, Linked Controller, Pulse Repeater, Pulse Extender, Pulse Timer, Powered Latch, and Powered Toggle Latch. These components can make redstone circuits simpler and smaller as well as giving finer control over timing.",
+    "categories": [
+      "Redstone"
+    ]
+  },
+  {
+    "title": "Redstone Contact",
+    "attributes": {
+      "image": "[[File:Redstone Contact.png]]",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Redstone Contacts allow Contraptions to convey redstone signals or activate Redstone Circuits.",
+    "categories": [
+      "Movement Actors",
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Redstone Link",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "tool": "Any Axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "tool2": "Any Tool",
+      "transparent": "Yes",
+      "renewable": "Yes"
+    },
+    "type": "block",
+    "description": "The Redstone Link is used to send and receive redstone signals to other links.",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Redstone Requester",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Redstone Requester is used to request Cardboard Packages from linked Packagers.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Refined Radiance",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Refined Radiance is a crafting material derived from the Chromatic Compound and was previously used to craft the Wand Of Symmetry, Deforester, and the Radiant Casing.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Rope Pulley",
+    "attributes": {
+      "image": "[[File:Rope Pulley.png]]",
+      "stress_requirement": "",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "4x [[Stress|SU]]"
+    },
+    "type": "block",
+    "description": "The Rope Pulley creates Contraptions much like a Mechanical Piston, but in only one direction and without the need for Piston Extension Poles.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Rose Quartz",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes"
+    },
+    "type": "item",
+    "description": "Rose Quartz is a material used to create Polished Rose Quartz and the Rose Quartz Block.",
+    "categories": [
+      "Materials"
+    ]
+  },
+  {
+    "title": "Rose Quartz Block",
+    "attributes": {
+      "image": "<gallery>\nRose Quartz Block.png|Block\nRose Quartz Tiles.png|Tiles\nSmall Rose Quartz Tiles.png|Small Tiles\n</gallery>",
+      "slot": "{{Slot|Rose Quartz Block}}{{Slot|Rose Quartz Tiles}}{{Slot|Small Rose Quartz Tiles}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "Block: 1.5 <br> Tiles: 6",
+      "hardness": "Block: 1.5 <br> Tiles: 3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Rose Quartz Block, Rose Quartz Tiles, and Small Rose Quartz Tiles are decorative blocks made from Rose Quartz and Polished Rose Quartz.",
+    "categories": [
+      "Decoration",
+      "Renewable resources"
+    ]
+  },
+  {
+    "title": "Rose Quartz Lamp",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Pickaxe",
+      "blast_resistance": "0.3",
+      "hardness": "0.3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "Yes (15) when lit",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Rotation Speed Controller",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "Yes"
+    },
+    "type": "block",
+    "description": "The Rotation Speed Controller is a mechanical component that allows the player to precisely control rotational speed.",
+    "categories": [
+      "Mechanical Components",
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Rotational Force",
+    "attributes": {},
+    "type": "page",
+    "description": "Rotational Force is what powers the various machines and the contraptions in the Create mod.",
+    "categories": [
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Sand Paper",
+    "attributes": {
+      "image": "<gallery>\nSand Paper.png|Normal\nRed Sand Paper.png|Red\n</gallery>",
+      "slot": "{{Slot|Sand Paper}}{{Slot|Red Sand Paper}}",
+      "renewable": "Yes",
+      "stackable": "No",
+      "durability": "8",
+      "type": "Tool"
+    },
+    "type": "item",
+    "description": "Sand Paper is a tool used solely to create Polished Rose Quartz.",
+    "categories": []
+  },
+  {
+    "title": "Schematic And Quill",
+    "attributes": {
+      "image": "<gallery>\nSchematic And Quill.png|Schematic And Quill\nEmpty Schematic.png|Empty Schematic\nSchematic.png|Schematic\n</gallery>",
+      "stackable": "No",
+      "slot": "{{Slot|Schematic And Quill}}{{Slot|Empty Schematic}}{{Slot|Schematic}}",
+      "renewable": "Yes"
+    },
+    "type": "item",
+    "description": "A Schematic And Quill is used to save blueprints of a structure.",
+    "categories": []
+  },
+  {
+    "title": "Schematicannon",
+    "attributes": {
+      "image": "<gallery>\nSchematicannon.png|Schematicannon\nSchematic Table.png|Schematic Table\n</gallery>",
+      "slot": "{{Slot|Schematicannon}}{{Slot|Schematic Table}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "Cannon: 3.5 <br> Table: 2.5",
+      "hardness": "Cannon: 3.5<br>Table: 2.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Schematicannon is a special type of machine used to build structures with the use of Schematics. It is a useful contraption which is primarily used within  Mode to deploy structures block-by-block, as the function of direct placement for Schematics are limited exclusively to  Mode.",
+    "categories": [
+      "Machines"
+    ]
+  },
+  {
+    "title": "Scorchia",
+    "attributes": {
+      "image": "<gallery>\nScorchia.png|Natural\nCut Scorchia.png|Cut\nCut Scorchia Slab.png|Cut Slab\nCut Scorchia Stairs.png|Cut Stairs\nCut Scorchia Wall.png|Cut Wall\nPolished Cut Scorchia.png|Polished Cut\nPolished Cut Scorchia Slab.png|Polished Cut Slab\nPolished Cut Scorchia Slab Double.png|Polished Cut Slab Double\nPolished Cut Scorchia Stairs.png|Polished Cut Stairs\nPolished Cut Scorchia Wall.png|Polished Cut Wall\nCut Scorchia Bricks.png|Bricks\nCut Scorchia Brick Slab.png|Brick Slab\nCut Scorchia Brick Stairs.png|Brick Stairs\nCut Scorchia Brick Wall.png|Brick Wall\nSmall Scorchia Bricks.png|Small Bricks\nSmall Scorchia Brick Slab.png|Small Brick Slab\nSmall Scorchia Brick Stairs.png|Small Brick Stairs\nSmall Scorchia Brick Wall.png|Small Brick Wall\nLayered Scorchia.png|Layered\nScorchia Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Scorchia}}\n{{Slot|Cut Scorchia}}\n{{Slot|Cut Scorchia Slab}}\n{{Slot|Cut Scorchia Stairs}}\n{{Slot|Cut Scorchia Wall}}\n{{Slot|Polished Cut Scorchia}}\n{{Slot|Polished Cut Scorchia Slab}}\n{{Slot|Polished Cut Scorchia Stairs}}\n{{Slot|Polished Cut Scorchia Wall}}\n{{Slot|Cut Scorchia Bricks}}\n{{Slot|Cut Scorchia Brick Slab}}\n{{Slot|Cut Scorchia Brick Stairs}}\n{{Slot|Cut Scorchia Brick Wall}}\n{{Slot|Small Scorchia Bricks}}\n{{Slot|Small Scorchia Brick Slab}}\n{{Slot|Small Scorchia Brick Stairs}}\n{{Slot|Small Scorchia Brick Wall}}\n{{Slot|Layered Scorchia}}\n{{Slot|Scorchia Pillar}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Scorchia is a decorative variant of Scoria, named after its ashy, scorched coloration.",
+    "categories": [
+      "Decoration",
+      "Renewable resources"
+    ]
+  },
+  {
+    "title": "Scoria",
+    "attributes": {
+      "image": "<gallery>\nScoria.png|Natural\nCut Scoria.png|Cut\nCut Scoria Slab.png|Cut Slab\nCut Scoria Stairs.png|Cut Stairs\nCut Scoria Wall.png|Cut Wall\nPolished Cut Scoria.png|Polished Cut\nPolished Cut Scoria Slab.png|Polished Cut Slab\nPolished Cut Scoria Stairs.png|Polished Cut Stairs\nPolished Cut Scoria Wall.png|Polished Cut Wall\nCut Scoria Bricks.png|Bricks\nCut Scoria Brick Slab.png|Brick Slab\nCut Scoria Brick Stairs.png|Brick Stairs\nCut Scoria Brick Wall.png|Brick Wall\nSmall Scoria Bricks.png|Small Bricks\nSmall Scoria Brick Slab.png|Small Brick Slab\nSmall Scoria Brick Stairs.png|Small Brick Stairs\nSmall Scoria Brick Wall.png|Small Brick Wall\nLayered Scoria.png|Layered\nScoria Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Scoria}}\n{{Slot|Cut Scoria}}\n{{Slot|Cut Scoria Slab}}\n{{Slot|Cut Scoria Stairs}}\n{{Slot|Cut Scoria Wall}}\n{{Slot|Polished Cut Scoria}}\n{{Slot|Polished Cut Scoria Slab}}\n{{Slot|Polished Cut Scoria Stairs}}\n{{Slot|Polished Cut Scoria Wall}}\n{{Slot|Cut Scoria Bricks}}\n{{Slot|Cut Scoria Brick Slab}}\n{{Slot|Cut Scoria Brick Stairs}}\n{{Slot|Cut Scoria Brick Wall}}\n{{Slot|Small Scoria Bricks}}\n{{Slot|Small Scoria Brick Slab}}\n{{Slot|Small Scoria Brick Stairs}}\n{{Slot|Small Scoria Brick Wall}}\n{{Slot|Layered Scoria}}\n{{Slot|Scoria Pillar}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Scoria is a decorative stone block added by Create.",
+    "categories": [
+      "Decoration",
+      "Renewable resources"
+    ]
+  },
+  {
+    "title": "Seat",
+    "attributes": {
+      "image": "<gallery>\nWhite Seat.png|White\nOrange Seat.png|Orange\nMagenta Seat.png|Magenta\nLight Blue Seat.png|Light Blue\nYellow Seat.png|Yellow\nLime Seat.png|Lime\nPink Seat.png|Pink\nGray Seat.png|Gray\nLight Gray Seat.png|Light Gray\nCyan Seat.png|Cyan\nPurple Seat.png|Purple\nBlue Seat.png|Blue\nBrown Seat.png|Brown\nGreen Seat.png|Green\nRed Seat.png|Red\nBlack Seat.png|Black\n</gallery>",
+      "tool": "Any Axe",
+      "slot": "{{Slot|White Seat}}{{Slot|Orange Seat}}{{Slot|Magenta Seat}}{{Slot|Light Blue Seat}}{{Slot|Yellow Seat}}{{Slot|Lime Seat}}{{Slot|Pink Seat}}{{Slot|Gray Seat}}{{Slot|Light Gray Seat}}{{Slot|Cyan Seat}}{{Slot|Purple Seat}}{{Slot|Blue Seat}}{{Slot|Brown Seat}}{{Slot|Green Seat}}<div class=center>{{Slot|Red Seat}}{{Slot|Black Seat}}</div>",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "transparent": "Yes",
+      "solid": "No",
+      "luminant": "No",
+      "full": "No",
+      "blast_resistance": "2",
+      "hardness": "2"
+    },
+    "type": "block",
+    "description": "Seats are used to allow multiple entities to ride a Contraption.",
+    "categories": [
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Sequenced Assembly",
+    "attributes": {},
+    "type": "page",
+    "description": "Sequenced Assembly is a mechanic that simulates a factory line for precision crafting.",
+    "categories": [
+      "Multi-blocks",
+      "Machines"
+    ]
+  },
+  {
+    "title": "Sequenced Gearshift",
+    "attributes": {
+      "image": "[[File:Sequenced Gearshift.png]]",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Sequenced Gearshift allows finer control over Rotational power, allowing multiple changes to the rotation over a period of time.",
+    "categories": [
+      "Mechanical Components",
+      "Transmission"
+    ]
+  },
+  {
+    "title": "Shadow Casing",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes",
+      "solid": "Yes",
+      "full": "Yes",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Shadow Casing is a Casing block crafted with Shadow Steel and is a purely decorative block.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Shadow Steel",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Shadow Steel is a crafting material derived from the Chromatic Compound and was previously used to craft the Shadow Steel tool set and the Shadow Casing.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Shadow Steel Tools",
+    "attributes": {
+      "image": "<gallery>\nShadow Steel Pickaxe.png|Pickaxe\nShadow Steel Axe.png|Mattock\nShadow Steel Sword.png|Sword\n</gallery>",
+      "slot": "{{Slot|Shadow Steel Pickaxe}}{{Slot|Shadow Steel Axe}}{{Slot|Shadow Steel Sword}}",
+      "type": "Tool",
+      "durability": "2303",
+      "renewable": "No",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "Obtaining",
+    "categories": []
+  },
+  {
+    "title": "Shaft",
+    "attributes": {
+      "image": "Shaft.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The shaft is a basic mechanical component in Create. A shaft can be used to connect two mechanical components such that the rotation of one rotates the other, and shafts serve as the only blocks upon which Mechanical Belts can be placed.",
+    "categories": [
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Sheets",
+    "attributes": {
+      "image": "<gallery>\nCopper Sheet.png|Copper\nIron Sheet.png|Iron\nGolden Sheet.png|Gold\nBrass Sheet.png|Brass\n</gallery>",
+      "slot": "{{Slot|Copper Sheet}}{{Slot|Iron Sheet}}{{Slot|Golden Sheet}}{{Slot|Brass Sheet}}",
+      "renewable": "Brass: No <br> All others: Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Sheets are used in multiple crafting recipes.",
+    "categories": []
+  },
+  {
+    "title": "Shelf",
+    "attributes": {},
+    "type": "block",
+    "description": "Not to be confused with the  or the similar Table Cloth.",
+    "categories": []
+  },
+  {
+    "title": "Shop keeper",
+    "attributes": {},
+    "type": "page",
+    "description": "",
+    "categories": []
+  },
+  {
+    "title": "SkelobonesTemporaryPageForPrintouts",
+    "attributes": {},
+    "type": "page",
+    "description": "+HauntingFactoryOther",
+    "categories": []
+  },
+  {
+    "title": "Sliding Door",
+    "attributes": {
+      "image": "<gallery>\nAndesite Door Block.png|Andesite\nCopper Door Block.png|Copper\nBrass Door Block.png|Brass\nTrain Door Block.png|Train\nFramed Glass Door Block.png|Glass\n</gallery>",
+      "slot": "{{Slot|Andesite Door}}{{Slot|Copper Door}}{{Slot|Brass Door}}{{Slot|Train Door}}{{Slot|Framed Glass Door}}",
+      "renewable": "Train & Brass: No<br>All Others: Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Sliding Doors are s with special functions on Contraptions.",
+    "categories": [
+      "Decoration",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Smart Fluid Pipe",
+    "attributes": {
+      "title": "Smart Fluid Pipe",
+      "image": "Smart Fluid Pipe.png{{!}}Smart",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "requires_rotation": "No"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Fluid Conveyance",
+      "Fluid Systems"
+    ]
+  },
+  {
+    "title": "Smart Observer",
+    "attributes": {
+      "image": "File:Smart_Observer.png",
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "full": "Yes",
+      "tool": "Wooden Pickaxe",
+      "solid": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "lavasusceptible": "No",
+      "renewable": "No",
+      "flammable": "No"
+    },
+    "type": "block",
+    "description": "The Smart Observer is a machine that emits a redstone signal dependent on the block or items inside a container in front of it.",
+    "categories": [
+      "Machines",
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Speedometer",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Pickaxe",
+      "tool2": "Any Axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "None",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Speedometer measures the speed of Rotational Force.",
+    "categories": [
+      "Machines",
+      "Mechanical Components",
+      "Blocks"
+    ]
+  },
+  {
+    "title": "Spout",
+    "attributes": {
+      "image": "[[File:Spout.png]]",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Spout is a block used for filling liquid containers such as bottles or buckets, or crafting with liquids.",
+    "categories": [
+      "Fluid Systems",
+      "Machines"
+    ]
+  },
+  {
+    "title": "Starter Workshop",
+    "attributes": {},
+    "type": "page",
+    "description": "This starter workshop can be built with items sourced only from the . Even so, it packs a lot of power. With it you can build automated harvesting (though not replanting) of crop and tree farms and perform automated mining. You can also give your character important new capabilities and take advantage of a range of decorative elements.",
+    "categories": [
+      "Tutorials",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Steam Engine",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_capacity": "2,048 (passive) or 16,384 (active/overclocked) [[Stress|SU]] (per Steam Engine)",
+      "speed_generated": "16 (passive) or 64 (active/overclocked) RPM"
+    },
+    "type": "block",
+    "description": "The Steam Engine is a block that provides Rotational Force. It outputs the highest Stress Unit (SU) capacity of all the survival-mode power-generating blocks. It converts the pressure caused by heating  in a Fluid Tank into Rotational Force, allowing for large scale item production and multiple contraptions to be powered.",
+    "categories": [
+      "Generators"
+    ]
+  },
+  {
+    "title": "Steam Whistle",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Steam Whistle is a musical block activated by redstone.",
+    "categories": [
+      "Decoration",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Sticker",
+    "attributes": {
+      "image": "[[File:Sticker.png]]",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Sticker is used to stick and unstick things to moving Contraptions.",
+    "categories": [
+      "Multi-blocks",
+      "Mechanical Components",
+      "Block Attachment Utility"
+    ]
+  },
+  {
+    "title": "Stock Link",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "A Stock Link exposes a storage system to a Logistics Network, transmitting an inventory list to each of the other devices on the same network. The stock link also receives requests to extract inventory and passes the list on to an attached Packager to execute.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Stock Ticker",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "tool2": "wooden axe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "A Stock Ticker is used to request items from a Logistics Network.",
+    "categories": [
+      "Recent Changes",
+      "High Logistics"
+    ]
+  },
+  {
+    "title": "Stone",
+    "attributes": {
+      "image": "Stone.png",
+      "transparent": "No",
+      "light": "No",
+      "tool": "wooden pickaxe",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "rarity": "Common",
+      "solid": "Yes"
+    },
+    "type": "block",
+    "description": "Stone is a block found underground in the Overworld or on the surface of mountains.",
+    "categories": []
+  },
+  {
+    "title": "Stressometer",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "pickaxe",
+      "tool2": "axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_impact": "None",
+      "speed_requirement": "None"
+    },
+    "type": "block",
+    "description": "The Stressometer is used to measure the amount of Stress on a Shaft. This stress is the \"load\" of the system.",
+    "categories": [
+      "Machines",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Stripped Spruce Log",
+    "attributes": {},
+    "type": "page",
+    "description": "",
+    "categories": []
+  },
+  {
+    "title": "Sturdy Sheet",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Sturdy Sheets are a crafting component.",
+    "categories": [
+      "Crafting Components"
+    ]
+  },
+  {
+    "title": "Super Glue",
+    "attributes": {
+      "type": "Tool",
+      "durability": "99",
+      "renewable": "Yes",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "Super Glue holds structures in Contraptions together.",
+    "categories": [
+      "Tools",
+      "Block Attachment Utility"
+    ]
+  },
+  {
+    "title": "Sweet Roll",
+    "attributes": {
+      "type": "Food",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "restores": "6",
+      "saturation": "8.6"
+    },
+    "type": "item",
+    "description": "The Sweet Roll is a food item made from bread and milk.",
+    "categories": [
+      "Food"
+    ]
+  },
+  {
+    "title": "TCBoG",
+    "attributes": {},
+    "type": "page",
+    "description": "TCBoG is a Gacha life drama, romance y show that was made by the creator, BronzyGonzy. TCBoG stands for, The Competition Battle of Gacha's. It was inspired by, BFDI, II, and The Music Freaks. The show had its reboot confirmed on, January 9th 2026 the contestants are: Belle,",
+    "categories": []
+  },
+  {
+    "title": "Table Cloth",
+    "attributes": {
+      "image": "<gallery>\nRed Table Cloth.png|Red\nWhite Table Cloth.png|White\nOrange Table Cloth.png|Orange\nMagenta Table Cloth.png|Magenta\nLight Blue Table Cloth.png|Light Blue\nYellow Table Cloth.png|Yellow\nLime Table Cloth.png|Lime\nPink Table Cloth.png|Pink\nGray Table Cloth.png|Gray\nLight Gray Table Cloth.png|Light Gray\nCyan Table Cloth.png|Cyan\nPurple Table Cloth.png|Purple\nBlue Table Cloth.png|Blue\nBrown Table Cloth.png|Brown\nGreen Table Cloth.png|Green\nBlack Table Cloth.png|Black\nAndesite Table Cover.png|Andesite\nCopper Table Cover.png|Copper\nBrass Table Cover.png|Brass\n</gallery>",
+      "slot": "{{Slot|White Table Cloth}}{{Slot|Orange Table Cloth}}{{Slot|Magenta Table Cloth}}{{Slot|Light Blue Table Cloth}}{{Slot|Yellow Table Cloth}}{{Slot|Lime Table Cloth}}{{Slot|Pink Table Cloth}}{{Slot|Gray Table Cloth}}{{Slot|Light Gray Table Cloth}}{{Slot|Cyan Table Cloth}}{{Slot|Purple Table Cloth}}{{Slot|Blue Table Cloth}}{{Slot|Brown Table Cloth}}{{Slot|Green Table Cloth}}{{Slot|Red Table Cloth}}{{Slot|Black Table Cloth}}<div class=center>{{Slot|Andesite Table Cover}}{{Slot|Copper Table Cover}}{{Slot|Brass Table Cover}}</div>",
+      "renewable": "Brass: No<br>Others: Yes",
+      "stackable": "Yes (64)",
+      "tool": "Cloth: Any<br>Others: Wooden Pickaxe",
+      "blast_resistance": "0.1",
+      "hardness": "0.1",
+      "solid": "Yes",
+      "full": "No",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "Cloth: Yes<br>Others: No"
+    },
+    "type": "block",
+    "description": "Table Cloths can be used to sell items to other players.",
+    "categories": [
+      "High Logistics",
+      "Recent Changes"
+    ]
+  },
+  {
+    "title": "Tag",
+    "attributes": {},
+    "type": "page",
+    "description": "Tags is a vanilla minecraft feature expanded by Create. In , tags allow players to group , , ,  or  together using JSON files.",
+    "categories": [
+      "Check the code",
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Threshold Switch",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Threshold Switch measures how full an inventory is and can emit a  signal at adjustable thresholds.",
+    "categories": [
+      "Redstone",
+      "Machines",
+      "Logic Components"
+    ]
+  },
+  {
+    "title": "Tiled Glass",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any",
+      "blast_resistance": "0.3",
+      "hardness": "0.3",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "Yes",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Tiled Glass is a decorative variant of",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Tips & Tricks",
+    "attributes": {},
+    "type": "page",
+    "description": "Create is a huge and vast mod with endless possibilities, which is why some people overlook many features that might have saved them from doing extra work. Here are some tips and tricks to improve your experience with the create mod!",
+    "categories": []
+  },
+  {
+    "title": "Toolbox",
+    "attributes": {
+      "image": "<gallery>\nBrown Toolbox.png|Brown\nWhite Toolbox.png|White\nOrange Toolbox.png|Orange\nMagenta Toolbox.png|Magenta\nLight Blue Toolbox.png|Light Blue\nYellow Toolbox.png|Yellow\nLime Toolbox.png|Lime\nPink Toolbox.png|Pink\nGray Toolbox.png|Gray\nLight Gray Toolbox.png|Light Gray\nCyan Toolbox.png|Cyan\nPurple Toolbox.png|Purple\nBlue Toolbox.png|Blue\nGreen Toolbox.png|Green\nRed Toolbox.png|Red\nBlack Toolbox.png|Black\n</gallery>",
+      "slot": "{{Slot|Brown Toolbox}}{{Slot|White Toolbox}}{{Slot|Orange Toolbox}}{{Slot|Magenta Toolbox}}{{Slot|Light Blue Toolbox}}{{Slot|Yellow Toolbox}}{{Slot|Lime Toolbox}}{{Slot|Pink Toolbox}}{{Slot|Gray Toolbox}}{{Slot|Light Gray Toolbox}}{{Slot|Cyan Toolbox}}{{Slot|Purple Toolbox}}{{Slot|Blue Toolbox}}{{Slot|Green Toolbox}}\n<div class=center>{{Slot|Red Toolbox}}{{Slot|Black Toolbox}}</div>",
+      "full": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "renewable": "Yes",
+      "stackable": "Yes",
+      "tool": "Any",
+      "solid": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "blast_resistance": "2",
+      "hardness": "2"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Blocks"
+    ]
+  },
+  {
+    "title": "Total Stress Unit Production",
+    "attributes": {},
+    "type": "page",
+    "description": "The Total Stress Unit Production is a formula which states that all stress-producing objects can have one total number of Su produced. It's a very easy formula:",
+    "categories": []
+  },
+  {
+    "title": "Track Switch",
+    "attributes": {},
+    "type": "page",
+    "description": "On the normal way, you could press \"A\" or \"S\" to switch on tracks directions, but the next item could help you to make more realistic your experience at switching tracks on the Create Mod.",
+    "categories": [
+      "Blocks",
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train",
+    "attributes": {
+      "title": "Bogey",
+      "image": "<gallery>\nSmall Bogey.png|Small Bogey\nLarge Bogey.png|Large Bogey\n</gallery>",
+      "slot": "{{Slot|Train Casing}}",
+      "renewable": "No",
+      "stackable": "No",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool": "Wooden Pickaxe"
+    },
+    "type": "block",
+    "description": "Trains are Contraptions that travel on Train Tracks and are comprised of carriages carried on either one or two bogeys. Create Trains can be controlled by players riding on the train, and can pass through . Unlike vanilla minecarts, Trains can also go through unloaded chunks even when unmanned, and be controlled by Conductors.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks",
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train Controls",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Train Controls are required in the creation of Trains.",
+    "categories": [
+      "Railway Equipment",
+      "Movement Actors"
+    ]
+  },
+  {
+    "title": "Train Observer",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "The Train Observer is used to detect passing Trains.",
+    "categories": [
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train Schedule",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Train Schedules are used to instruct non-player Train conductors.",
+    "categories": [
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train Signal",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Train Signals are used to control the flow of Trains not driven by players.",
+    "categories": [
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train Station",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "tool": "Wooden Pickaxe"
+    },
+    "type": "block",
+    "description": "Train Stations are used to create, disassemble, and guide Trains.",
+    "categories": [
+      "Movement Anchors",
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train System",
+    "attributes": {},
+    "type": "page",
+    "description": "set this up for tutorial pages",
+    "categories": []
+  },
+  {
+    "title": "Train Track",
+    "attributes": {
+      "image": "Track Block.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Any Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes, while not bending",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Train Tracks are special blocks used to support Trains.",
+    "categories": [
+      "Railway Equipment"
+    ]
+  },
+  {
+    "title": "Train Trapdoor",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "3",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "A  resembling Train Casing.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Trang ch\u1ee7",
+    "attributes": {},
+    "type": "page",
+    "description": "Ch\u00e0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi Minecraft Create Mod Wiki! articles since June 12th, 2019<mainpage-leftcolumn-start />",
+    "categories": []
+  },
+  {
+    "title": "Transmitter",
+    "attributes": {
+      "stackable": "Yes (64)",
+      "renewable": "Yes"
+    },
+    "type": "item",
+    "description": "The Transmitter is a crafting component used to craft link blocks.",
+    "categories": [
+      "Recent Changes",
+      "Crafting Components"
+    ]
+  },
+  {
+    "title": "Transposer",
+    "attributes": {
+      "image": "<gallery>\nTransposer.png|Transposer\nLinked Transposer.png|Linked\n</gallery>",
+      "slot": "{{Slot|Transposer}}{{Slot|Linked Transposer}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "For similar and updated functionality, see Funnel.",
+    "categories": []
+  },
+  {
+    "title": "Tree Fertilizer",
+    "attributes": {
+      "image1": "Tree Fertilizer.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Tree Fertilizer is used to force a  to grow.",
+    "categories": []
+  },
+  {
+    "title": "Tuff",
+    "attributes": {
+      "image": "<gallery>\nTuff.png|Natural\nTuff Slab.png|Slab\nTuff Stairs (N).png|Stairs\nTuff Wall.png|Wall\nPolished Tuff.png|Polished\nPolished Tuff Slab.png|Polished Slab\nPolished Tuff Stairs (N).png|Polished Stairs\nPolished Tuff Wall.png|Polished Wall\nTuff Bricks.png|Bricks\nTuff Brick Slab.png|Brick Slab\nTuff Brick Stairs (N).png|Brick Stairs\nTuff Brick Wall.png|Brick Wall\nCut Tuff.png|Cut\nCut Tuff Slab.png|Cut Slab\nCut Tuff Stairs (N).png|Cut Stairs\nCut Tuff Wall.png|Cut Wall\nPolished Cut Tuff.png|Polished Cut\nPolished Cut Tuff Slab.png|Polished Cut Slab\nPolished Cut Tuff Stairs (N).png|Polished Cut Stairs\nPolished Cut Tuff Wall.png|Polished Cut Wall\nCut Tuff Bricks.png|Bricks\nCut Tuff Brick Slab.png|Brick Slab\nCut Tuff Brick Stairs (N).png|Brick Stairs\nCut Tuff Brick Wall.png|Brick Wall\nSmall Tuff Bricks.png|Small Bricks\nSmall Tuff Brick Slab.png|Small Brick Slab\nSmall Tuff Brick Stairs (N).png|Small Brick Stairs\nSmall Tuff Brick Wall.png|Small Brick Wall\nChiseled Tuff.png|Chiseled\nChiseled Tuff Bricks.png|Chiseled Bricks\nLayered Tuff.png|Layered\nTuff Pillar.png\n</gallery>",
+      "slot": "{{Slot|Tuff}}{{Slot|Tuff Slab}}{{Slot|Tuff Stairs}}{{Slot|Tuff Wall}}\n{{Slot|Polished Tuff}}{{Slot|Polished Tuff Slab}}{{Slot|Polished Tuff Stairs}}{{Slot|Polished Tuff Wall}}<br>\n{{Slot|Tuff Bricks}}{{Slot|Tuff Brick Slab}}{{Slot|Tuff Brick Stairs}}{{Slot|Tuff Brick Wall}}<br>\n{{Slot|Cut Tuff}}{{Slot|Cut Tuff Slab}}{{Slot|Cut Tuff Stairs}}{{Slot|Cut Tuff Wall}}<br>\n{{Slot|Polished Cut Tuff}}{{Slot|Polished Cut Tuff Slab}}{{Slot|Polished Cut Tuff Stairs}}{{Slot|Polished Cut Tuff Wall}}<br>\n{{Slot|Cut Tuff Bricks}}{{Slot|Cut Tuff Brick Stairs}}{{Slot|Cut Tuff Brick Slab}}{{Slot|Cut Tuff Brick Wall}}<br>\n{{Slot|Small Tuff Bricks}}{{Slot|Small Tuff Brick Slab}}{{Slot|Small Tuff Brick Stairs}}{{Slot|Small Tuff Brick Wall}}<br>\n{{Slot|Chiseled Tuff}}{{Slot|Chiseled Tuff Bricks}}{{Slot|Layered Tuff}}{{Slot|Tuff Pillar}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "wooden pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Tuff is a decorative vanilla block.",
+    "categories": [
+      "Decoration",
+      "Non-renewable resources"
+    ]
+  },
+  {
+    "title": "Turntable",
+    "attributes": {
+      "image": "File:Turntable.png",
+      "stress_requirement": "",
+      "speed_requirement": "None",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "stress_impact": "4.0x RPM"
+    },
+    "type": "block",
+    "description": "The Turntable is a block which can rotate .",
+    "categories": [
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Tutorials/Andesite/Andesite Alloy Production",
+    "attributes": {},
+    "type": "page",
+    "description": "Andesite Alloy Automation",
+    "categories": []
+  },
+  {
+    "title": "Tutorials/Brass Production",
+    "attributes": {},
+    "type": "page",
+    "description": "Items needed",
+    "categories": []
+  },
+  {
+    "title": "Tutorials/Crafting Precision Mechanisms",
+    "attributes": {},
+    "type": "page",
+    "description": "The Precision Mechanism is an important component needed to construct useful items such as the Extendo Grip, Mechanical Arm, and Rotation Speed Controller. This tutorial will explain how to perform the sequenced assembly of a precision mechanism and illustrate the process with both a minimalist and a fully automated approach.",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Tutorials/Crop Automation",
+    "attributes": {},
+    "type": "page",
+    "description": "The Create mod can be used to automatically harvest and replant crops.",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Tutorials/Gold Ingot Automation",
+    "attributes": {},
+    "type": "page",
+    "description": "This tutorial will help you make an automatic setup for generating . It is very slow, but can be made faster with more components or higher Rotational Force.",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Tutorials/Iron Ingot Automation",
+    "attributes": {},
+    "type": "page",
+    "description": "This Tutorial shows how to create an iron farm. Iron can be farmed by grinding Cobblestone and washing the Gravel.",
+    "categories": []
+  },
+  {
+    "title": "Tutorials/Mining Contraptions",
+    "attributes": {},
+    "type": "page",
+    "description": "Mining contraptions automate the collection of ores in Minecraft. There are a great many ways to design a mining contraption. However, they all have a few things in common: a structure incorporating drills and chassis, a means of movement, a means of storing and offloading ore, and the risk of encountering hazards. This tutorial will first cover some of the foundational concepts behind these common issues, then provide some designs for mining contraptions.",
+    "categories": []
+  },
+  {
+    "title": "Tutorials/Quarries",
+    "attributes": {},
+    "type": "page",
+    "description": "use a Mechanical Drill",
+    "categories": []
+  },
+  {
+    "title": "Tutorials/Trains",
+    "attributes": {},
+    "type": "page",
+    "description": "To start off, you're going to need some Train Track. Place this down in a line.",
+    "categories": []
+  },
+  {
+    "title": "Tutorials/Tree Automation",
+    "attributes": {},
+    "type": "page",
+    "description": "Tree farms can provide many resources\u2014 of course, but also,  (which can be composted for ). Oak trees can produce , and mangrove trees produce both , and .",
+    "categories": [
+      "Tutorials"
+    ]
+  },
+  {
+    "title": "Value Settings Screen",
+    "attributes": {},
+    "type": "page",
+    "description": "thumb|250px|The Value Settings Screen of a Valve Handle.",
+    "categories": [
+      "Miscellaneous"
+    ]
+  },
+  {
+    "title": "Valve Handle",
+    "attributes": {
+      "image": "<gallery>\nCopper Valve Handle.png|Copper\nWhite Valve Handle.png|White\nOrange Valve Handle.png|Orange\nMagenta Valve Handle.png|Magenta\nLight Blue Valve Handle.png|Light Blue\nYellow Valve Handle.png|Yellow\nLime Valve Handle.png|Lime\nPink Valve Handle.png|Pink\nGray Valve Handle.png|Gray\nLight Gray Valve Handle.png|Light Gray\nCyan Valve Handle.png|Cyan\nPurple Valve Handle.png|Purple\nBlue Valve Handle.png|Blue\nBrown Valve Handle.png|Brown\nGreen Valve Handle.png|Green\nRed Valve Handle.png|Red\nBlack Valve Handle.png|Black\n</gallery>",
+      "slot": "{{Slot|Copper Valve Handle}}{{Slot|White Valve Handle}}{{Slot|Orange Valve Handle}}{{Slot|Magenta Valve Handle}}{{Slot|Light Blue Valve Handle}}{{Slot|Yellow Valve Handle}}{{Slot|Lime Valve Handle}}{{Slot|Pink Valve Handle}}{{Slot|Gray Valve Handle}}{{Slot|Light Gray Valve Handle}}{{Slot|Cyan Valve Handle}}{{Slot|Purple Valve Handle}}{{Slot|Blue Valve Handle}}{{Slot|Brown Valve Handle}}{{Slot|Green Valve Handle}}{{Slot|Red Valve Handle}}{{Slot|Black Valve Handle}}",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "full": "No",
+      "transparent": "Yes",
+      "luminant": "No",
+      "stress_capacity": "128 [[Stress|SU]]",
+      "title": "Copper Valve Handle",
+      "solid": "Yes",
+      "blast_resistance": "6",
+      "hardness": "3"
+    },
+    "type": "block",
+    "description": "Obtaining",
+    "categories": [
+      "Generators"
+    ]
+  },
+  {
+    "title": "Veridium",
+    "attributes": {
+      "image": "<gallery>\nVeridium.png|Natural\nCut Veridium.png|Cut\nCut Veridium Slab.png|Cut Slab\nCut Veridium Stairs.png|Cut Stairs\nCut Veridium Wall.png|Cut Wall\nPolished Cut Veridium.png|Polished Cut\nPolished Cut Veridium Slab.png|Polished Cut Slab\nPolished Cut Veridium Stairs.png|Polished Cut Stairs\nPolished Cut Veridium Wall.png|Polished Cut Wall\nCut Veridium Bricks.png|Bricks\nCut Veridium Brick Slab.png|Brick Slab\nCut Veridium Brick Stairs.png|Brick Stairs\nCut Veridium Brick Wall.png|Brick Wall\nSmall Veridium Bricks.png|Small Bricks\nSmall Veridium Brick Slab.png|Small Brick Slab\nSmall Veridium Brick Stairs.png|Small Brick Stairs\nSmall Veridium Brick Wall.png|Small Brick Wall\nLayered Veridium.png|Layered\nVeridium Pillar.png|Pillar\n</gallery>",
+      "slot": "{{Slot|Veridium}}\n{{Slot|Cut Veridium}}\n{{Slot|Cut Veridium Slab}}\n{{Slot|Cut Veridium Stairs}}\n{{Slot|Cut Veridium Wall}}\n{{Slot|Polished Cut Veridium}}\n{{Slot|Polished Cut Veridium Slab}}\n{{Slot|Polished Cut Veridium Stairs}}\n{{Slot|Polished Cut Veridium Wall}}\n{{Slot|Cut Veridium Bricks}}\n{{Slot|Cut Veridium Brick Slab}}\n{{Slot|Cut Veridium Brick Stairs}}\n{{Slot|Cut Veridium Brick Wall}}\n{{Slot|Small Veridium Bricks}}\n{{Slot|Small Veridium Brick Slab}}\n{{Slot|Small Veridium Brick Stairs}}\n{{Slot|Small Veridium Brick Wall}}\n{{Slot|Layered Veridium}}\n{{Slot|Veridium Pillar}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "6",
+      "hardness": "1.25",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Veridium is a decorative block added by Create, named after its green coloration.",
+    "categories": [
+      "Decoration",
+      "Non-renewable resources"
+    ]
+  },
+  {
+    "title": "Wand Of Symmetry",
+    "attributes": {
+      "type": "Tool",
+      "renewable": "No",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "The Wand Of Symmetry is a helpful building tool that mirrors blocks placed.",
+    "categories": [
+      "Tools"
+    ]
+  },
+  {
+    "title": "Water Wheel",
+    "attributes": {
+      "image": "<gallery>\nWater_Wheel.png|Spruce\nOak_Water_Wheel.png|Oak\nBirch_Water_Wheel.png|Birch\nJungle_Water_Wheel.png|Jungle\nAcacia_Water_Wheel.png|Acacia\nDark_Oak_Water_Wheel.png|Dark Oak\nCrimson_Water_Wheel.png|Crimson\nWarped_Water_Wheel.png|Warped\nMangrove_Water_Wheel.png|Mangrove\nBamboo_Water_Wheel.png|Bamboo\nCherry_Water_Wheel.png|Cherry\n</gallery>",
+      "output": "",
+      "default_speed": "250",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "stress_capacity": "256 [[Stress|SU]]",
+      "speed_generated": "8 RPM"
+    },
+    "type": "block",
+    "description": "The Water Wheel is a source of rotational power. It generates Rotational Force when water flows over it.",
+    "categories": [
+      "Generators"
+    ]
+  },
+  {
+    "title": "Weathered Limestone",
+    "attributes": {
+      "image": "<gallery>\nWeathered Limestone.png|Normal\nWeathered Limestone Cobblestone.png|Cobblestone\nPolished Weathered Limestone.png|Polished\nWeathered Limestone Bricks.png|Bricks\nFancy Weathered Limestone Bricks.png|Fancy\nWeathered Limestone Pillar.png|Pillar\nPaved Weathered Limestone.png|Paved\nLayered Weathered Limestone.png|Layered\nChiseled Weathered Limestone.png|Chiseled\nMossy Weathered Limestone.png|Mossy\nOvergrown Weathered Limestone.png|Overgrown</gallery>",
+      "slot": "{{slot|Weathered Limestone}}{{slot|Weathered Limestone Cobblestone}}{{slot|Polished Weathered Limestone}}{{slot|Weathered Limestone Bricks}}{{slot|Fancy Weathered Limestone Bricks}}{{slot|Weathered Limestone Pillar}}{{slot|Paved Weathered Limestone}}{{slot|Layered Weathered Limestone}}{{slot|Chiseled Weathered Limestone}}{{slot|Mossy Weathered Limestone}}{{slot|Overgrown Weathered Limestone}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "blast_resistance": "0.8",
+      "hardness": "0.8",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Weathered Limestone is a decorative variant of Limestone.",
+    "categories": []
+  },
+  {
+    "title": "Weighted Ejector",
+    "attributes": {
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "stress_impact": "2x RPM",
+      "speed_requirement": "None",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "transparent": "Yes",
+      "solid": "No"
+    },
+    "type": "block",
+    "description": "The Weighted Ejector flings items and entities to a targeted block up to 32 blocks away.",
+    "categories": [
+      "Item Transportation",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Wheat Flour",
+    "attributes": {
+      "image1": "Wheat Flour.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Wheat Flour is a middle item in the crafting process of Dough.",
+    "categories": []
+  },
+  {
+    "title": "Widget:FileUrl",
+    "attributes": {},
+    "type": "page",
+    "description": "url(https://static.wikia.nocookie.net/create_mod/images/)",
+    "categories": []
+  },
+  {
+    "title": "Windmill",
+    "attributes": {},
+    "type": "page",
+    "description": "thumb|270px|The Ponder scene for the Windmill Bearing.",
+    "categories": [
+      "Movement Anchors",
+      "Multi-blocks",
+      "Generators"
+    ]
+  },
+  {
+    "title": "Windmill Bearing",
+    "attributes": {
+      "image": "File:Windmill_Bearing.png",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "Wooden Pickaxe",
+      "tool2": "Wooden Axe",
+      "blast_resistance": "6",
+      "hardness": "1.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No",
+      "stress_capacity": "512-8192 [[Stress|SU]]",
+      "speed_generated": "1-16 RPM"
+    },
+    "type": "block",
+    "description": "The Windmill Bearing is a block used to create Windmills for power generation.",
+    "categories": [
+      "Generators",
+      "Mechanical Components"
+    ]
+  },
+  {
+    "title": "Windmill Sail",
+    "attributes": {
+      "image": "<gallery>\nWhite_Sail Block.png|White Sail\nOrange Sail.png|Orange\nMagenta Sail.png|Magenta\nLight Blue Sail.png|Light Blue\nYellow Sail.png|Yellow\nLime Sail.png|Lime\nPink Sail.png|Pink\nGray Sail.png|Gray\nLight Gray Sail.png|Light Gray\nCyan Sail.png|Cyan\nPurple Sail.png|Purple\nBlue Sail.png|Blue\nBrown Sail.png|Brown\nGreen Sail.png|Green\nRed Sail.png|Red\nBlack Sail.png|Black\nSail_Frame.png|Frame\n</gallery>",
+      "slot": "{{Slot|Sail Frame}}{{Slot|White Sail}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "blast_resistance": "2",
+      "hardness": "2",
+      "full": "No",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "Yes",
+      "tool": "Any Axe",
+      "transparent": "Yes",
+      "solid": "Yes"
+    },
+    "type": "block",
+    "description": "The Windmill Sail is a block used to create a Windmill.",
+    "categories": [
+      "Generators"
+    ]
+  },
+  {
+    "title": "Window",
+    "attributes": {
+      "image": "<gallery>Oak_Window.png|Oak\nSpruce_Window.png|Spruce\nBirch_Window.png|Birch\nJungle_Window.png|Jungle\nAcacia_Window.png|Acacia\nDark_Oak_Window.png|Dark Oak\nMangrove_Window.png|Mangrove\nCrimson_Window.png|Crimson\nWarped_Window.png|Warped\nCherry Window.png|Cherry\nBamboo Window.png|Bamboo\nOrnate_Iron_Window.png|Ornate Iron\nIndustrial Iron Window.png|Industrial Iron\nWeathered Iron Window.png|Weathered Iron\n</gallery>",
+      "slot": "{{Slot|Oak Window}}{{Slot|Spruce Window}}{{Slot|Birch Window}}{{Slot|Jungle Window}}{{Slot|Acacia Window}}{{Slot|Dark Oak Window}}{{Slot|Mangrove Window}}{{Slot|Crimson Window}}{{Slot|Warped Window}}{{Slot|Cherry Window}}{{Slot|Bamboo Window}}{{Slot|Ornate Iron Window}}{{Slot|Industrial Iron Window}}{{Slot|Weathered Iron Window}}\n{{Slot|Oak Window Pane}}{{Slot|Spruce Window Pane}}{{Slot|Birch Window Pane}}{{Slot|Jungle Window Pane}}{{Slot|Acacia Window Pane}}{{Slot|Dark Oak Window Pane}}{{Slot|Mangrove Window Pane}}{{Slot|Crimson Window Pane}}{{Slot|Warped Window Pane}}{{Slot|Cherry Window Pane}}{{Slot|Bamboo Window Pane}}{{Slot|Ornate Iron Window Pane}}{{Slot|Industrial Iron Window Pane}}{{Slot|Weathered Iron Window Pane}}",
+      "renewable": "Yes",
+      "stackable": "Yes (64)",
+      "tool": "None",
+      "blast_resistance": "0.3",
+      "hardness": "0.3",
+      "solid": "Yes",
+      "full": "Yes",
+      "transparent": "Yes",
+      "luminant": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Windows are decorative blocks with wooden or iron frames with various patterns based on the material used for the frame.  When stacked, the textures connect across blocks to form larger window patterns. Window blocks may be combined to craft Window Panes.",
+    "categories": [
+      "Decoration"
+    ]
+  },
+  {
+    "title": "Wrench",
+    "attributes": {
+      "image1": "Wrench.png",
+      "renewable": "Yes",
+      "stackable": "No"
+    },
+    "type": "item",
+    "description": "The Wrench is a tool used to rotate, dismantle and configure components",
+    "categories": [
+      "Tools"
+    ]
+  },
+  {
+    "title": "Zinc",
+    "attributes": {},
+    "type": "page",
+    "description": "Zinc is a material found in the . It spawns naturally as zinc ore and can be smelted into ingots or crushed into Crushed Zinc Ore.",
+    "categories": [
+      "Disambiguation pages"
+    ]
+  },
+  {
+    "title": "Zinc Ingot",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "The Zinc Ingot is an ingot used to create Brass Ingots.",
+    "categories": [
+      "Ingots",
+      "Materials"
+    ]
+  },
+  {
+    "title": "Zinc Nugget",
+    "attributes": {
+      "renewable": "No",
+      "stackable": "Yes (64)"
+    },
+    "type": "item",
+    "description": "Zinc nuggets are small pieces of Zinc that can be obtained through crafting a single zinc ingot. One zinc nugget is equal to a ninth of a zinc ingot. They are used to craft zinc ingots, Andesite Alloy and Package Filter.",
+    "categories": []
+  },
+  {
+    "title": "Zinc Ore",
+    "attributes": {
+      "image": "<gallery>\nZinc Ore.png|Normal\nDeepslate Zinc Ore.png|Deepslate\n</gallery>",
+      "slot": "{{Slot|Zinc Ore}}{{Slot|Deepslate Zinc Ore}}",
+      "renewable": "No",
+      "stackable": "Yes (64)",
+      "tool": "Iron Pickaxe",
+      "blast_resistance": "3",
+      "hardness": "'''Zinc Ore''': 3<br>\n'''Deepslate Zinc Ore''': 4.5",
+      "solid": "Yes",
+      "full": "Yes",
+      "luminant": "No",
+      "transparent": "No",
+      "flammable": "No",
+      "lavasusceptible": "No"
+    },
+    "type": "block",
+    "description": "Zinc Ore is a  block found underground. It can be processed into Zinc Ingots.",
+    "categories": [
+      "Materials",
+      "Ores"
+    ]
+  }
+]
