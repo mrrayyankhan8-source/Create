@@ -54,6 +54,10 @@ export class KineticNetwork {
         this.recalculate();
     }
 
+    public triggerTopologyUpdate() {
+        this.recalculate();
+    }
+
     public recalculate() {
         if (this.nodes.size === 0) return;
 
@@ -122,6 +126,22 @@ export class KineticNetwork {
             const outgoing = this.connections.filter(c => c.fromNode === current);
             for (const edge of outgoing) {
                 if (!visited.has(edge.toNode)) {
+
+                    // If the node we are traversing through is a Clutch and it's disengaged,
+                    // it does not propagate speed.
+                    if ('isEngaged' in edge.fromNode && !(edge.fromNode as any).isEngaged) {
+                        continue;
+                    }
+                    if ('isEngaged' in edge.toNode && !(edge.toNode as any).isEngaged) {
+                        // The clutch itself still gets speed from the input side,
+                        // but logic to stop output side should apply.
+                        // For simplicity in this graph logic:
+                        // If traversing OUT of a disengaged clutch, block it.
+                        if (edge.fromNode === current && 'isEngaged' in edge.fromNode && !(edge.fromNode as any).isEngaged) {
+                             continue;
+                        }
+                    }
+
                     visited.add(edge.toNode);
                     edge.toNode.setTheoreticalSpeed(currentSpeed * edge.ratio);
                     queue.push(edge.toNode);
@@ -132,6 +152,11 @@ export class KineticNetwork {
             const incoming = this.connections.filter(c => c.toNode === current);
             for (const edge of incoming) {
                 if (!visited.has(edge.fromNode)) {
+
+                    if ('isEngaged' in edge.toNode && !(edge.toNode as any).isEngaged) {
+                        continue;
+                    }
+
                     visited.add(edge.fromNode);
                     // Reverse the ratio for reverse traversal
                     edge.fromNode.setTheoreticalSpeed(currentSpeed / edge.ratio);

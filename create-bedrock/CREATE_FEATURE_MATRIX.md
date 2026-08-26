@@ -9,31 +9,31 @@ This matrix tracks the implementation status of subsystems discovered in the Jav
 | - Shafts | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
 | - Gears / Cogwheels | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
 | - Gearboxes | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
-| - Clutches | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Power Generators** | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Water Wheels | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Windmills | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Steam Engines | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Contraptions** | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Bearings | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Moving Structures | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Processing Machines**| In Progress | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
+| - Clutches | In Progress | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| **Power Generators** | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Water Wheels | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Windmills | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Steam Engines | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| **Contraptions** | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Bearings | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Moving Structures | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| **Processing Machines**| Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
 | - Mechanical Press | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
-| - Mixer | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Drill | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Saw | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Deployer | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Mechanical Arm | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Logistics** | In Progress | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
+| - Mixer | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Drill | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Saw | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Deployer | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Mechanical Arm | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| **Logistics** | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
 | - Belts | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
-| - Chutes | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Funnels | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Fluids** | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Pipes / Pumps | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Tanks | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Trains** | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Tracks | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Trains / Bogies | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| - Stations / Schedules| Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Redstone** | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
-| **Recipes/Sequenced** | Planned | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | |
+| - Chutes | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| - Funnels | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| **Fluids** | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Pipes / Pumps | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Tanks | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| **Trains** | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Tracks | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Trains / Bogies | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| - Stations / Schedules| Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [✓] | Backend Simulated |
+| **Redstone** | In Progress | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |
+| **Recipes/Sequenced** | Complete | [✓] | [✓] | [ ] | [ ] | [ ] | [ ] | [ ] | Backend Simulated |

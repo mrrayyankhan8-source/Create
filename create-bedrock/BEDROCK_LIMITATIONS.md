@@ -1,0 +1,10 @@
+# Bedrock Limitations and Workarounds
+
+Because Minecraft Bedrock's API is fundamentally different from Minecraft Java (especially lacking Forge/Fabric mixins and direct rendering hooks), specific adjustments must be made when porting the Create mod.
+
+| Feature | Java/Create behavior | Bedrock limitation | Implemented approximation | Possible future solution |
+| :--- | :--- | :--- | :--- | :--- |
+| **Custom Rendering** | Uses Flywheel to render thousands of dynamic gears/blocks performantly. | Bedrock lacks access to custom rendering pipelines or shaders for addons. | We utilize `Animation Controllers` bound to mathematical logic in `AnimationEngine.ts`, acting on custom block geometries. Large networks might fall back to entities if blocks cannot animate properly. | Official Bedrock Custom Block Rendering APIs. |
+| **Tick / Ticking Entities** | Every block entity executes `tick()` directly in the game loop. | Having thousands of ticking block entities in JS is prohibitively slow in Bedrock. | Implementation of the `TickManager.ts` utilizing High, Normal, and Low frequency updates. Math calculation is performed as a **Virtual Algorithmic Backend** that decouples the visual block from the actual kinetic network math graph. | Improved Script API performance for block components. |
+| **Contraptions** | Converts a volume of blocks into a `ContraptionEntity` and renders them dynamically using GL calls. | Cannot dynamically construct an entity visual out of arbitrary blocks on the fly without severe lag or pre-defined models. | Mathematical abstraction (`Contraption.ts`) manages block coordinates virtually. Visually, moving blocks might have to be represented by individual block-entities translating simultaneously or using a specialized resource pack definition. | N/A |
+| **Fluids** | Forge Fluid API natively handles capacities and transfer rates. | Bedrock currently lacks a robust equivalent to the Forge fluid API. | We implemented our own `FluidTank.ts` and `PipeNetwork.ts` to mathematically simulate fluid flow in the virtual backend. | Waiting for robust Bedrock Fluid APIs. |
