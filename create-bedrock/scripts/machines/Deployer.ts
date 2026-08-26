@@ -9,43 +9,31 @@ export enum DeployerAction {
     INTERACT
 }
 
-export class Deployer implements KineticNode {
-    id: string;
-    location: Location;
-    networkId?: number;
+import { BaseKineticNode } from "../kinetic/KineticNode";
 
-    public isSource: boolean = false;
-    private currentSpeed: number = 0;
+export class Deployer extends BaseKineticNode {
     public stressImpact: number = 4;
 
     public currentAction: DeployerAction = DeployerAction.USE;
     private progress: number = 0;
     private isExtending: boolean = false;
 
-    constructor(id: string, location: Location) {
-        this.id = id;
-        this.location = location;
+    constructor(id: string) {
+        super(id);
     }
 
-    getGeneratedSpeed(): number { return 0; }
-    getTheoreticalSpeed(): number { return this.currentSpeed; }
-    calculateAddedStressCapacity(): number { return 0; }
-    calculateStressApplied(): number { return this.stressImpact; }
+    getStressImpact(): number { return this.stressImpact; }
 
-    updateFromNetwork(capacity: number, stress: number, size: number): void {
-        if (stress > capacity && capacity > 0) {
-            this.currentSpeed = 0;
+    updateFromNetwork(capacity: number, stress: number, overstressed: boolean): void {
+        if (overstressed) {
+            this.speed = 0;
         }
     }
 
-    public setSpeed(speed: number) {
-        this.currentSpeed = speed;
-    }
-
     public tick(deltaTime: number) {
-        if (this.currentSpeed === 0) return;
+        if (this.speed === 0) return;
 
-        const step = Math.abs(this.currentSpeed) * deltaTime * 0.05;
+        const step = Math.abs(this.speed) * deltaTime * 0.05;
 
         if (this.isExtending) {
             this.progress += step;
