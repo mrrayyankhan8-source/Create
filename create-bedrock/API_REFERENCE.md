@@ -19,3 +19,6 @@ Handles the physical layout of train tracks.
 - `addNode(id, position)`: Adds a track waypoint.
 - `connectNodes(idA, idB)`: Links two waypoints together forming a traversable edge.
 - `findPath(startId, endId)`: Runs a BFS pathfinding algorithm to locate the shortest path through the track network.
+## `Data Generation`
+The data generation utility automates the creation of base Behavior Pack JSON files for Create Mod components.
+- `scripts/utilities/generate_bedrock_json.js`: A Node script that ingests definitions (currently defined inline but capable of parsing the provided wiki data dump) and writes out valid `minecraft:block` and `minecraft:item` component definitions into `behavior_packs/create_bp/`.
