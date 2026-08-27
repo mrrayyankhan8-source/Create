@@ -19,7 +19,7 @@ export class RedstoneLink {
     public setPower(power: number) {
         if (this.isTransmitter && this.currentPower !== power) {
             this.currentPower = power;
-            RedstoneNetwork.broadcast(this.frequency1, this.frequency2, power);
+            RedstoneNetwork.recalculate(this.frequency1, this.frequency2);
         }
     }
 
@@ -27,6 +27,7 @@ export class RedstoneLink {
         if (!this.isTransmitter) {
             this.currentPower = power;
             // Update physical block redstone output here via BedrockAdapter
+            // BedrockAdapter.setBlockRedstonePower(this.location, power);
         }
     }
 
@@ -36,17 +37,49 @@ export class RedstoneLink {
 }
 
 export class RedstoneNetwork {
-    private static links: RedstoneLink[] = [];
+    private static links: Map<string, RedstoneLink> = new Map();
 
     public static register(link: RedstoneLink) {
-        this.links.push(link);
+        this.links.set(link.id, link);
+        this.recalculate(link.frequency1, link.frequency2);
     }
 
-    public static broadcast(freq1: string, freq2: string, power: number) {
-        for (const link of this.links) {
-            if (!link.isTransmitter && link.frequency1 === freq1 && link.frequency2 === freq2) {
-                link.receivePower(power);
+    public static unregister(linkId: string) {
+        const link = this.links.get(linkId);
+        if (link) {
+            this.links.delete(linkId);
+            this.recalculate(link.frequency1, link.frequency2);
+        }
+    }
+
+    public static getNetworkPower(freq1: string, freq2: string): number {
+        let maxPower = 0;
+        for (const link of this.links.values()) {
+            if (link.isTransmitter && link.frequency1 === freq1 && link.frequency2 === freq2) {
+                if (link.getPower() > maxPower) {
+                    maxPower = link.getPower();
+                }
             }
         }
+        return maxPower;
+    }
+
+    public static recalculate(freq1: string, freq2: string) {
+        // Redstone link receivers emit signal with the level of the strongest transmitter of the same frequency
+        const networkPower = this.getNetworkPower(freq1, freq2);
+
+        for (const link of this.links.values()) {
+            if (!link.isTransmitter && link.frequency1 === freq1 && link.frequency2 === freq2) {
+                link.receivePower(networkPower);
+            }
+        }
+    }
+
+    public static getLinks(): RedstoneLink[] {
+        return Array.from(this.links.values());
+    }
+
+    public static clear() {
+        this.links.clear();
     }
 }

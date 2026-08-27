@@ -10,23 +10,21 @@
 - Phase 7: Advanced Processing (Sequenced Assembly, Recipe Engine logic)
 - Phase 8: Trains (Track Graph pathfinding, Kinematics, Automated Schedules)
 - Phase 9: Rendering & Polish (Procedural Geometry stubs, Animation mathematical controllers)
+- Phase 10: Data Definition Generation (Behavior Pack JSON components created)
+- Phase 11: Final logic cleanup (Redstone Links, RecipeEngine parsing, Bootstrap runner)
 
 ## In Progress
-- Integrate with live Bedrock game (when API permits)
+- N/A
 
 ## Remaining
-- None. Virtual backend complete.
+- Integrate with live Bedrock game environment
+- Create / integrate missing visual assets (textures, models, animation controllers)
 
 ## Known Bugs
-- None yet.
+- None currently reported in unit testing.
 
 ## Bedrock Limitations
 - Full Bedrock block/entity implementation is substituted with a virtual algorithmic backend to ensure core logical completeness independent of the engine APIs.
 
 ## Next Task
-- Implement Clutches and Redstone Links
-- Create missing documentation files
-
-## Phase 10: Data Definition Generation
-* [x] Complete Behavior Pack item/block generation script.
-* [x] Execute generator script to create Bedrock JSON representations.
+- Wait for live environment hookup.
