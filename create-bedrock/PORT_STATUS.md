@@ -26,3 +26,7 @@
 ## Next Task
 - Implement Clutches and Redstone Links
 - Create missing documentation files
+
+## Phase 10: Data Definition Generation
+* [x] Complete Behavior Pack item/block generation script.
+* [x] Execute generator script to create Bedrock JSON representations.

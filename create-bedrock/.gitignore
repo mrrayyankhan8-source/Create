@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+data/wiki_data.json
+behavior_packs/create_bp/blocks/
+behavior_packs/create_bp/items/

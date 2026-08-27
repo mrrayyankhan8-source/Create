@@ -1,48 +1,9 @@
-## Based on GitHub's Eclipse .gitignore
-
-run/
-.gradle/
-build/
-gradle-app.setting
-
-## IntelliJ IDEA
-
-.idea/
-out/
-*.iml
-*.iws
-*.ipr
-
-## Eclipse
-
-eclipse/
-*.pydevproject
-.project
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
-.factorypath
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-.DS_Store
-/libs/
 node_modules/
+dist/
+coverage/
+.DS_Store
+create-bedrock/node_modules/
+create-bedrock/data/wiki_data.json
+create-bedrock/behavior_packs/
+create-bedrock/resource_packs/
+create-bedrock/scripts/utilities/
