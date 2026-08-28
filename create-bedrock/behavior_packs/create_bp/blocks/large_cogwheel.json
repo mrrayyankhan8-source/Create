@@ -1,0 +1,140 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:large_cogwheel",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:axis": [
+                    "y",
+                    "x",
+                    "z"
+                ],
+                "create:waterlogged": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.large_cogwheel"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_large_cogwheel",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -14,
+                    -8,
+                    -14
+                ],
+                "size": [
+                    28,
+                    16,
+                    28
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -14,
+                    -8,
+                    -14
+                ],
+                "size": [
+                    28,
+                    16,
+                    28
+                ]
+            },
+            "minecraft:tick": {
+                "interval_range": [
+                    1,
+                    1
+                ],
+                "looping": true
+            },
+            "minecraft:custom_components": [
+                "create:kinetic_block"
+            ]
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('create:axis') == 'x'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ],
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            -14,
+                            -14
+                        ],
+                        "size": [
+                            16,
+                            28,
+                            28
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            -14,
+                            -14
+                        ],
+                        "size": [
+                            16,
+                            28,
+                            28
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('create:axis') == 'z'",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ],
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -14,
+                            -14,
+                            -8
+                        ],
+                        "size": [
+                            28,
+                            28,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -14,
+                            -14,
+                            -8
+                        ],
+                        "size": [
+                            28,
+                            28,
+                            16
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

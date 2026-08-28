@@ -243,3 +243,153 @@ const steamEngineJson = {
     }
 };
 writeJson('steam_engine.json', steamEngineJson);
+
+// 4. Cogwheel JSON
+const cogwheelJson = {
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:cogwheel",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:axis": ["y", "x", "z"],
+                "create:waterlogged": [false, true]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.cogwheel"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_cogwheel",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.0
+            },
+            "minecraft:collision_box": {
+                "origin": [-6, -8, -6],
+                "size": [12, 16, 12]
+            },
+            "minecraft:selection_box": {
+                "origin": [-6, -8, -6],
+                "size": [12, 16, 12]
+            },
+            "minecraft:tick": {
+                "interval_range": [1, 1],
+                "looping": true
+            },
+            "minecraft:custom_components": ["create:kinetic_block"]
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('create:axis') == 'x'",
+                "components": {
+                    "minecraft:rotation": [0, 0, 90],
+                    "minecraft:collision_box": {
+                        "origin": [-8, -6, -6],
+                        "size": [16, 12, 12]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [-8, -6, -6],
+                        "size": [16, 12, 12]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('create:axis') == 'z'",
+                "components": {
+                    "minecraft:rotation": [90, 0, 0],
+                    "minecraft:collision_box": {
+                        "origin": [-6, -6, -8],
+                        "size": [12, 12, 16]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [-6, -6, -8],
+                        "size": [12, 12, 16]
+                    }
+                }
+            }
+        ]
+    }
+};
+writeJson('cogwheel.json', cogwheelJson);
+
+// 5. Large Cogwheel JSON
+const largeCogwheelJson = {
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:large_cogwheel",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:axis": ["y", "x", "z"],
+                "create:waterlogged": [false, true]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.large_cogwheel"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_large_cogwheel",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.0
+            },
+            "minecraft:collision_box": {
+                "origin": [-14, -8, -14],
+                "size": [28, 16, 28] // Exceeds default bedrock bounds, Bedrock limits box size to 16x16x16 natively for some engines, but using standard representation.
+            },
+            "minecraft:selection_box": {
+                "origin": [-14, -8, -14],
+                "size": [28, 16, 28]
+            },
+            "minecraft:tick": {
+                "interval_range": [1, 1],
+                "looping": true
+            },
+            "minecraft:custom_components": ["create:kinetic_block"]
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('create:axis') == 'x'",
+                "components": {
+                    "minecraft:rotation": [0, 0, 90],
+                    "minecraft:collision_box": {
+                        "origin": [-8, -14, -14],
+                        "size": [16, 28, 28]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [-8, -14, -14],
+                        "size": [16, 28, 28]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('create:axis') == 'z'",
+                "components": {
+                    "minecraft:rotation": [90, 0, 0],
+                    "minecraft:collision_box": {
+                        "origin": [-14, -14, -8],
+                        "size": [28, 28, 16]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [-14, -14, -8],
+                        "size": [28, 28, 16]
+                    }
+                }
+            }
+        ]
+    }
+};
+writeJson('large_cogwheel.json', largeCogwheelJson);

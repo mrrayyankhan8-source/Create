@@ -40,3 +40,18 @@
 
 ## Completed Features
 (Pending)
+
+### Cogwheel (Small & Large)
+- **Source Files**: `CogWheelBlock.java`, `CogwheelBlockItem.java`, `ICogWheel.java`, `EncasedCogwheelBlock.java`.
+- **Properties**:
+  - Inherits from `AbstractSimpleShaftBlock`.
+  - Properties: `AXIS` (x,y,z), `WATERLOGGED` (boolean).
+  - Encased variants have `TOP_SHAFT` and `BOTTOM_SHAFT` to conditionally render the protruding shafts.
+- **Interactions & Placement**:
+  - Placed diagonally or on shafts using `CogwheelBlockItem` placement helpers (`SmallCogHelper`, `LargeCogHelper`).
+  - Cannot overlap invalidly in the kinetic network (prevents placing large and small cogs directly meshing in physically impossible bounds).
+  - Shape bounds are different (`SMALL_GEAR` vs `LARGE_GEAR` shapes).
+  - Rotational meshes (visually and logically) require an 11.25-degree offset in some axes for large cogwheels (handled via visual component rendering).
+- **Network**:
+  - Connects to other cogwheels, shafts, and encased machines. Diagonals transfer speed.
+  - Generates advancements (`AllAdvancements.COGS`) on complex placements.
