@@ -55,3 +55,21 @@
 - **Network**:
   - Connects to other cogwheels, shafts, and encased machines. Diagonals transfer speed.
   - Generates advancements (`AllAdvancements.COGS`) on complex placements.
+
+### Casings (Andesite, Brass, Copper, Railway, Shadow Steel, Refined Radiance)
+- **Source Files**: `CasingBlock.java`, `BuilderTransformers.java`.
+- **Properties**:
+  - Basic decorative blocks.
+  - Can be wrenched (returns FAIL to use default rotation logic).
+- **Interactions**:
+  - Used in recipes or by clicking specific blocks (e.g., Shafts, Cogwheels) to encase them.
+
+### Encased Blocks (Shafts & Cogwheels)
+- **Source Files**: `EncasedShaftBlock.java`, `EncasedCogwheelBlock.java`, `AbstractEncasedShaftBlock.java`.
+- **Properties**:
+  - Inherits standard kinetic network behaviors (axis property).
+  - Encased Cogwheels also hold `TOP_SHAFT` and `BOTTOM_SHAFT` boolean properties depending on neighboring connections.
+- **Interactions**:
+  - Sneak-wrenching destroys the casing (spawns particles) and leaves the internal block (Shaft or Cogwheel).
+  - Normal wrenching allows rotating the casing/connection axis.
+  - Pick-block returns either the casing item or the kinetic block depending on the clicked face.

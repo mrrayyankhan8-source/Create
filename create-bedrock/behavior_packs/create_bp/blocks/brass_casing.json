@@ -1,0 +1,22 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:brass_casing",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_brass_casing",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.5
+            }
+        }
+    }
+}

@@ -393,3 +393,142 @@ const largeCogwheelJson = {
     }
 };
 writeJson('large_cogwheel.json', largeCogwheelJson);
+
+// 6. Generic Casing Blocks (Andesite, Brass, Copper, Railway)
+const casings = ['andesite_casing', 'brass_casing', 'copper_casing', 'railway_casing', 'shadow_steel_casing', 'refined_radiance_casing'];
+casings.forEach(casing => {
+    writeJson(`${casing}.json`, {
+        "format_version": "1.20.80",
+        "minecraft:block": {
+            "description": {
+                "identifier": `create:${casing}`,
+                "menu_category": { "category": "construction" }
+            },
+            "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": `create_${casing}`,
+                        "render_method": "opaque"
+                    }
+                },
+                "minecraft:destructible_by_mining": { "seconds_to_destroy": 1.5 }
+            }
+        }
+    });
+});
+
+// 7. Encased Shafts
+const encasedShaftTypes = ['andesite', 'brass'];
+encasedShaftTypes.forEach(type => {
+    writeJson(`${type}_encased_shaft.json`, {
+        "format_version": "1.20.80",
+        "minecraft:block": {
+            "description": {
+                "identifier": `create:${type}_encased_shaft`,
+                "menu_category": { "category": "construction" },
+                "states": {
+                    "create:axis": ["y", "x", "z"]
+                }
+            },
+            "components": {
+                "minecraft:geometry": {
+                    "identifier": `geometry.create.encased_shaft`
+                },
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": `create_${type}_casing`,
+                        "render_method": "alpha_test"
+                    },
+                    "shaft": {
+                        "texture": "create_shaft"
+                    }
+                },
+                "minecraft:destructible_by_mining": { "seconds_to_destroy": 1.5 },
+                "minecraft:on_interact": { "event": "create:on_interact" },
+                "minecraft:custom_components": ["create:kinetic_block"]
+            },
+            "events": {
+                "create:on_interact": {
+                    "sequence": [
+                        {
+                            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'create:wrench') && q.is_sneaking",
+                            "set_block": { "block_type": "create:shaft" }
+                        }
+                    ]
+                }
+            },
+            "permutations": [
+                {
+                    "condition": "q.block_state('create:axis') == 'x'",
+                    "components": { "minecraft:rotation": [0, 0, 90] }
+                },
+                {
+                    "condition": "q.block_state('create:axis') == 'z'",
+                    "components": { "minecraft:rotation": [90, 0, 0] }
+                }
+            ]
+        }
+    });
+});
+
+// 8. Encased Cogwheels (Small & Large)
+const cogwheelTypes = [
+    { id: 'cogwheel', base: 'cogwheel' },
+    { id: 'large_cogwheel', base: 'large_cogwheel' }
+];
+
+encasedShaftTypes.forEach(casingType => {
+    cogwheelTypes.forEach(cogType => {
+        writeJson(`${casingType}_encased_${cogType.id}.json`, {
+            "format_version": "1.20.80",
+            "minecraft:block": {
+                "description": {
+                    "identifier": `create:${casingType}_encased_${cogType.id}`,
+                    "menu_category": { "category": "construction" },
+                    "states": {
+                        "create:axis": ["y", "x", "z"],
+                        "create:top_shaft": [false, true],
+                        "create:bottom_shaft": [false, true]
+                    }
+                },
+                "components": {
+                    "minecraft:geometry": {
+                        "identifier": `geometry.create.encased_${cogType.id}`
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": `create_${casingType}_casing`,
+                            "render_method": "alpha_test"
+                        },
+                        "cog": {
+                            "texture": `create_${cogType.base}`
+                        }
+                    },
+                    "minecraft:destructible_by_mining": { "seconds_to_destroy": 1.5 },
+                    "minecraft:on_interact": { "event": "create:on_interact" },
+                    "minecraft:custom_components": ["create:kinetic_block"]
+                },
+                "events": {
+                    "create:on_interact": {
+                        "sequence": [
+                            {
+                                "condition": "q.is_item_name_any('slot.weapon.mainhand', 'create:wrench') && q.is_sneaking",
+                                "set_block": { "block_type": `create:${cogType.base}` }
+                            }
+                        ]
+                    }
+                },
+                "permutations": [
+                    {
+                        "condition": "q.block_state('create:axis') == 'x'",
+                        "components": { "minecraft:rotation": [0, 0, 90] }
+                    },
+                    {
+                        "condition": "q.block_state('create:axis') == 'z'",
+                        "components": { "minecraft:rotation": [90, 0, 0] }
+                    }
+                ]
+            }
+        });
+    });
+});

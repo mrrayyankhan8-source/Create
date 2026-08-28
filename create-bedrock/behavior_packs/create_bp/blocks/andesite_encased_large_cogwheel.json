@@ -1,0 +1,83 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:andesite_encased_large_cogwheel",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:axis": [
+                    "y",
+                    "x",
+                    "z"
+                ],
+                "create:top_shaft": [
+                    false,
+                    true
+                ],
+                "create:bottom_shaft": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.encased_large_cogwheel"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_andesite_casing",
+                    "render_method": "alpha_test"
+                },
+                "cog": {
+                    "texture": "create_large_cogwheel"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.5
+            },
+            "minecraft:on_interact": {
+                "event": "create:on_interact"
+            },
+            "minecraft:custom_components": [
+                "create:kinetic_block"
+            ]
+        },
+        "events": {
+            "create:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'create:wrench') && q.is_sneaking",
+                        "set_block": {
+                            "block_type": "create:large_cogwheel"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('create:axis') == 'x'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_state('create:axis') == 'z'",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            }
+        ]
+    }
+}
