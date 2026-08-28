@@ -1,0 +1,59 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:steam_engine",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:facing_direction": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "create:waterlogged": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.steam_engine"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_steam_engine",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:on_placed": {
+                "event": "create:update_shaft"
+            },
+            "minecraft:on_player_destroyed": {
+                "event": "create:revert_shaft"
+            },
+            "minecraft:tick": {
+                "interval_range": [
+                    1,
+                    1
+                ],
+                "looping": true
+            },
+            "minecraft:custom_components": [
+                "create:steam_engine_block"
+            ]
+        },
+        "events": {
+            "create:update_shaft": {},
+            "create:revert_shaft": {}
+        }
+    }
+}

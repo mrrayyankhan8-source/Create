@@ -1,0 +1,141 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:powered_shaft",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:axis": [
+                    "y",
+                    "x",
+                    "z"
+                ],
+                "create:waterlogged": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.powered_shaft"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_powered_shaft",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:loot": "rtb://minecraft:shaft",
+            "minecraft:collision_box": {
+                "origin": [
+                    -4,
+                    -8,
+                    -4
+                ],
+                "size": [
+                    8,
+                    16,
+                    8
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -4,
+                    -8,
+                    -4
+                ],
+                "size": [
+                    8,
+                    16,
+                    8
+                ]
+            },
+            "minecraft:tick": {
+                "interval_range": [
+                    1,
+                    1
+                ],
+                "looping": true
+            },
+            "minecraft:custom_components": [
+                "create:generating_kinetic_block"
+            ]
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('create:axis') == 'x'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ],
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            -4,
+                            -4
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            8
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            -4,
+                            -4
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('create:axis') == 'z'",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ],
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -4,
+                            -4,
+                            -8
+                        ],
+                        "size": [
+                            8,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -4,
+                            -4,
+                            -8
+                        ],
+                        "size": [
+                            8,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "create:shaft",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "create:axis": [
+                    "y",
+                    "x",
+                    "z"
+                ],
+                "create:waterlogged": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.create.shaft"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create_shaft",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -2,
+                    -8,
+                    -2
+                ],
+                "size": [
+                    4,
+                    16,
+                    4
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -2,
+                    -8,
+                    -2
+                ],
+                "size": [
+                    4,
+                    16,
+                    4
+                ]
+            },
+            "minecraft:on_interact": {
+                "event": "create:on_interact"
+            },
+            "minecraft:tick": {
+                "interval_range": [
+                    1,
+                    1
+                ],
+                "looping": true
+            },
+            "minecraft:custom_components": [
+                "create:kinetic_block"
+            ]
+        },
+        "events": {
+            "create:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'create:metal_girder') && q.block_state('create:axis') != 'y'",
+                        "set_block": {
+                            "block_type": "create:metal_girder_encased_shaft"
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'create:andesite_casing')",
+                        "set_block": {
+                            "block_type": "create:andesite_encased_shaft"
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'create:brass_casing')",
+                        "set_block": {
+                            "block_type": "create:brass_encased_shaft"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('create:axis') == 'x'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ],
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            -2,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            4,
+                            4
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            -2,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('create:axis') == 'z'",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ],
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            -2,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            -2,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            16
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
