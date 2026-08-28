@@ -7,3 +7,4 @@ create-bedrock/data/wiki_data.json
 create-bedrock/behavior_packs/
 create-bedrock/resource_packs/
 create-bedrock/scripts/utilities/
+*.mcpack
