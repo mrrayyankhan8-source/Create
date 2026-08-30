@@ -1,0 +1,22 @@
+{
+    "analyzed_components": [
+        "KineticNetwork",
+        "KineticBlockEntity",
+        "RotationPropagator",
+        "IRotate",
+        "KineticBlock",
+        "RotatedPillarKineticBlock",
+        "ShaftBlock",
+        "CogWheelBlock"
+    ],
+    "implemented_components": [
+        "KineticNetwork (Partial Backend)",
+        "KineticBlockEntity (Base Class)",
+        "RotationPropagator (Skeleton)",
+        "RotatedPillarKineticBlockEntity",
+        "ShaftBlockEntity",
+        "CogwheelBlockEntity",
+        "KineticBlockManager",
+        "KineticRegistration"
+    ]
+}

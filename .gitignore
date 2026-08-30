@@ -45,3 +45,5 @@ local.properties
 
 .DS_Store
 /libs/
+create_addon_extracted/
+create-bedrock/node_modules/
