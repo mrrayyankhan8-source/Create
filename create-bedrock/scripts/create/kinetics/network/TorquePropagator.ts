@@ -1,4 +1,3 @@
-import { Dimension } from "@minecraft/server";
 import { KineticBlockEntity } from "../block/KineticBlockEntity.js";
 import { KineticNetwork } from "./KineticNetwork.js";
 
@@ -20,22 +19,21 @@ export class TorquePropagator {
         }
 
         if (id === null || id === undefined) {
-            // Generating new network if we don't have one and we are called (usually via attachKinetics)
             id = this.nextNetworkId++;
             be.networkId = id;
         }
 
         let network = map.get(id);
         if (!network) {
-            network = new KineticNetwork(id);
+            network = new KineticNetwork(id, dimensionId);
             map.set(id, network);
         }
 
         return network;
     }
 
-    public static removeNetwork(dimension: Dimension, id: number): void {
-        const map = this.networks.get(dimension.id);
+    public static removeNetwork(dimensionId: string, id: number): void {
+        const map = this.networks.get(dimensionId);
         if (map) {
             map.delete(id);
         }

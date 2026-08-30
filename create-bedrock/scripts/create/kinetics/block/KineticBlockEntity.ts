@@ -1,14 +1,16 @@
 import { Block, Dimension, Vector3 } from "@minecraft/server";
+import { TorquePropagator } from "../network/TorquePropagator.js";
+import { BlockStressValues } from "../../api/stress/BlockStressValues.js";
 
-// Remove Circular Dependencies
-// import { KineticNetwork } from "../network/KineticNetwork.js";
-// import { RotationPropagator } from "../propagation/RotationPropagator.js";
-// import { TorquePropagator } from "../network/TorquePropagator.js";
+let rotationPropagatorClass: any = null;
+function getRotationPropagator() {
+    if (!rotationPropagatorClass) {
+        rotationPropagatorClass = require("../propagation/RotationPropagator.js").RotationPropagator;
+    }
+    return rotationPropagatorClass;
+}
 
-/**
- * Port of com.simibubi.create.content.kinetics.base.KineticBlockEntity
- */
-export abstract class KineticBlockEntity {
+export class KineticBlockEntity {
     public block: Block;
     public network: any | null = null;
     public networkId: number | null = null;
@@ -31,31 +33,31 @@ export abstract class KineticBlockEntity {
         this.block = block;
     }
 
-    public abstract isSource(): boolean;
-
-    public getGeneratedSpeed(): number {
-        return 0;
-    }
-
-    public getTheoreticalSpeed(): number {
-        return this.speed;
-    }
+    public isSource(): boolean { return false; }
+    public getGeneratedSpeed(): number { return 0; }
+    public getTheoreticalSpeed(): number { return this.speed; }
 
     public getSpeed(): number {
         if (this.overStressed) return 0;
         return this.getTheoreticalSpeed();
     }
 
+    protected getStressConfigKey(): string { return this.block.typeId; }
+
     public calculateAddedStressCapacity(): number {
-        const capacity = this.capacity;
+        const capacity = BlockStressValues.getCapacity(this.getStressConfigKey());
         this.lastCapacityProvided = capacity;
         return capacity;
     }
 
     public calculateStressApplied(): number {
-        const stress = this.stress;
+        const stress = BlockStressValues.getImpact(this.getStressConfigKey());
         this.lastStressApplied = stress;
         return stress;
+    }
+
+    public isOverStressed(): boolean {
+        return this.overStressed;
     }
 
     public updateOverStressed(overStressed: boolean): boolean {
@@ -68,10 +70,8 @@ export abstract class KineticBlockEntity {
         this.updateSpeedRequested = true;
     }
 
-    // Defer implementation that requires propagators to avoid circular dependency
     public getOrCreateNetwork(): any {
-        // Must be implemented/overridden by network helper function where needed
-        throw new Error("Must use TorquePropagator");
+        return TorquePropagator.getOrCreateNetworkFor(this);
     }
 
     public hasNetwork(): boolean {
@@ -86,16 +86,16 @@ export abstract class KineticBlockEntity {
 
     public attachKinetics(): void {
         this.updateSpeedRequested = false;
-        // Delegate to RotationPropagator externally
+        getRotationPropagator().handleAdded(this);
     }
 
     public detachKinetics(): void {
-        // Delegate to RotationPropagator externally
+        getRotationPropagator().handleRemoved(this);
     }
 
     public remove(): void {
-        if (this.hasNetwork() && this.network) {
-            this.network.remove(this);
+        if (this.hasNetwork()) {
+            this.getOrCreateNetwork().remove(this);
         }
         this.detachKinetics();
     }
@@ -117,8 +117,8 @@ export abstract class KineticBlockEntity {
     public removeSource(): void {
         this.setSpeed(0);
         this.setSource(null);
-        if (this.hasNetwork() && this.network) {
-            this.network.remove(this);
+        if (this.hasNetwork()) {
+            this.getOrCreateNetwork().remove(this);
         }
     }
 
@@ -141,4 +141,14 @@ export abstract class KineticBlockEntity {
     }
 
     protected syncSpeedToEntity(): void {}
+
+    // --- Render / Visual Bridge ---
+
+    public needsVisualEntity(): boolean {
+        return false;
+    }
+
+    public getVisualEntityId(): string | undefined {
+        return undefined;
+    }
 }

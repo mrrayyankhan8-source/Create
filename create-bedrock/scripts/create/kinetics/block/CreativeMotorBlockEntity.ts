@@ -1,4 +1,4 @@
-import { Block, Vector3 } from "@minecraft/server";
+import { Block } from "@minecraft/server";
 import { GeneratingKineticBlockEntity } from "./GeneratingKineticBlockEntity.js";
 
 /**
@@ -12,15 +12,9 @@ export class CreativeMotorBlockEntity extends GeneratingKineticBlockEntity {
 
     constructor(block: Block) {
         super(block);
-        this.capacity = 16384; // Value from Create Java default stress config for creative motor
     }
 
     public override getGeneratedSpeed(): number {
-        // Normally this would read from the ScrollValueBehaviour
         return this.generatedSpeed;
-    }
-
-    public override calculateAddedStressCapacity(): number {
-        return this.capacity; // Creative motor provides large capacity
     }
 }

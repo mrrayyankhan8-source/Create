@@ -1,0 +1,40 @@
+{
+  "analyzed": [
+    "com.simibubi.create.content.kinetics.base.KineticBlockEntity",
+    "com.simibubi.create.content.kinetics.RotationPropagator",
+    "com.simibubi.create.content.kinetics.TorquePropagator",
+    "com.simibubi.create.content.kinetics.KineticNetwork",
+    "com.simibubi.create.content.kinetics.BlockStressValues",
+    "com.simibubi.create.content.kinetics.base.DirectionalShaftHalvesBlockEntity",
+    "com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity",
+    "com.simibubi.create.content.kinetics.transmission.GearshiftBlockEntity",
+    "com.simibubi.create.content.kinetics.transmission.ClutchBlockEntity",
+    "com.simibubi.create.content.equipment.wrench.IWrenchable",
+    "com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation",
+    "com.simibubi.create.content.kinetics.base.KineticEffectHandler"
+  ],
+  "implemented": {
+    "KineticBlockEntity": "scripts/create/kinetics/block/KineticBlockEntity.ts",
+    "RotationPropagator": "scripts/create/kinetics/propagation/RotationPropagator.ts",
+    "TorquePropagator": "scripts/create/kinetics/network/TorquePropagator.ts",
+    "KineticNetwork": "scripts/create/kinetics/network/KineticNetwork.ts",
+    "BlockStressValues": "scripts/create/api/stress/BlockStressValues.ts",
+    "CreativeMotor": "scripts/create/kinetics/block/CreativeMotorBlockEntity.ts",
+    "Shaft": "scripts/create/kinetics/block/ShaftBlockEntity.ts",
+    "Cogwheel": "scripts/create/kinetics/block/CogwheelBlockEntity.ts",
+    "Gearbox": "scripts/create/kinetics/block/GearboxBlockEntity.ts",
+    "Gearshift": "scripts/create/kinetics/block/GearshiftBlockEntity.ts",
+    "Clutch": "scripts/create/kinetics/block/ClutchBlockEntity.ts",
+    "WrenchItem": "scripts/create/items/WrenchItem.ts",
+    "GogglesItem": "scripts/create/items/GogglesItem.ts",
+    "KineticRenderer": "scripts/create/kinetics/render/KineticRenderer.ts",
+    "KineticEffectHandler": "scripts/create/kinetics/render/KineticEffectHandler.ts"
+  },
+  "remaining": [
+    "Encased Shafts",
+    "Mechanical Belts",
+    "Contraption Entities",
+    "Fluid Networks",
+    "Trains"
+  ]
+}

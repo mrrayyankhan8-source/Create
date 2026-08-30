@@ -10,12 +10,12 @@ import { KineticBlockManager } from "../block/KineticBlockManager.js";
 export class RotationPropagator {
 
     private static getDirection(diff: Vector3): string | null {
-        if (diff.x > 0) return "east";
-        if (diff.x < 0) return "west";
-        if (diff.y > 0) return "up";
-        if (diff.y < 0) return "down";
-        if (diff.z > 0) return "south";
-        if (diff.z < 0) return "north";
+        if (diff.x > 0 && diff.y === 0 && diff.z === 0) return "east";
+        if (diff.x < 0 && diff.y === 0 && diff.z === 0) return "west";
+        if (diff.x === 0 && diff.y > 0 && diff.z === 0) return "up";
+        if (diff.x === 0 && diff.y < 0 && diff.z === 0) return "down";
+        if (diff.x === 0 && diff.y === 0 && diff.z > 0) return "south";
+        if (diff.x === 0 && diff.y === 0 && diff.z < 0) return "north";
         return null;
     }
 
@@ -39,12 +39,17 @@ export class RotationPropagator {
     }
 
     private static getAxisModifier(entity: KineticBlockEntity, direction: string): number {
+        if (entity.block && entity.block.typeId && entity.block.typeId.includes("gearbox")) {
+            return direction === "up" || direction === "down" ? -1 : 1;
+        }
+        if (typeof (entity as any).getRotationSpeedModifier === 'function') {
+            return (entity as any).getRotationSpeedModifier(direction);
+        }
         return 1.0;
     }
 
     private static isLargeToLargeGear(from: CogwheelBlockEntity, to: CogwheelBlockEntity, diff: Vector3): boolean {
         if (!from.isLarge || !to.isLarge) return false;
-
         if (diff.x === 0 && diff.y === 0 && diff.z === 0) return false;
 
         const axisFrom = from.getAxis();
@@ -67,6 +72,33 @@ export class RotationPropagator {
         };
 
         const direction = this.getDirection(diff);
+
+        let isFromSmallCog = false;
+        let isToSmallCog = false;
+        let isFromLargeCog = false;
+        let isToLargeCog = false;
+
+        if (from instanceof CogwheelBlockEntity || (from.block && from.block.typeId && from.block.typeId.includes("cogwheel"))) {
+            isFromSmallCog = !(from as any).isLarge;
+            isFromLargeCog = (from as any).isLarge;
+        }
+
+        if (to instanceof CogwheelBlockEntity || (to.block && to.block.typeId && to.block.typeId.includes("cogwheel"))) {
+            isToSmallCog = !(to as any).isLarge;
+            isToLargeCog = (to as any).isLarge;
+        }
+
+        if (isFromLargeCog && isToLargeCog) {
+            if (this.isLargeToLargeGear(from as CogwheelBlockEntity, to as CogwheelBlockEntity, diff)) {
+                 const sourceAxis = (from as CogwheelBlockEntity).getAxis();
+                 const targetAxis = (to as CogwheelBlockEntity).getAxis();
+                 const sourceAxisDiff = (diff as any)[sourceAxis];
+                 const targetAxisDiff = (diff as any)[targetAxis];
+
+                 return ((sourceAxisDiff > 0) !== (targetAxisDiff > 0)) ? -1 : 1;
+            }
+        }
+
         if (!direction) return 0;
 
         let alignedAxes = true;
@@ -82,26 +114,11 @@ export class RotationPropagator {
 
         let connectedByAxis = false;
         if (alignedAxes) {
-             if (from instanceof RotatedPillarKineticBlockEntity && to instanceof RotatedPillarKineticBlockEntity) {
-                 if (from.getAxis() === dirAxis && to.getAxis() === dirAxis) {
+             if (typeof (from as any).getAxis === 'function' && typeof (to as any).getAxis === 'function') {
+                 if ((from as any).getAxis() === dirAxis && (to as any).getAxis() === dirAxis) {
                      connectedByAxis = true;
                  }
              }
-        }
-
-        let isFromSmallCog = false;
-        let isToSmallCog = false;
-        let isFromLargeCog = false;
-        let isToLargeCog = false;
-
-        if (from instanceof CogwheelBlockEntity) {
-            isFromSmallCog = !from.isLarge;
-            isFromLargeCog = from.isLarge;
-        }
-
-        if (to instanceof CogwheelBlockEntity) {
-            isToSmallCog = !to.isLarge;
-            isToLargeCog = to.isLarge;
         }
 
         const connectedByGears = isFromSmallCog && isToSmallCog;
@@ -110,17 +127,6 @@ export class RotationPropagator {
             let axisModifier = this.getAxisModifier(to, this.getOppositeDirection(direction));
             if (axisModifier !== 0) axisModifier = 1 / axisModifier;
             return this.getAxisModifier(from, direction) * axisModifier;
-        }
-
-        if (isFromLargeCog && isToLargeCog) {
-            if (this.isLargeToLargeGear(from as CogwheelBlockEntity, to as CogwheelBlockEntity, diff)) {
-                 const sourceAxis = (from as CogwheelBlockEntity).getAxis();
-                 const targetAxis = (to as CogwheelBlockEntity).getAxis();
-                 const sourceAxisDiff = (diff as any)[sourceAxis];
-                 const targetAxisDiff = (diff as any)[targetAxis];
-
-                 return ((sourceAxisDiff > 0) !== (targetAxisDiff > 0)) ? -1 : 1;
-            }
         }
 
         if (isFromLargeCog && isToSmallCog) {
@@ -170,77 +176,158 @@ export class RotationPropagator {
     }
 
     public static handleRemoved(removedTE: KineticBlockEntity): void {
+        if (!removedTE) return;
+
         const pos = removedTE.block.location;
         const dimension = removedTE.block.dimension;
-        // Logic from original Java: finding dependencies, setting speed 0, then seeking new sources
 
-        for (const neighbour of this.getConnectedNeighbours(removedTE)) {
-            if (neighbour.hasSource() &&
-                neighbour.source?.x === pos.x &&
-                neighbour.source?.y === pos.y &&
-                neighbour.source?.z === pos.z) {
-                neighbour.removeSource();
-                this.handleRemoved(neighbour);
+        const neighbours = this.getPotentialNeighbourLocations(removedTE);
+        for (const loc of neighbours) {
+            const neighbourBE = KineticBlockManager.get(dimension, loc);
+            if (!neighbourBE) continue;
+
+            if (!neighbourBE.hasSource() ||
+                neighbourBE.source?.x !== pos.x ||
+                neighbourBE.source?.y !== pos.y ||
+                neighbourBE.source?.z !== pos.z) {
+                continue;
             }
-        }
 
-        // After clearing dependents, attempt to reconnect them to other potential sources
-        this.propagateMissingSource(removedTE);
+            this.propagateMissingSource(neighbourBE, pos);
+        }
     }
 
-    private static propagateMissingSource(removedTE: KineticBlockEntity): void {
-        const potentialNewSources: Set<KineticBlockEntity> = new Set();
+    private static propagateMissingSource(updateTE: KineticBlockEntity, removedPos?: Vector3): void {
+        const dimension = updateTE.block.dimension;
+        const potentialNewSources: KineticBlockEntity[] = [];
+        const frontier: Vector3[] = [];
+        frontier.push(updateTE.block.location);
 
-        for (const neighbour of this.getConnectedNeighbours(removedTE)) {
-            if (neighbour.hasSource() || neighbour.isSource()) {
-                potentialNewSources.add(neighbour);
+        const missingSource = updateTE.hasSource() ? updateTE.source : null;
+
+        const removedSet: Set<KineticBlockEntity> = new Set();
+
+        while (frontier.length > 0) {
+            const pos = frontier.shift()!;
+            const currentBE = KineticBlockManager.get(dimension, pos);
+            if (!currentBE || removedSet.has(currentBE)) continue;
+
+            removedSet.add(currentBE);
+
+            // We must traverse neighbors BEFORE we clear the source, so we can check if they point at us
+            for (const neighbourBE of this.getConnectedNeighbours(currentBE)) {
+
+                // If it's part of the same disconnected sub-tree...
+                const pointsAtUs = neighbourBE.source?.x === pos.x && neighbourBE.source?.y === pos.y && neighbourBE.source?.z === pos.z;
+                const pointsAtRemoved = removedPos && neighbourBE.source?.x === removedPos.x && neighbourBE.source?.y === removedPos.y && neighbourBE.source?.z === removedPos.z;
+                const sharedSource = missingSource && neighbourBE.source?.x === missingSource.x && neighbourBE.source?.y === missingSource.y && neighbourBE.source?.z === missingSource.z;
+
+                // Potential rescue
+                if (!neighbourBE.hasSource()) {
+                    if (neighbourBE.isSource()) {
+                        potentialNewSources.push(neighbourBE);
+                    }
+                    continue;
+                }
+
+                if (pointsAtUs || pointsAtRemoved || sharedSource) {
+                    frontier.push(neighbourBE.block.location);
+                    continue;
+                }
+
+                const notPointingAtUs = neighbourBE.source?.x !== pos.x || neighbourBE.source?.y !== pos.y || neighbourBE.source?.z !== pos.z;
+
+                if (notPointingAtUs) {
+                    potentialNewSources.push(neighbourBE);
+                    continue;
+                }
+
+                if (neighbourBE.isSource()) {
+                    potentialNewSources.push(neighbourBE);
+                }
             }
+
+            currentBE.removeSource(); // This automatically handles network removal in our TS port
         }
 
         for (const newSource of potentialNewSources) {
-            this.propagateNewSource(newSource);
+            if (newSource.hasSource() || newSource.isSource()) {
+                this.propagateNewSource(newSource);
+                return;
+            }
         }
     }
 
     private static propagateNewSource(currentTE: KineticBlockEntity): void {
-        for (const neighbourTE of this.getConnectedNeighbours(currentTE)) {
-            const speedOfCurrent = currentTE.getTheoreticalSpeed();
-            const speedOfNeighbour = neighbourTE.getTheoreticalSpeed();
-            const newSpeed = this.getConveyedSpeed(currentTE, neighbourTE);
-            const oppositeSpeed = this.getConveyedSpeed(neighbourTE, currentTE);
+        if (currentTE.isSource() && currentTE.getTheoreticalSpeed() === 0) {
+             currentTE.setSpeed(currentTE.getGeneratedSpeed());
+             currentTE.setSource(currentTE.block.location);
+        }
 
-            if (newSpeed === 0 && oppositeSpeed === 0) continue;
+        if (currentTE.isSource() && currentTE.source === null) {
+            currentTE.setSource(currentTE.block.location);
+        }
 
-            const incompatible = Math.sign(newSpeed) !== Math.sign(speedOfNeighbour) && (newSpeed !== 0 && speedOfNeighbour !== 0);
+        const currentNetwork = currentTE.getOrCreateNetwork();
+        currentNetwork.add(currentTE);
 
-            // Simplifying fast-fail limits for initial Bedrock port (e.g. over 256 rpm)
-            const MAX_RPM = 256;
-            const tooFast = Math.abs(newSpeed) > MAX_RPM || Math.abs(oppositeSpeed) > MAX_RPM;
+        const visited: Set<KineticBlockEntity> = new Set();
+        visited.add(currentTE);
 
-            if (tooFast) {
-                // In a real port, break block here
-                continue;
-            }
+        const queue: KineticBlockEntity[] = [currentTE];
 
-            if (incompatible) {
-                // Break block here
-                continue;
-            }
+        while (queue.length > 0) {
+            const node = queue.shift()!;
 
-            if (Math.abs(oppositeSpeed) > Math.abs(speedOfCurrent)) {
-                // Neighbour is faster, overpower us
-                currentTE.setSource(neighbourTE.block.location);
-                currentTE.setSpeed(this.getConveyedSpeed(neighbourTE, currentTE));
-                this.propagateNewSource(currentTE);
-                return;
-            }
+            for (const neighbourTE of this.getConnectedNeighbours(node)) {
+                if (visited.has(neighbourTE)) continue;
 
-            if (Math.abs(newSpeed) >= Math.abs(speedOfNeighbour)) {
-                // We are faster, overpower neighbour
-                if (speedOfNeighbour !== newSpeed || !neighbourTE.hasSource()) {
-                    neighbourTE.setSource(currentTE.block.location);
-                    neighbourTE.setSpeed(newSpeed);
-                    this.propagateNewSource(neighbourTE);
+                const speedOfCurrent = node.getTheoreticalSpeed();
+                const speedOfNeighbour = neighbourTE.getTheoreticalSpeed();
+                const newSpeed = this.getConveyedSpeed(node, neighbourTE);
+                const oppositeSpeed = this.getConveyedSpeed(neighbourTE, node);
+
+                if (newSpeed === 0 && oppositeSpeed === 0) continue;
+
+                const incompatible = Math.sign(newSpeed) !== Math.sign(speedOfNeighbour) && (newSpeed !== 0 && speedOfNeighbour !== 0);
+
+                const MAX_RPM = 256;
+                const tooFast = Math.abs(newSpeed) > MAX_RPM || Math.abs(oppositeSpeed) > MAX_RPM;
+
+                if (tooFast || incompatible) {
+                    continue;
+                }
+
+                if (Math.abs(oppositeSpeed) > Math.abs(speedOfCurrent)) {
+                    neighbourTE.getOrCreateNetwork().remove(neighbourTE);
+
+                    node.setSource(neighbourTE.block.location);
+                    node.setSpeed(this.getConveyedSpeed(neighbourTE, node));
+
+                    const neighbourNetwork = neighbourTE.getOrCreateNetwork();
+                    neighbourNetwork.add(node);
+                    node.networkId = neighbourTE.networkId;
+
+                    visited.add(neighbourTE);
+                    queue.push(neighbourTE);
+                } else {
+                    if (Math.abs(newSpeed) >= Math.abs(speedOfNeighbour)) {
+                        const differentSource = neighbourTE.source?.x !== node.block.location.x || neighbourTE.source?.y !== node.block.location.y || neighbourTE.source?.z !== node.block.location.z;
+                        if (speedOfNeighbour !== newSpeed || !neighbourTE.hasSource() || differentSource) {
+
+                            neighbourTE.getOrCreateNetwork().remove(neighbourTE);
+
+                            neighbourTE.setSource(node.block.location);
+                            neighbourTE.setSpeed(newSpeed);
+
+                            const network = node.getOrCreateNetwork();
+                            network.add(neighbourTE);
+                            neighbourTE.networkId = node.networkId;
+
+                            visited.add(neighbourTE);
+                            queue.push(neighbourTE); // Propagate to next layer
+                        }
+                    }
                 }
             }
         }
@@ -250,7 +337,6 @@ export class RotationPropagator {
         const pos = be.block.location;
         const locations: Vector3[] = [];
 
-        // Orthogonal
         locations.push({ x: pos.x + 1, y: pos.y, z: pos.z });
         locations.push({ x: pos.x - 1, y: pos.y, z: pos.z });
         locations.push({ x: pos.x, y: pos.y + 1, z: pos.z });
@@ -258,7 +344,6 @@ export class RotationPropagator {
         locations.push({ x: pos.x, y: pos.y, z: pos.z + 1 });
         locations.push({ x: pos.x, y: pos.y, z: pos.z - 1 });
 
-        // Diagonal checks for large cogs
         if (be instanceof CogwheelBlockEntity && be.isLarge) {
             const axis = be.getAxis();
             if (axis === 'x') {
@@ -290,7 +375,9 @@ export class RotationPropagator {
         for (const loc of locations) {
             const neighbourBE = KineticBlockManager.get(dimension, loc);
             if (neighbourBE) {
-                // Determine if a connection actually exists
+                if (be.block.location.x === loc.x && be.block.location.y === loc.y && be.block.location.z === loc.z) {
+                    continue;
+                }
                 if (this.getRotationSpeedModifier(be, neighbourBE) !== 0) {
                      neighbours.push(neighbourBE);
                 }

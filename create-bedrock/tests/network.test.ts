@@ -1,6 +1,5 @@
 import { KineticNetwork } from "../scripts/create/kinetics/network/KineticNetwork.js";
 
-// Minimal mock to avoid cyclic dependency issues in Jest with the real RotationPropagator
 class MockBlockEntity {
     public _isSource = false;
     public _generatedSpeed = 0;
@@ -23,13 +22,14 @@ class MockBlockEntity {
     }
 
     public updateSpeed(): void {}
+    public updateFromNetwork(): void {}
 }
 
 describe("KineticNetwork", () => {
     let network: KineticNetwork;
 
     beforeEach(() => {
-        network = new KineticNetwork(1);
+        network = new KineticNetwork(1, "overworld");
         network.initialized = true;
     });
 
@@ -41,7 +41,7 @@ describe("KineticNetwork", () => {
 
         network.add(source as any);
 
-        expect((network as any).currentCapacity).toBe(32000); // 1000 * 32
+        expect((network as any).currentCapacity).toBe(32000);
     });
 
     it("should correctly update stress from a member", () => {
@@ -51,20 +51,20 @@ describe("KineticNetwork", () => {
         member._theoreticalSpeed = 32;
 
         network.add(member as any);
-        expect((network as any).currentStress).toBe(16000); // 500 * 32
+        expect((network as any).currentStress).toBe(16000);
     });
 
     it("should identify overstressed networks", () => {
         const source = new MockBlockEntity();
         source._isSource = true;
         source._capacity = 100;
-        source._generatedSpeed = 10; // capacity = 1000
+        source._generatedSpeed = 10;
         network.add(source as any);
 
         const member = new MockBlockEntity();
         member._isSource = false;
         member._stress = 200;
-        member._theoreticalSpeed = 10; // stress = 2000
+        member._theoreticalSpeed = 10;
         network.add(member as any);
 
         expect(member.overStressed).toBe(true);

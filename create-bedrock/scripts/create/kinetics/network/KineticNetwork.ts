@@ -1,11 +1,12 @@
-import { Block, BlockPermutation, Dimension, Vector3 } from "@minecraft/server";
 import { KineticBlockEntity } from "../block/KineticBlockEntity.js";
+import { TorquePropagator } from "./TorquePropagator.js";
 
 /**
  * Port of com.simibubi.create.content.kinetics.KineticNetwork
  */
 export class KineticNetwork {
     public id: number;
+    public dimensionId: string;
     public initialized: boolean = false;
     public sources: Map<KineticBlockEntity, number> = new Map();
     public members: Map<KineticBlockEntity, number> = new Map();
@@ -13,8 +14,9 @@ export class KineticNetwork {
     private currentCapacity: number = 0;
     private currentStress: number = 0;
 
-    constructor(id: number) {
+    constructor(id: number, dimensionId: string) {
         this.id = id;
+        this.dimensionId = dimensionId;
     }
 
     public initFromTE(maxStress: number, currentStress: number): void {
@@ -57,8 +59,10 @@ export class KineticNetwork {
         }
         this.members.delete(be);
 
+        be.updateFromNetwork(0, 0, 0);
+
         if (this.members.size === 0) {
-            // TorquePropagator handles full removal
+            TorquePropagator.removeNetwork(this.dimensionId, this.id);
         } else {
             this.updateCapacity();
             this.updateStress();
@@ -87,10 +91,11 @@ export class KineticNetwork {
             if (member.updateOverStressed(overStressed)) {
                 member.updateSpeed();
             }
+            member.updateFromNetwork(this.currentCapacity, this.currentStress, this.members.size);
         }
     }
 
     private getStressMultiplierForSpeed(speed: number): number {
-        return Math.abs(speed); // simplified logic from Create source
+        return Math.abs(speed);
     }
 }
