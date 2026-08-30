@@ -1,4 +1,4 @@
-import { world } from "@minecraft/server";
+import { world, system } from "@minecraft/server";
 import { WrenchItem } from "../items/WrenchItem.js";
 import { GogglesItem } from "../items/GogglesItem.js";
 
@@ -15,7 +15,7 @@ export class ItemUseRegistry {
         });
 
         // Tick loop for Goggles Overlay
-        world.afterEvents.tick.subscribe(() => {
+        system.runInterval(() => {
             const players = world.getAllPlayers();
             for (const player of players) {
                 GogglesItem.tickOverlay(player);

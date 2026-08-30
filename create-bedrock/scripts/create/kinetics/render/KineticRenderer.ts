@@ -21,18 +21,31 @@ export class KineticRenderer {
     public static spawnVisual(be: KineticBlockEntity, entityTypeId: string): Entity | undefined {
         const key = this.getPosKey(be.block.dimension, be.block.location);
 
-        // Ensure we don't spawn duplicate visuals
+        // 1. Check in-memory map
         if (this.visualEntities.has(key)) {
-            return this.visualEntities.get(key);
+            const ent = this.visualEntities.get(key);
+            if (ent && ent.isValid()) return ent;
         }
 
         try {
-            // Spawn at block center
+            // 2. Scan the world (survive world reloads where in-memory map is wiped)
+            // Entities are located exactly at block location + 0.5
             const spawnLoc = {
                 x: be.block.location.x + 0.5,
                 y: be.block.location.y,
                 z: be.block.location.z + 0.5
             };
+
+            // Note: getEntitiesAtBlockLocation uses integer block coords, so we use be.block.location
+            const existingEntities = be.block.dimension.getEntitiesAtBlockLocation(be.block.location);
+            for (const ent of existingEntities) {
+                if (ent.typeId === entityTypeId && ent.hasTag("create:visual")) {
+                    this.visualEntities.set(key, ent);
+                    return ent;
+                }
+            }
+
+            // 3. If missing, spawn new
             const entity = be.block.dimension.spawnEntity(entityTypeId, spawnLoc);
 
             // Add a tag so we can clean them up later if the script reloads

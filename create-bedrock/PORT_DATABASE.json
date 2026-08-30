@@ -11,7 +11,11 @@
     "com.simibubi.create.content.kinetics.transmission.ClutchBlockEntity",
     "com.simibubi.create.content.equipment.wrench.IWrenchable",
     "com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation",
-    "com.simibubi.create.content.kinetics.base.KineticEffectHandler"
+    "com.simibubi.create.content.kinetics.base.KineticEffectHandler",
+    "com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedShaftBlock",
+    "com.simibubi.create.content.kinetics.belt.BeltBlock",
+    "com.simibubi.create.content.kinetics.belt.BeltBlockEntity",
+    "com.simibubi.create.content.kinetics.belt.transport.BeltInventory"
   ],
   "implemented": {
     "KineticBlockEntity": "scripts/create/kinetics/block/KineticBlockEntity.ts",
@@ -28,13 +32,16 @@
     "WrenchItem": "scripts/create/items/WrenchItem.ts",
     "GogglesItem": "scripts/create/items/GogglesItem.ts",
     "KineticRenderer": "scripts/create/kinetics/render/KineticRenderer.ts",
-    "KineticEffectHandler": "scripts/create/kinetics/render/KineticEffectHandler.ts"
+    "KineticEffectHandler": "scripts/create/kinetics/render/KineticEffectHandler.ts",
+    "EncasedShaft": "scripts/create/kinetics/block/EncasedShaftBlockEntity.ts",
+    "BeltBlockEntity": "scripts/create/kinetics/belt/BeltBlockEntity.ts",
+    "BeltInventory": "scripts/create/kinetics/belt/transport/BeltInventory.ts",
+    "TransportedItemStack": "scripts/create/kinetics/belt/transport/TransportedItemStack.ts"
   },
   "remaining": [
-    "Encased Shafts",
-    "Mechanical Belts",
     "Contraption Entities",
     "Fluid Networks",
-    "Trains"
+    "Trains",
+    "Processing Machines (Crushers, Mixers, etc)"
   ]
 }
