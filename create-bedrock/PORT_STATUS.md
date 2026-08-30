@@ -10,6 +10,8 @@
   - Creative Motor
   - Gearshift, Clutch, Gearbox
   - BeltBlockEntity & BeltInventory
+  - CrushingWheelBlockEntity
+  - MechanicalMixerBlockEntity
 - **Transport / Logistics:**
   - Mechanical Belts: Linear item movement simulation based on kinetic speed
   - `TransportedItemStack` state tracking
@@ -22,11 +24,11 @@
 
 ## Next Tasks
 - **Contraptions (Moving Structures):** Analyze and stub the architecture for turning block sub-networks into dynamic movable entities.
-- **Processing Machines:** Add core logic for Crushing Wheels, Millstones, and Mixers utilizing the `BeltInventory` hooks.
 - **Fluid Networks:** Begin porting the fluid pipe graph architecture.
+- **Trains:** Stub out track and bogey interactions.
 
 ## Known Limitations (Bedrock Specific)
 - **Visual Instancing:** We are using invisible dummy entities (`create:shaft_visual`) driven by Molang `query.property('create:speed')`. This works perfectly for smooth, data-driven animations, but spawns an entity per kinetic block. We must monitor engine limits on low-end devices.
 
 ## Known Bugs
-- None currently. All 21 core Jest tests passing.
+- None currently. All 23 core Jest tests passing.

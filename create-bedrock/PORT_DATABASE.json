@@ -15,7 +15,11 @@
     "com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedShaftBlock",
     "com.simibubi.create.content.kinetics.belt.BeltBlock",
     "com.simibubi.create.content.kinetics.belt.BeltBlockEntity",
-    "com.simibubi.create.content.kinetics.belt.transport.BeltInventory"
+    "com.simibubi.create.content.kinetics.belt.transport.BeltInventory",
+    "com.simibubi.create.content.kinetics.crusher.CrushingWheelBlock",
+    "com.simibubi.create.content.kinetics.millstone.MillstoneBlockEntity",
+    "com.simibubi.create.content.kinetics.mixer.MechanicalMixerBlockEntity",
+    "com.simibubi.create.content.processing.basin.BasinBlockEntity"
   ],
   "implemented": {
     "KineticBlockEntity": "scripts/create/kinetics/block/KineticBlockEntity.ts",
@@ -36,12 +40,15 @@
     "EncasedShaft": "scripts/create/kinetics/block/EncasedShaftBlockEntity.ts",
     "BeltBlockEntity": "scripts/create/kinetics/belt/BeltBlockEntity.ts",
     "BeltInventory": "scripts/create/kinetics/belt/transport/BeltInventory.ts",
-    "TransportedItemStack": "scripts/create/kinetics/belt/transport/TransportedItemStack.ts"
+    "TransportedItemStack": "scripts/create/kinetics/belt/transport/TransportedItemStack.ts",
+    "CrushingWheel": "scripts/create/kinetics/block/CrushingWheelBlockEntity.ts",
+    "Millstone": "scripts/create/kinetics/block/MillstoneBlockEntity.ts",
+    "MechanicalMixer": "scripts/create/kinetics/block/MechanicalMixerBlockEntity.ts",
+    "Basin": "scripts/create/kinetics/block/BasinBlockEntity.ts"
   },
   "remaining": [
     "Contraption Entities",
     "Fluid Networks",
-    "Trains",
-    "Processing Machines (Crushers, Mixers, etc)"
+    "Trains"
   ]
 }
