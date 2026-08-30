@@ -1,0 +1,5 @@
+{
+  "components": {
+    "KineticNetwork": { "status": "WIP", "notes": "Porting basic logic" }
+  }
+}

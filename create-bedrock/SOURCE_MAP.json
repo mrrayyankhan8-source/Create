@@ -1,0 +1,11 @@
+{
+  "analyzed": [
+    "src/main/java/com/simibubi/create/content/kinetics/base/KineticBlock.java",
+    "src/main/java/com/simibubi/create/content/kinetics/base/KineticBlockEntity.java",
+    "src/main/java/com/simibubi/create/content/kinetics/KineticNetwork.java"
+  ],
+  "implemented": [
+    "create-bedrock/src/kinetics/KineticNetwork.ts",
+    "create-bedrock/src/kinetics/KineticBlockManager.ts"
+  ]
+}
