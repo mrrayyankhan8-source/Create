@@ -45,3 +45,6 @@ local.properties
 
 .DS_Store
 /libs/
+tmp_addon/
+create-bedrock/node_modules/
+node_modules/
