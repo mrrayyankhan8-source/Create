@@ -9,8 +9,9 @@
     "generate": "node scripts/utilities/generate_bedrock_json.js"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.0",
+    "@types/jest": "^29.5.14",
     "jest": "^29.5.0",
+    "ts-jest": "^29.4.12",
     "typescript": "^5.9.3"
   },
   "dependencies": {

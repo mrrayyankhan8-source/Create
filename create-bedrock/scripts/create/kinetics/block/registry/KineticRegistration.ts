@@ -2,6 +2,7 @@ import { world } from "@minecraft/server";
 import { KineticBlockManager } from "../KineticBlockManager.js";
 import { ShaftBlockEntity } from "../ShaftBlockEntity.js";
 import { CogwheelBlockEntity } from "../CogwheelBlockEntity.js";
+import { CreativeMotorBlockEntity } from "../CreativeMotorBlockEntity.js";
 
 /**
  * Handles registering Bedrock blocks into the kinetic backend when placed/loaded.
@@ -23,6 +24,10 @@ export function initializeKineticsEvents() {
             const entity = new CogwheelBlockEntity(block, true);
             KineticBlockManager.register(dimension, block.location, entity);
             entity.attachKinetics();
+        } else if (typeId === "create:creative_motor") {
+            const entity = new CreativeMotorBlockEntity(block);
+            KineticBlockManager.register(dimension, block.location, entity);
+            entity.attachKinetics();
         }
     });
 
@@ -32,7 +37,6 @@ export function initializeKineticsEvents() {
 
         if (typeId.startsWith("create:")) {
             KineticBlockManager.remove(dimension, block.location);
-            // Need to notify neighbors about network break
         }
     });
 }

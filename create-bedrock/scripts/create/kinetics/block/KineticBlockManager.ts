@@ -1,5 +1,7 @@
 import { Block, Dimension, Vector3 } from "@minecraft/server";
 import { KineticBlockEntity } from "./KineticBlockEntity.js";
+import { RotationPropagator } from "../propagation/RotationPropagator.js";
+import { TorquePropagator } from "../network/TorquePropagator.js";
 
 /**
  * Global manager mapping Minecraft Bedrock blocks to their virtual KineticBlockEntity instances.
@@ -20,12 +22,25 @@ export class KineticBlockManager {
     }
 
     public static remove(dimension: Dimension, pos: Vector3): void {
+        const entity = this.get(dimension, pos);
+        if (entity) {
+            // Unwire circular dependencies here
+            RotationPropagator.handleRemoved(entity);
+            if (entity.hasNetwork()) {
+                const network = TorquePropagator.getOrCreateNetworkFor(entity);
+                network.remove(entity);
+            }
+        }
         this.blockEntities.delete(this.getPosKey(dimension, pos));
     }
 
     public static tickAll(): void {
         for (const entity of this.blockEntities.values()) {
-            entity.tick();
+            // Check if speed update is requested
+            if (entity.updateSpeedRequested && entity.preventSpeedUpdate === 0) {
+                 entity.updateSpeedRequested = false;
+                 RotationPropagator.handleAdded(entity);
+            }
         }
     }
 }

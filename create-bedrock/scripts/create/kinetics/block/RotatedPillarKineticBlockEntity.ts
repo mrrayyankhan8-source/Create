@@ -1,14 +1,10 @@
 import { Block } from "@minecraft/server";
-import { KineticBlockEntity } from "./KineticBlockEntity.js";
+import { BracketedKineticBlockEntity } from "./BracketedKineticBlockEntity.js";
 
 /**
  * Port of com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock
  */
-export class RotatedPillarKineticBlockEntity extends KineticBlockEntity {
-
-    public isSource(): boolean {
-        return false;
-    }
+export class RotatedPillarKineticBlockEntity extends BracketedKineticBlockEntity {
 
     public getAxis(): string {
         try {
@@ -17,7 +13,7 @@ export class RotatedPillarKineticBlockEntity extends KineticBlockEntity {
             if (axis === "north" || axis === "south") return "z";
             if (axis === "east" || axis === "west") return "x";
         } catch (e) {
-            // Default to Y if block doesn't have the property
+            // Default
         }
         return "y";
     }
@@ -29,7 +25,6 @@ export class RotatedPillarKineticBlockEntity extends KineticBlockEntity {
         for (const entity of entities) {
             if (entity.typeId.includes("shaft") || entity.typeId.includes("cogwheel")) {
                 entity.setProperty("create:rpm", this.speed);
-                // The visual rendering in Bedrock entities usually depends on this rpm value
             }
         }
     }

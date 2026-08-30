@@ -7,16 +7,22 @@
         "KineticBlock",
         "RotatedPillarKineticBlock",
         "ShaftBlock",
-        "CogWheelBlock"
+        "CogWheelBlock",
+        "TorquePropagator",
+        "GeneratingKineticBlockEntity",
+        "CreativeMotorBlockEntity"
     ],
     "implemented_components": [
-        "KineticNetwork (Partial Backend)",
-        "KineticBlockEntity (Base Class)",
-        "RotationPropagator (Skeleton)",
+        "KineticNetwork",
+        "KineticBlockEntity",
+        "RotationPropagator",
         "RotatedPillarKineticBlockEntity",
         "ShaftBlockEntity",
         "CogwheelBlockEntity",
         "KineticBlockManager",
-        "KineticRegistration"
+        "KineticRegistration",
+        "TorquePropagator",
+        "GeneratingKineticBlockEntity",
+        "CreativeMotorBlockEntity"
     ]
 }

@@ -2,6 +2,7 @@
 
 | Feature | Java Status | Bedrock Status | Notes |
 |---------|-------------|----------------|-------|
-| Kinetic Network | Fully Implemented | Backend Partial | TypeScript mapping system tracks capacity/stress but lacks actual prop traversal logic |
+| Kinetic Network | Fully Implemented | Backend Advanced | TypeScript mapping system tracks capacity/stress and resolves traversal logic through RotationPropagator |
 | Shaft Block | Fully Implemented | Virtual Logic | Entity registers correctly |
 | Cogwheel Block | Fully Implemented | Virtual Logic | Entity registers correctly |
+| Creative Motor | Fully Implemented | Virtual Logic | Serves as network source, provides 16384 capacity |
