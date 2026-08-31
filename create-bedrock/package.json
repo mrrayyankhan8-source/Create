@@ -1,0 +1,17 @@
+{
+  "name": "create-bedrock",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests"
+  },
+  "devDependencies": {
+    "@minecraft/server": "^1.11.0",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  }
+}

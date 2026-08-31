@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Create (Bedrock Port)",
+    "description": "Create mod ported to Bedrock",
+    "uuid": "4c45b98a-11c7-43a1-9d22-1d7d25e042b5",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 60]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "7a353634-1111-4191-8889-1065e1577777",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "uuid": "5c4a5c9a-1111-4191-8889-1065e1577777",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "2c2a5c9a-2222-4191-8889-1065e1578888",
+      "version": [1, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    }
+  ]
+}
