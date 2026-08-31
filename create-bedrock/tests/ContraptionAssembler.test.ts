@@ -1,7 +1,21 @@
 import { ContraptionAssembler } from "../scripts/create/contraptions/ContraptionAssembler.js";
 
+// Mock @minecraft/server to provide the class correctly
+jest.mock("@minecraft/server", () => ({
+    BlockPermutation: {
+        resolve: jest.fn().mockReturnValue({
+            withState: jest.fn().mockReturnThis()
+        })
+    }
+}), { virtual: true });
+
 class MockBlock {
     constructor(public typeId: string) {}
+    get permutation() {
+        return {
+            getAllStates: () => ({ "minecraft:block_face": "up" })
+        }
+    }
 }
 
 class MockDimension {

@@ -86,7 +86,12 @@ export class WrenchItem {
             block.setPermutation(BlockPermutation.resolve("minecraft:air"));
 
             // Give item back to player (simplified drops)
-            if (player.getGameMode() !== "creative") {
+            const gameModeComponent = player.getComponent("minecraft:gamemode");
+            const isCreative = gameModeComponent && typeof (gameModeComponent as any).gameMode === 'string'
+                ? (gameModeComponent as any).gameMode === "creative"
+                : false;
+
+            if (!isCreative) {
                  player.dimension.spawnItem(new ItemStack(typeId, 1), block.location);
             }
 

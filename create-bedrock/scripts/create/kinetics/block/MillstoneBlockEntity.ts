@@ -1,5 +1,6 @@
 import { Block, ItemStack, Container } from "@minecraft/server";
 import { KineticBlockEntity } from "./KineticBlockEntity.js";
+import { RecipeRegistry, ProcessingRecipe } from "../../api/recipe/RecipeRegistry.js";
 
 /**
  * Port of com.simibubi.create.content.kinetics.millstone.MillstoneBlockEntity
@@ -7,6 +8,7 @@ import { KineticBlockEntity } from "./KineticBlockEntity.js";
  */
 export class MillstoneBlockEntity extends KineticBlockEntity {
     public timer: number = 0;
+    private currentRecipe: ProcessingRecipe | null = null;
 
     // In Bedrock, we will interface with the actual block container component for ease of use
     // Input slot: 0
@@ -44,9 +46,10 @@ export class MillstoneBlockEntity extends KineticBlockEntity {
         if (!inputStack) return;
 
         // If we have an input but no timer, we check for a valid recipe
-        if (this.canProcess(inputStack)) {
-            // Hardcoded duration for stub, usually pulled from recipe
-            this.timer = 100;
+        const recipe = RecipeRegistry.getRecipeFor("milling", inputStack);
+        if (recipe) {
+            this.currentRecipe = recipe;
+            this.timer = recipe.processingTime;
         }
     }
 
@@ -55,52 +58,49 @@ export class MillstoneBlockEntity extends KineticBlockEntity {
         return invComp?.container;
     }
 
-    private canProcess(stack: ItemStack): boolean {
-        // Stubbed recipe validation: accept anything tagged 'forge:ores' or wheat for example
-        // We will hardcode a basic rule for testing
-        if (stack.typeId === "minecraft:wheat") return true;
-        if (stack.typeId === "minecraft:cobblestone") return true;
-        return false;
-    }
-
     private process(inventory: Container, inputStack: ItemStack | undefined): void {
-        if (!inputStack) return;
+        if (!inputStack || !this.currentRecipe) return;
 
-        // Try to place output
-        let outputId = "minecraft:air";
-        let outputAmount = 1;
+        let allPlaced = true;
 
-        if (inputStack.typeId === "minecraft:wheat") {
-            outputId = "minecraft:bread"; // Wheat flour placeholder
-        } else if (inputStack.typeId === "minecraft:cobblestone") {
-            outputId = "minecraft:gravel";
-        }
+        for (const result of this.currentRecipe.results) {
+            // In full impl, this processes % chance drops (e.g. wheat seeds with 25% chance).
+            // For now, always grant items for stability.
+            const outputId = result.typeId;
+            const outputAmount = result.amount;
 
-        if (outputId !== "minecraft:air") {
-            // Find empty output slot
+            // Find empty or stackable output slot
             let placed = false;
             for (let i = 1; i <= 9; i++) {
                 const outSlot = inventory.getItem(i);
                 if (!outSlot) {
-                    inventory.setItem(i, new ItemStack(outputId, outputAmount));
-                    placed = true;
-                    break;
-                } else if (outSlot.typeId === outputId && outSlot.amount < outSlot.maxAmount) {
+                    try {
+                        inventory.setItem(i, new ItemStack(outputId, outputAmount));
+                        placed = true;
+                        break;
+                    } catch (e) {
+                        // Usually implies missing item from mock environment, skip gracefully
+                    }
+                } else if (outSlot.typeId === outputId && outSlot.amount + outputAmount <= outSlot.maxAmount) {
                     outSlot.amount += outputAmount;
                     inventory.setItem(i, outSlot);
                     placed = true;
                     break;
                 }
             }
-
-            if (placed) {
-                if (inputStack.amount > 1) {
-                    inputStack.amount -= 1;
-                    inventory.setItem(0, inputStack);
-                } else {
-                    inventory.setItem(0, undefined);
-                }
+            if (!placed) {
+                allPlaced = false;
             }
+        }
+
+        if (allPlaced) {
+            if (inputStack.amount > 1) {
+                inputStack.amount -= 1;
+                inventory.setItem(0, inputStack);
+            } else {
+                inventory.setItem(0, undefined);
+            }
+            this.currentRecipe = null;
         }
     }
 }

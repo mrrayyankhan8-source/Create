@@ -2,6 +2,14 @@ import { Contraption } from "../scripts/create/contraptions/Contraption.js";
 import { AbstractContraptionEntity } from "../scripts/create/contraptions/AbstractContraptionEntity.js";
 import { ContraptionManager } from "../scripts/create/contraptions/ContraptionManager.js";
 
+jest.mock("@minecraft/server", () => ({
+    BlockPermutation: {
+        resolve: jest.fn().mockReturnValue({
+            withState: jest.fn().mockReturnThis()
+        })
+    }
+}), { virtual: true });
+
 class MockEntity {
     public isValidValue = true;
     public location = { x: 0, y: 0, z: 0 };
