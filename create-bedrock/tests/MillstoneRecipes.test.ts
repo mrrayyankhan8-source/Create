@@ -48,7 +48,7 @@ describe("Millstone Recipes", () => {
     it("should process items through the global RecipeRegistry successfully", () => {
         RecipeRegistry.register({
             type: "milling",
-            ingredients: ["minecraft:wheat"],
+            ingredients: [{ item: "minecraft:wheat" }],
             results: [{ typeId: "minecraft:wheat_seeds", amount: 2 }],
             processingTime: 50
         });

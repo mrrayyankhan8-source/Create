@@ -49,7 +49,7 @@ export class MillstoneBlockEntity extends KineticBlockEntity {
         const recipe = RecipeRegistry.getRecipeFor("milling", inputStack);
         if (recipe) {
             this.currentRecipe = recipe;
-            this.timer = recipe.processingTime;
+            this.timer = recipe.processingTime ?? 100;
         }
     }
 
@@ -63,7 +63,8 @@ export class MillstoneBlockEntity extends KineticBlockEntity {
 
         let allPlaced = true;
 
-        for (const result of this.currentRecipe.results) {
+        const results = this.currentRecipe.results || [];
+        for (const result of results) {
             // In full impl, this processes % chance drops (e.g. wheat seeds with 25% chance).
             // For now, always grant items for stability.
             const outputId = result.typeId;

@@ -1,3 +1,10 @@
+jest.mock("@minecraft/server", () => ({
+    ItemStack: class {
+        constructor(public typeId: string, public amount: number) {}
+        maxAmount = 64;
+    }
+}), { virtual: true });
+
 import { MechanicalMixerBlockEntity } from "../scripts/create/kinetics/block/MechanicalMixerBlockEntity.js";
 import { CrushingWheelBlockEntity } from "../scripts/create/kinetics/block/CrushingWheelBlockEntity.js";
 import { KineticBlockManager } from "../scripts/create/kinetics/block/KineticBlockManager.js";

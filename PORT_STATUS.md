@@ -1,53 +1,52 @@
 # Port Status
 
 ## Completed
-* Setup base directories
-* Setup TypeScript config and project
-* Setup JSON generator script
-* Design Bedrock Architecture and implement simulated KineticNetwork
-* Establish unit test foundation with Jest
-* Implement and test RotationPropagator logic based on original Java Create source
-* Trace and implement Java network synchronization (`updateCapacity`, `updateStress`, `updateFromNetwork`)
+* Setup base directories, TS config, JSON generator, and testing.
+* Designed Bedrock Architecture, `KineticNetwork`, and `RotationPropagator`.
+* Implemented block stress and capacity systems.
+* Implemented and tested base moving parts (Shafts, Cogwheels, Gearboxes, Encased Shafts, Belt Inventories).
+* Implemented foundational dummy visualization schemas (`BlockPermutation`, geometry state logic)
+* Implemented Fluid Networks (BFS propagation via `FluidPropagator`, basic `PumpBlockEntity` logic).
+* Implemented preliminary Contraption block assembly via BFS (`ContraptionAssembler`).
+* Implemented foundational Track, Station, Train and Signal architectures.
+* Fixed critical Bedrock ESM initialization logic related to `@minecraft/server` circular dependencies.
+* **Implemented global `RecipeRegistry.ts` replicating Create's JSON-driven recipe behaviors.**
+* Integrated Millstone and Mechanical Mixer natively with Bedrock `minecraft:inventory` components.
 
 ## Analyzed
-* KineticBlockEntity (Core block entity logic for kinetics)
-* KineticNetwork (Graph propagation logic for kinetic systems)
-* RotationPropagator (Determining rotation speed modifiers between connected blocks)
-* IRotate (Interface defining block axis and rotation behavior)
-* KineticBlock (Base block class for kinetic mechanics)
-* RotatedPillarKineticBlock
-* ShaftBlock
-* CogWheelBlock
-* TorquePropagator (Network tracking)
-* GeneratingKineticBlockEntity
+* Kinetic mechanics and propagation (`KineticNetwork`, `RotationPropagator`, `TorquePropagator`).
+* Basic kinetic blocks (`CogwheelBlock`, `ShaftBlock`, etc).
+* Fluid mechanics (`FluidPropagator`, `FluidNetwork`).
+* Contraption structures (`Contraption.java`, `ContraptionCollider.java`).
+* Train and signal subsystems.
+* Processing recipes (`ProcessingRecipeParams.java`, `ProcessingRecipeBuilder.java`).
 
 ## Implemented
-* `KineticNetwork.ts`: Core tracking of kinetic network capacity and stress logic
-* `KineticBlockEntity.ts`: Abstract virtual base class tracking stress and generating propagation triggers
-* `KineticBlockManager.ts`: Global registry mapped block locations to their virtual entities
-* `RotationPropagator.ts`: Filled out specific speed propagation multipliers mimicking original Java Create source (`Axis <-> Axis`, `Large <-> Large`, `Large <-> Small`, `Gear <-> Gear`).
-* `RotatedPillarKineticBlockEntity.ts`: Port of rotation state logic for axis-aligned components
-* `ShaftBlockEntity.ts`: Logic class for shafts
-* `CogwheelBlockEntity.ts`: Logic class for cogwheels
-* `KineticRegistration.ts`: Auto-registers placed shafts/cogs into the kinetic backend
-* `TorquePropagator.ts`: Central network instantiator corresponding to `Create.TORQUE_PROPAGATOR`.
-* `GeneratingKineticBlockEntity.ts`: Base class for source logic
-* **Tests Added**: Unit tests for `KineticNetwork` and `RotationPropagator` confirming logic accurately duplicates Create's logic.
+* Core Kinetics (`KineticBlockEntity`, `KineticNetwork`, `TorquePropagator`, `RotationPropagator`).
+* Machinery (`CreativeMotorBlockEntity`, `MillstoneBlockEntity`, `MechanicalMixerBlockEntity`, `CrushingWheelBlockEntity`).
+* Moving Structures (`ContraptionAssembler`, `Contraption`).
+* Fluid Handling (`FluidPropagator`, `PumpBlockEntity`).
+* Trains & Rail (`TrackGraph`, `Train`, `TrainStationBlockEntity`, `TrackSignalBlockEntity`).
+* Data/API (`RecipeRegistry`).
+* Extensively verified through 33 unit tests (Jest).
 
 ## Tested
-* Base TypeScript compilation successful
-* Jest tests for `KineticNetwork` (pass)
-* Jest tests for `RotationPropagator` (pass)
+* All TypeScript files strictly type check (isolatedModules compliance enforced).
+* 33/33 Jest unit tests passing spanning Kinetics, Stress, Trains, Contraptions, Belts, and Recipes.
 
 ## Remaining
-* Implement basic motor/generator source logic (e.g. `CreativeMotor`) to act as a testable power input in the network.
-* Connect TypeScript propagation logic to Bedrock script UI / events.
+* Implement Advanced Contraption Sub-Networks (e.g. storage and fluid interactions on moving objects).
+* Trains UI, Scheduling, and specific bogie visualization models.
+* Implement UI/Container bridging for block configuration (e.g. Filter UI, Station UI, Train Schedule UI).
+* Bedrock-native rendering hooks for dynamically rotating gears/contraptions (via Dummy Entities + Molang).
 
 ## Current Task
-* Pre-commit review and prepare to submit
+* Pre-commit checks and submit branch.
 
 ## Limitations
-* None currently identified.
+* Create uses a custom rendering pipeline (Flywheel). The Bedrock port utilizes dynamic dummy entities + resource pack animations/Molang as the closest functional equivalent.
+* Strict Bedrock QuickJS ES Module context forbids global cross-require dynamic loading unless carefully decoupled.
+* Bedrock has no native Fluid API yet, so `minecraft:inventory` with buckets/custom items will serve as intermediate fluid representation until a robust script-level volume API is fully mapped.
 
 ## Bugs
-* None yet
+* None currently identified.

@@ -10,7 +10,21 @@
         "CogWheelBlock",
         "TorquePropagator",
         "GeneratingKineticBlockEntity",
-        "CreativeMotorBlockEntity"
+        "CreativeMotorBlockEntity",
+        "BeltBlockEntity",
+        "GearboxBlockEntity",
+        "EncasedShaftBlockEntity",
+        "FluidNetwork",
+        "FluidPropagator",
+        "PumpBlockEntity",
+        "Contraption",
+        "ContraptionAssembler",
+        "TrackGraph",
+        "Train",
+        "TrainStationBlockEntity",
+        "TrackSignalBlockEntity",
+        "ProcessingRecipeParams",
+        "ProcessingRecipeBuilder"
     ],
     "implemented_components": [
         "KineticNetwork",
@@ -23,6 +37,21 @@
         "KineticRegistration",
         "TorquePropagator",
         "GeneratingKineticBlockEntity",
-        "CreativeMotorBlockEntity"
+        "CreativeMotorBlockEntity",
+        "GearboxBlockEntity",
+        "BeltBlockEntity",
+        "EncasedShaftBlockEntity",
+        "FluidPropagator",
+        "PumpBlockEntity",
+        "ContraptionAssembler",
+        "Contraption",
+        "TrackGraph",
+        "Train",
+        "TrainStationBlockEntity",
+        "TrackSignalBlockEntity",
+        "RecipeRegistry",
+        "MillstoneBlockEntity",
+        "MechanicalMixerBlockEntity",
+        "CrushingWheelBlockEntity"
     ]
 }
