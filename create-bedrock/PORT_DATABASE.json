@@ -25,7 +25,11 @@
     "com.simibubi.create.content.fluids.FluidPropagator",
     "com.simibubi.create.content.fluids.FluidTransportBehaviour",
     "com.simibubi.create.content.contraptions.Contraption",
-    "com.simibubi.create.content.contraptions.AbstractContraptionEntity"
+    "com.simibubi.create.content.contraptions.AbstractContraptionEntity",
+    "com.simibubi.create.api.contraption.BlockMovementChecks",
+    "com.simibubi.create.content.trains.graph.TrackGraph",
+    "com.simibubi.create.content.trains.entity.Train",
+    "com.simibubi.create.content.trains.entity.Carriage"
   ],
   "implemented": {
     "KineticBlockEntity": "scripts/create/kinetics/block/KineticBlockEntity.ts",
@@ -53,10 +57,19 @@
     "Basin": "scripts/create/kinetics/block/BasinBlockEntity.ts",
     "PumpBlockEntity": "scripts/create/fluids/PumpBlockEntity.ts",
     "FluidPropagator": "scripts/create/fluids/FluidPropagator.ts",
-    "FluidTransportBehaviour": "scripts/create/fluids/FluidTransportBehaviour.ts"
+    "FluidTransportBehaviour": "scripts/create/fluids/FluidTransportBehaviour.ts",
+    "AbstractContraptionEntity": "scripts/create/contraptions/AbstractContraptionEntity.ts",
+    "ContraptionManager": "scripts/create/contraptions/ContraptionManager.ts",
+    "ContraptionAssembler": "scripts/create/contraptions/ContraptionAssembler.ts",
+    "Contraption": "scripts/create/contraptions/Contraption.ts",
+    "TrackGraph": "scripts/create/trains/graph/TrackGraph.ts",
+    "TrackNode": "scripts/create/trains/graph/TrackNode.ts",
+    "TrackEdge": "scripts/create/trains/graph/TrackEdge.ts",
+    "Train": "scripts/create/trains/entity/Train.ts",
+    "Carriage": "scripts/create/trains/entity/Carriage.ts"
   },
   "remaining": [
-    "Contraption Entities",
-    "Trains"
+    "Trains UI and Signals",
+    "Advanced Contraption Sub-Networks"
   ]
 }

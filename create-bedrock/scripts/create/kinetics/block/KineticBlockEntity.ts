@@ -1,14 +1,7 @@
 import { Block, Dimension, Vector3 } from "@minecraft/server";
 import { TorquePropagator } from "../network/TorquePropagator.js";
 import { BlockStressValues } from "../../api/stress/BlockStressValues.js";
-
-let rotationPropagatorClass: any = null;
-function getRotationPropagator() {
-    if (!rotationPropagatorClass) {
-        rotationPropagatorClass = require("../propagation/RotationPropagator.js").RotationPropagator;
-    }
-    return rotationPropagatorClass;
-}
+import { RotationPropagator } from "../propagation/RotationPropagator.js";
 
 export class KineticBlockEntity {
     public block: Block;
@@ -86,11 +79,11 @@ export class KineticBlockEntity {
 
     public attachKinetics(): void {
         this.updateSpeedRequested = false;
-        getRotationPropagator().handleAdded(this);
+        RotationPropagator.handleAdded(this);
     }
 
     public detachKinetics(): void {
-        getRotationPropagator().handleRemoved(this);
+        RotationPropagator.handleRemoved(this);
     }
 
     public remove(): void {

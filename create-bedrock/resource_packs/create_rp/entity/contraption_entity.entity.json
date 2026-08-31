@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "create:contraption_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/invisible"
+      },
+      "geometry": {
+        "default": "geometry.create.contraption"
+      },
+      "scripts": {
+        "animate": []
+      },
+      "animations": {},
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

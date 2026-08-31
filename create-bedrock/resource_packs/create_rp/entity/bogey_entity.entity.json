@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "create:bogey_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bogey"
+      },
+      "geometry": {
+        "default": "geometry.create.bogey"
+      },
+      "scripts": {
+        "animate": [
+          "bogey_rotation"
+        ]
+      },
+      "animations": {
+        "bogey_rotation": "animation.create.bogey_rotation"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

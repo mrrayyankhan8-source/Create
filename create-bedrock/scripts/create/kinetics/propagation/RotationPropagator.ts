@@ -1,12 +1,8 @@
 import { Vector3, Block } from "@minecraft/server";
-import { KineticBlockEntity } from "../block/KineticBlockEntity.js";
-import { RotatedPillarKineticBlockEntity } from "../block/RotatedPillarKineticBlockEntity.js";
-import { CogwheelBlockEntity } from "../block/CogwheelBlockEntity.js";
 import { KineticBlockManager } from "../block/KineticBlockManager.js";
+// We use 'any' in parameter types here, and dynamic typing to check for specific subclasses
+// This completely circumvents the circular dependency while satisfying the ESM compiler.
 
-/**
- * Port of com.simibubi.create.content.kinetics.RotationPropagator
- */
 export class RotationPropagator {
 
     private static getDirection(diff: Vector3): string | null {
@@ -38,17 +34,17 @@ export class RotationPropagator {
         return "y";
     }
 
-    private static getAxisModifier(entity: KineticBlockEntity, direction: string): number {
+    private static getAxisModifier(entity: any, direction: string): number {
         if (entity.block && entity.block.typeId && entity.block.typeId.includes("gearbox")) {
             return direction === "up" || direction === "down" ? -1 : 1;
         }
-        if (typeof (entity as any).getRotationSpeedModifier === 'function') {
-            return (entity as any).getRotationSpeedModifier(direction);
+        if (typeof entity.getRotationSpeedModifier === 'function') {
+            return entity.getRotationSpeedModifier(direction);
         }
         return 1.0;
     }
 
-    private static isLargeToLargeGear(from: CogwheelBlockEntity, to: CogwheelBlockEntity, diff: Vector3): boolean {
+    private static isLargeToLargeGear(from: any, to: any, diff: Vector3): boolean {
         if (!from.isLarge || !to.isLarge) return false;
         if (diff.x === 0 && diff.y === 0 && diff.z === 0) return false;
 
@@ -64,7 +60,7 @@ export class RotationPropagator {
         return false;
     }
 
-    public static getRotationSpeedModifier(from: KineticBlockEntity, to: KineticBlockEntity): number {
+    public static getRotationSpeedModifier(from: any, to: any): number {
         const diff = {
             x: to.block.location.x - from.block.location.x,
             y: to.block.location.y - from.block.location.y,
@@ -78,20 +74,22 @@ export class RotationPropagator {
         let isFromLargeCog = false;
         let isToLargeCog = false;
 
-        if (from instanceof CogwheelBlockEntity || (from.block && from.block.typeId && from.block.typeId.includes("cogwheel"))) {
-            isFromSmallCog = !(from as any).isLarge;
-            isFromLargeCog = (from as any).isLarge;
+        const isFromCogwheel = from.constructor.name === "CogwheelBlockEntity" || (from.block && from.block.typeId && from.block.typeId.includes("cogwheel"));
+        if (isFromCogwheel) {
+            isFromSmallCog = !from.isLarge;
+            isFromLargeCog = from.isLarge;
         }
 
-        if (to instanceof CogwheelBlockEntity || (to.block && to.block.typeId && to.block.typeId.includes("cogwheel"))) {
-            isToSmallCog = !(to as any).isLarge;
-            isToLargeCog = (to as any).isLarge;
+        const isToCogwheel = to.constructor.name === "CogwheelBlockEntity" || (to.block && to.block.typeId && to.block.typeId.includes("cogwheel"));
+        if (isToCogwheel) {
+            isToSmallCog = !to.isLarge;
+            isToLargeCog = to.isLarge;
         }
 
         if (isFromLargeCog && isToLargeCog) {
-            if (this.isLargeToLargeGear(from as CogwheelBlockEntity, to as CogwheelBlockEntity, diff)) {
-                 const sourceAxis = (from as CogwheelBlockEntity).getAxis();
-                 const targetAxis = (to as CogwheelBlockEntity).getAxis();
+            if (this.isLargeToLargeGear(from, to, diff)) {
+                 const sourceAxis = from.getAxis();
+                 const targetAxis = to.getAxis();
                  const sourceAxisDiff = (diff as any)[sourceAxis];
                  const targetAxisDiff = (diff as any)[targetAxis];
 
@@ -114,8 +112,8 @@ export class RotationPropagator {
 
         let connectedByAxis = false;
         if (alignedAxes) {
-             if (typeof (from as any).getAxis === 'function' && typeof (to as any).getAxis === 'function') {
-                 if ((from as any).getAxis() === dirAxis && (to as any).getAxis() === dirAxis) {
+             if (typeof from.getAxis === 'function' && typeof to.getAxis === 'function') {
+                 if (from.getAxis() === dirAxis && to.getAxis() === dirAxis) {
                      connectedByAxis = true;
                  }
              }
@@ -130,8 +128,8 @@ export class RotationPropagator {
         }
 
         if (isFromLargeCog && isToSmallCog) {
-            const axisFrom = (from as CogwheelBlockEntity).getAxis();
-            const axisTo = (to as CogwheelBlockEntity).getAxis();
+            const axisFrom = from.getAxis();
+            const axisTo = to.getAxis();
 
             if (axisFrom !== axisTo) {
                 if (Math.abs(diff.x) + Math.abs(diff.y) + Math.abs(diff.z) === 1) {
@@ -141,8 +139,8 @@ export class RotationPropagator {
         }
 
         if (isToLargeCog && isFromSmallCog) {
-            const axisFrom = (from as CogwheelBlockEntity).getAxis();
-            const axisTo = (to as CogwheelBlockEntity).getAxis();
+            const axisFrom = from.getAxis();
+            const axisTo = to.getAxis();
 
             if (axisFrom !== axisTo) {
                  if (Math.abs(diff.x) + Math.abs(diff.y) + Math.abs(diff.z) === 1) {
@@ -156,8 +154,8 @@ export class RotationPropagator {
             if (manhattanDist !== 1) return 0;
             if (isToLargeCog) return 0;
 
-            const fromAxis = (from as CogwheelBlockEntity).getAxis();
-            const toAxis = (to as CogwheelBlockEntity).getAxis();
+            const fromAxis = from.getAxis();
+            const toAxis = to.getAxis();
 
             if (dirAxis === fromAxis) return 0;
             if (fromAxis === toAxis) return -1;
@@ -166,16 +164,16 @@ export class RotationPropagator {
         return 0;
     }
 
-    public static getConveyedSpeed(from: KineticBlockEntity, to: KineticBlockEntity): number {
+    public static getConveyedSpeed(from: any, to: any): number {
         const modifier = this.getRotationSpeedModifier(from, to);
         return modifier !== 0 ? from.getTheoreticalSpeed() * modifier : 0;
     }
 
-    public static handleAdded(addedTE: KineticBlockEntity): void {
+    public static handleAdded(addedTE: any): void {
         this.propagateNewSource(addedTE);
     }
 
-    public static handleRemoved(removedTE: KineticBlockEntity): void {
+    public static handleRemoved(removedTE: any): void {
         if (!removedTE) return;
 
         const pos = removedTE.block.location;
@@ -197,15 +195,15 @@ export class RotationPropagator {
         }
     }
 
-    private static propagateMissingSource(updateTE: KineticBlockEntity, removedPos?: Vector3): void {
+    private static propagateMissingSource(updateTE: any, removedPos?: Vector3): void {
         const dimension = updateTE.block.dimension;
-        const potentialNewSources: KineticBlockEntity[] = [];
+        const potentialNewSources: any[] = [];
         const frontier: Vector3[] = [];
         frontier.push(updateTE.block.location);
 
         const missingSource = updateTE.hasSource() ? updateTE.source : null;
 
-        const removedSet: Set<KineticBlockEntity> = new Set();
+        const removedSet: Set<any> = new Set();
 
         while (frontier.length > 0) {
             const pos = frontier.shift()!;
@@ -258,7 +256,7 @@ export class RotationPropagator {
         }
     }
 
-    private static propagateNewSource(currentTE: KineticBlockEntity): void {
+    private static propagateNewSource(currentTE: any): void {
         if (currentTE.isSource() && currentTE.getTheoreticalSpeed() === 0) {
              currentTE.setSpeed(currentTE.getGeneratedSpeed());
              currentTE.setSource(currentTE.block.location);
@@ -271,10 +269,10 @@ export class RotationPropagator {
         const currentNetwork = currentTE.getOrCreateNetwork();
         currentNetwork.add(currentTE);
 
-        const visited: Set<KineticBlockEntity> = new Set();
+        const visited: Set<any> = new Set();
         visited.add(currentTE);
 
-        const queue: KineticBlockEntity[] = [currentTE];
+        const queue: any[] = [currentTE];
 
         while (queue.length > 0) {
             const node = queue.shift()!;
@@ -333,7 +331,7 @@ export class RotationPropagator {
         }
     }
 
-    private static getPotentialNeighbourLocations(be: KineticBlockEntity): Vector3[] {
+    private static getPotentialNeighbourLocations(be: any): Vector3[] {
         const pos = be.block.location;
         const locations: Vector3[] = [];
 
@@ -344,8 +342,9 @@ export class RotationPropagator {
         locations.push({ x: pos.x, y: pos.y, z: pos.z + 1 });
         locations.push({ x: pos.x, y: pos.y, z: pos.z - 1 });
 
-        if (be instanceof CogwheelBlockEntity && be.isLarge) {
-            const axis = be.getAxis();
+        const isCogwheel = be.constructor.name === "CogwheelBlockEntity" || (be.block && be.block.typeId && be.block.typeId.includes("cogwheel"));
+        if (isCogwheel && be.isLarge) {
+            const axis = typeof be.getAxis === 'function' ? be.getAxis() : "y";
             if (axis === 'x') {
                 locations.push({ x: pos.x, y: pos.y + 1, z: pos.z + 1 });
                 locations.push({ x: pos.x, y: pos.y + 1, z: pos.z - 1 });
@@ -367,10 +366,10 @@ export class RotationPropagator {
         return locations;
     }
 
-    private static getConnectedNeighbours(be: KineticBlockEntity): KineticBlockEntity[] {
+    private static getConnectedNeighbours(be: any): any[] {
         const dimension = be.block.dimension;
         const locations = this.getPotentialNeighbourLocations(be);
-        const neighbours: KineticBlockEntity[] = [];
+        const neighbours: any[] = [];
 
         for (const loc of locations) {
             const neighbourBE = KineticBlockManager.get(dimension, loc);

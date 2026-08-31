@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "create:bogey_entity",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+            "properties": {
+				"create:wheel_rotation": {
+					"type": "float",
+					"default": 0.0,
+                    "range": [-360.0, 360.0],
+                    "client_sync": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1.0,
+				"height": 1.0
+			},
+			"minecraft:physics": {
+                "has_gravity": true,
+                "has_collision": true
+            }
+		}
+	}
+}
