@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Create RP (Bedrock Port)",
+    "description": "Resources for Create Bedrock Port",
+    "uuid": "2c2a5c9a-2222-4191-8889-1065e1578888",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 60]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "8c8a5c9a-2222-4191-8889-1065e1578888",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "4c45b98a-11c7-43a1-9d22-1d7d25e042b5",
+      "version": [1, 0, 0]
+    }
+  ]
+}
