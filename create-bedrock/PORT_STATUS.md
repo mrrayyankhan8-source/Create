@@ -12,6 +12,10 @@
   - BeltBlockEntity & BeltInventory
   - CrushingWheelBlockEntity
   - MechanicalMixerBlockEntity
+- **Fluid Networks:**
+  - FluidPropagator (BFS Pressure Traversal)
+  - PumpBlockEntity (Pressure generation via Kinetic speed)
+  - FluidTransportBehaviour (Pipe caching & interfaces)
 - **Transport / Logistics:**
   - Mechanical Belts: Linear item movement simulation based on kinetic speed
   - `TransportedItemStack` state tracking
@@ -23,12 +27,11 @@
   - Wrench Rotation & Sneak Dismantling
 
 ## Next Tasks
-- **Contraptions (Moving Structures):** Analyze and stub the architecture for turning block sub-networks into dynamic movable entities.
-- **Fluid Networks:** Begin porting the fluid pipe graph architecture.
+- **Contraptions (Moving Structures):** Stub the backend structures (`AbstractContraptionEntity` and `Contraption`) that allow multi-block structures to move and rotate based on `MovementBehaviour`.
 - **Trains:** Stub out track and bogey interactions.
 
 ## Known Limitations (Bedrock Specific)
 - **Visual Instancing:** We are using invisible dummy entities (`create:shaft_visual`) driven by Molang `query.property('create:speed')`. This works perfectly for smooth, data-driven animations, but spawns an entity per kinetic block. We must monitor engine limits on low-end devices.
 
 ## Known Bugs
-- None currently. All 23 core Jest tests passing.
+- None currently. All 24 core Jest tests passing.

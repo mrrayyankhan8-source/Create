@@ -19,7 +19,13 @@
     "com.simibubi.create.content.kinetics.crusher.CrushingWheelBlock",
     "com.simibubi.create.content.kinetics.millstone.MillstoneBlockEntity",
     "com.simibubi.create.content.kinetics.mixer.MechanicalMixerBlockEntity",
-    "com.simibubi.create.content.processing.basin.BasinBlockEntity"
+    "com.simibubi.create.content.processing.basin.BasinBlockEntity",
+    "com.simibubi.create.content.fluids.pipes.FluidPipeBlock",
+    "com.simibubi.create.content.fluids.pump.PumpBlockEntity",
+    "com.simibubi.create.content.fluids.FluidPropagator",
+    "com.simibubi.create.content.fluids.FluidTransportBehaviour",
+    "com.simibubi.create.content.contraptions.Contraption",
+    "com.simibubi.create.content.contraptions.AbstractContraptionEntity"
   ],
   "implemented": {
     "KineticBlockEntity": "scripts/create/kinetics/block/KineticBlockEntity.ts",
@@ -44,11 +50,13 @@
     "CrushingWheel": "scripts/create/kinetics/block/CrushingWheelBlockEntity.ts",
     "Millstone": "scripts/create/kinetics/block/MillstoneBlockEntity.ts",
     "MechanicalMixer": "scripts/create/kinetics/block/MechanicalMixerBlockEntity.ts",
-    "Basin": "scripts/create/kinetics/block/BasinBlockEntity.ts"
+    "Basin": "scripts/create/kinetics/block/BasinBlockEntity.ts",
+    "PumpBlockEntity": "scripts/create/fluids/PumpBlockEntity.ts",
+    "FluidPropagator": "scripts/create/fluids/FluidPropagator.ts",
+    "FluidTransportBehaviour": "scripts/create/fluids/FluidTransportBehaviour.ts"
   },
   "remaining": [
     "Contraption Entities",
-    "Fluid Networks",
     "Trains"
   ]
 }
