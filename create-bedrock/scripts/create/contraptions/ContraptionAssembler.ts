@@ -89,8 +89,12 @@ export class ContraptionAssembler {
 
             contraption.addBlock(localPos, info);
 
+            // Check for storages and attach them to the Contraption's internal network, emptying the block
+            contraption.storage.attachBlock(localPos, block);
+            contraption.fluidStorage.attachBlock(localPos, block);
+
             // Temporary simple linear traversal for contiguous Create blocks
-            if (block.typeId.includes("create:") || block.typeId.includes("chassis")) {
+            if (block.typeId.includes("create:") || block.typeId.includes("chassis") || block.typeId.includes("chest") || block.typeId.includes("barrel")) {
                 const dirs = ["up", "down", "north", "south", "east", "west"];
                 for (const d of dirs) {
                     const nextPos = this.getOffsetPos(currentPos, d);

@@ -1,5 +1,8 @@
 import { Dimension, Vector3, BlockPermutation } from "@minecraft/server";
 
+import { MountedStorageManager } from "./MountedStorageManager.js";
+import { MountedFluidStorage } from "./MountedFluidStorage.js";
+
 export interface StructureBlockInfo {
     pos: Vector3;
     state: string; // The typeId
@@ -15,6 +18,8 @@ export class Contraption {
     public bounds: { min: Vector3, max: Vector3 } = {
         min: {x: 0, y: 0, z: 0}, max: {x: 0, y: 0, z: 0}
     };
+    public storage: MountedStorageManager = new MountedStorageManager();
+    public fluidStorage: MountedFluidStorage = new MountedFluidStorage();
 
     constructor() {}
 
@@ -58,6 +63,10 @@ export class Contraption {
                             }
                         }
                         block.setPermutation(newPerm);
+
+                        // Re-mount items and fluids back to the newly placed blocks
+                        this.storage.unmount(info.pos, block);
+                        this.fluidStorage.unmount(info.pos, block);
                     } catch (e) {
                         // Suppress BlockPermutation errors in isolated unit test environments
                         // where @minecraft/server cannot actually be imported or resolved.

@@ -24,7 +24,10 @@
         "TrainStationBlockEntity",
         "TrackSignalBlockEntity",
         "ProcessingRecipeParams",
-        "ProcessingRecipeBuilder"
+        "ProcessingRecipeBuilder",
+        "MountedStorageManager",
+        "MountedItemStorage",
+        "MountedFluidStorage"
     ],
     "implemented_components": [
         "KineticNetwork",
@@ -52,6 +55,8 @@
         "RecipeRegistry",
         "MillstoneBlockEntity",
         "MechanicalMixerBlockEntity",
-        "CrushingWheelBlockEntity"
+        "CrushingWheelBlockEntity",
+        "MountedStorageManager",
+        "MountedFluidStorage"
     ]
 }
