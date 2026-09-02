@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "create:gearbox_visual",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gearbox"
+      },
+      "geometry": {
+        "default": "geometry.create.gearbox"
+      },
+      "scripts": {
+        "animate": []
+      },
+      "animations": {},
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

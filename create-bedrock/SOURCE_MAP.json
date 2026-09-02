@@ -1,0 +1,15 @@
+{
+  "com.simibubi.create.content.kinetics.base.KineticBlockEntity": {
+    "bedrock_equivalent": "scripts/create/kinetics/block/KineticBlockEntity.ts",
+    "status": "complete"
+  },
+  "com.simibubi.create.content.kinetics.RotationPropagator": {
+    "bedrock_equivalent": "scripts/create/kinetics/propagation/RotationPropagator.ts",
+    "status": "complete"
+  },
+  "com.simibubi.create.content.kinetics.KineticEffectHandler": {
+    "bedrock_equivalent": "scripts/create/kinetics/render/KineticEffectHandler.ts",
+    "status": "complete",
+    "notes": "Uses dummy entities for flywheel instanced rendering translation."
+  }
+}

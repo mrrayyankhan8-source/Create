@@ -1,0 +1,13 @@
+{
+    "mapped_files": {
+        "src/main/java/com/simibubi/create/content/kinetics/KineticNetwork.java": "create-bedrock/scripts/create/kinetics/network/KineticNetwork.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/base/KineticBlockEntity.java": "create-bedrock/scripts/create/kinetics/block/KineticBlockEntity.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/RotationPropagator.java": "create-bedrock/scripts/create/kinetics/propagation/RotationPropagator.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/base/RotatedPillarKineticBlock.java": "create-bedrock/scripts/create/kinetics/block/RotatedPillarKineticBlockEntity.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/simpleRelays/ShaftBlock.java": "create-bedrock/scripts/create/kinetics/block/ShaftBlockEntity.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/simpleRelays/CogWheelBlock.java": "create-bedrock/scripts/create/kinetics/block/CogwheelBlockEntity.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/TorquePropagator.java": "create-bedrock/scripts/create/kinetics/network/TorquePropagator.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/base/GeneratingKineticBlockEntity.java": "create-bedrock/scripts/create/kinetics/block/GeneratingKineticBlockEntity.ts",
+        "src/main/java/com/simibubi/create/content/kinetics/motor/CreativeMotorBlockEntity.java": "create-bedrock/scripts/create/kinetics/block/CreativeMotorBlockEntity.ts"
+    }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "create:gearbox_visual",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+            "properties": {
+				"create:speed": {
+					"type": "float",
+					"default": 0.0,
+                    "range": [-256.0, 256.0],
+                    "client_sync": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			},
+			"minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            },
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		}
+	}
+}
